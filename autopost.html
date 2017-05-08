@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Same Post - Тот же постинг, только лучше!</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dropdown.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/dropdown.min.js"></script>
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+            <script>
+                $(document).ready(function(){    
+                $("[rel=tooltip]").tooltip();
+                });
+            </script>
+            <script type="text/javascript">
+                $(function () {$('#datetimepicker1').datetimepicker({pickTime: false, language: 'ru'});
+                               $("#datetimepicker2").datetimepicker({pickDate: false, language: 'ru'});
+                               $("#datetimepicker3").datetimepicker({pickDate: false, language: 'ru'});
+                               $("#datetimepicker4").datetimepicker({pickDate: false, language: 'ru'})});
+            </script>
+</head>
+<body>    
+
+<header>
+<nav class="navbar navbar-default menu navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="autopost.html"><img src="img/logo.png" width="131"></a>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li class="active"><a href="autopost.html">АвтоПост</a></li>
+</ul>        
+<ul class="nav navbar-nav navbar-right">
+    <li class="active-link"><a id="user-profile" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
+    <ul class="dropdown-menu">
+        <div class="arrow"></div>
+        <li class="username ng-binding"><span class="glyphicon glyphicon-user"></span> Евгений Марилёв</li>
+        <li class="divider"></li>
+      <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Профиль</a></li> -->
+      <li class="munu-drop"><a href="user.html"><span class="glyphicon glyphicon-cog"></span> Настройки</a></li>
+      <li class="divider"></li>
+      <li class="munu-drop"><a href="index.html"><span class="glyphicon glyphicon-off"></span> Выход</a></li>
+    </ul></li>
+    <li class="active-link"><a id="new-post" href="newpost.html">Добавить пост +</a></li> 
+</ul>
+</div>
+</div>
+</nav>
+</header>
+    
+            <div class="content">
+                
+<!-- Дата ================================================== -->            
+            <div class="container">
+            
+            <div class="col-md-2">            
+            </div>
+                        
+            <div class="col-md-4">
+                <h3>Группа:</h3>
+          <select class="form-control">
+                      <option>Группа 1</option>
+                      <option>Группа 2</option>
+                      <option>Группа 3</option>
+                      <option>Группа 4</option>
+                      <option>Группа 5</option>
+                </select>
+                
+<!-- <div class="ui fluid search selection dropdown">
+  <input type="hidden" name="country">
+  <i class="dropdown icon"></i>
+  <div class="default text">Выберите группу</div>
+  <div class="menu">
+  <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+  <div class="item" data-value="ax"><i class="ax flag"></i>Aland Islands</div>
+  <div class="item" data-value="al"><i class="al flag"></i>Albania</div>
+</div>
+</div> -->
+                
+            </div>
+                        
+            <div class="col-md-4">            
+                <h3>Дата:</h3>          
+                <div class="form-group">
+                    <input type="text" class="form-control" id="datetimepicker1" />
+                </div>            
+            </div>
+                     
+            
+                
+            <div class="col-md-2">            
+            </div>
+            </div><br>            
+<!-- Дата ================================================== -->            
+            
+<!-- Расписание ================================================== --> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                <h3>Расписание:</h3><br>
+                
+                    <div class="col-md-2">                 
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-minus"></span></button>
+                            </span>
+                        </div>                
+                    </div>
+                
+                    <div class="col-md-2">
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-minus"></span></button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                      <div class="input-group">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-minus"></span></button>
+                            </span>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-primary" onclick="#" rel="tooltip" title="Добавить время"><span class="glyphicon glyphicon-plus"></span></button>
+                        <button type="button" class="btn btn-danger" onclick="#" rel="tooltip" title="Отменить"><span class="glyphicon glyphicon-ban-circle"></span></button>
+                        <button type="button" class="btn btn-success" onclick="#" rel="tooltip" title="Сохранить"><span class="glyphicon glyphicon-ok"></span></button>
+                    </div>
+                
+                    </div>                    
+                </div>
+            </div><br><br>         
+<!-- Расписание ================================================== -->
+           
+<!-- Контент ================================================== -->
+                        
+            <div class="container">            
+            
+                <ul id="myTab" class="nav nav-tabs">
+                  <li class="active"><a href="#home" data-toggle="tab"><span class="badge pull-right">10</span>Ожидают публикации:&nbsp</a></li>
+                  <li><a href="#profile" data-toggle="tab"><span class="badge pull-right">1</span>Опубликованы:&nbsp</a></li>
+                  <li><a href="#profile1" data-toggle="tab"><span class="badge pull-right">1</span>Ошибки:&nbsp</a></li>   
+                </ul>
+                
+            <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="home"><br>
+                <div class="container">
+                <div class="row">              
+                
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post">
+                <div class="caption">
+                <p class="text-center">9:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post" class="img-rounded">
+                <div class="caption">
+                <p class="text-center">10:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post" class="img-rounded">
+                <div class="caption">
+                <p class="text-center">11:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post" class="img-rounded">
+                <div class="caption">
+                <p class="text-center">12:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post" class="img-rounded">
+                <div class="caption">
+                <p class="text-center">13:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post" class="img-rounded">
+                <div class="caption">
+                <p class="text-center">14:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post" class="img-rounded">
+                <div class="caption">
+                <p class="text-center">15:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post" class="img-rounded">
+                <div class="caption">
+                <p class="text-center">16:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post" class="img-rounded">
+                <div class="caption">
+                <p class="text-center">17:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post" class="img-rounded">
+                <div class="caption">
+                <p class="text-center">18:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>                    
+                </div>
+                </div>
+                
+                    <div class="container">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-4">
+                        <ul class="nav navbar-more"><li class="active-link"><a id="more" href="#">Показать еще...</a></li></ul>
+                        </div>
+                    </div>
+                
+          </div>
+                <div class="tab-pane fade" id="profile"><br>
+                <div class="container">
+                <div class="row">
+                
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post" class="img-rounded">
+                <div class="caption">
+                <p class="text-center">7:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>
+                
+                </div>
+                </div>
+                </div>
+                <div class="tab-pane fade" id="profile1"><br>
+                <div class="container">
+                <div class="row">
+                
+                <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/2.jpg" alt="post" class="img-rounded">
+                <div class="caption">
+                <p class="text-center">8:00</p>
+                <p class="text-center">
+                    <a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a>
+                </p>
+                </div>
+                </div>
+                </div>
+                
+                </div>
+                </div>            
+                </div>
+          </div>
+          </div>
+          </div>
+                    
+      <!-- <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Название панели</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
+      </div> -->
+           
+<!-- Контент ================================================== -->
+            
+<!-- Футер ================================================== -->
+              
+            <footer>
+            <div class="container-foot">
+            
+            <hr>
+            <p>© Same post 2017</p><br>
+            
+            </div>
+            </footer>
+    
+<!-- Футер ================================================== --> 	
+</body>
+</html>

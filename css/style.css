@@ -333,16 +333,17 @@ color:#996;
 }
 
 .home-post .common-post {
-  background-color: #fff;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
+    margin-bottom: 15px;
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;
 }
 .home-post .common-post figure {
-  overflow: hidden;
-  width: 100%;
+    overflow: hidden;
+    width: 100%;
 	height: 196px;
 }
 
@@ -353,8 +354,8 @@ color:#996;
 }
 
 .home-post .common-post h5 {
-  margin: 0 0 7px;
-  font-size: 18px;
+    margin: 0 0 7px;
+    font-size: 18px;
 	font-weight: 700;
 	color: #3a3c41;
 }

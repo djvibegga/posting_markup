@@ -478,3 +478,6 @@ color:#996;
     font-size: 13px;
     text-align: center;
 }
+.remove-image:hover {
+    color: #f00;
+}

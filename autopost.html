@@ -25,6 +25,9 @@
                 $(document).ready(function(){    
                 $("[rel=tooltip]").tooltip();
                 });
+                $(function () {
+                $('[data-toggle="popover"]').popover('toggle')
+                })
             </script>
             <script type="text/javascript">
                 $(function () {$('#datetimepicker1').datetimepicker({pickTime: false, language: 'ru'});
@@ -54,7 +57,7 @@
 <ul class="nav navbar-nav navbar-right">
     <li class="active-link"><a id="user-profile" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
     <ul class="dropdown-menu">
-        <div class="arrow"></div>
+        <div class="arrow-user"></div>
         <li class="username ng-binding"><span class="glyphicon glyphicon-user"></span> Евгений Марилёв</li>
         <li class="divider"></li>
       <li class="munu-drop"><a href="user.html"><span class="glyphicon glyphicon-cog"></span> Настройки</a></li>
@@ -130,8 +133,8 @@
                         </div>
                     </div>
                 
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary" onclick="#" rel="tooltip" title="Добавить время"><span class="glyphicon glyphicon-plus"></span></button>
+                    <div class="col-md-5">
+                        <button type="button" class="btn btn-primary" onclick="#" data-placement="top" data-toggle="popover" title="Создайте расписание!" data-content="Для того, чтобы Ваши посты автоматически распределялись по текущему расписанию, нужно создать его или назначать время публикации самостоятельно при создании поста."><span class="glyphicon glyphicon-plus"></span></button>
                         <button type="button" class="btn btn-danger" onclick="#" rel="tooltip" title="Отменить"><span class="glyphicon glyphicon-ban-circle"></span></button>
                         <button type="button" class="btn btn-success" onclick="#" rel="tooltip" title="Сохранить"><span class="glyphicon glyphicon-ok"></span></button>
                     </div>

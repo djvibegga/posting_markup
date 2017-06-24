@@ -513,3 +513,16 @@ input[type="file"] {
     margin-top: 10px;
     padding-bottom: 20px;
 }
+.attachments-w {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+}
+.attachments-w .btn-attach {
+    font-size: 20px;
+    text-decoration: none;
+    color: #b5b5b5;
+    width: 25px;
+    margin-left: 5px;
+    display: inline-block;
+}

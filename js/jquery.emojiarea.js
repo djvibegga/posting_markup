@@ -589,9 +589,9 @@
             + '<td><a class="emoji-menu-tab icon-grid"></a></td>'
             + '</tr></table>').appendTo(this.$itemsTailWrap);
     this.$itemsWrap = $(
-        '<div class="emoji-items-wrap mobile_scrollable_wrap"></div>')
+        '<div class="emoji-items-wrap nano mobile_scrollable_wrap"></div>')
         .appendTo(this.$itemsTailWrap);
-    this.$items = $('<div class="emoji-items">').appendTo(
+    this.$items = $('<div class="emoji-items nano-content">').appendTo(
         this.$itemsWrap);
 
     this.emojiarea.$editor.after(this.$menu)

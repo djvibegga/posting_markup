@@ -1,53 +1,449 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
+<html>
+  <head>    
+    <meta charset="UTF-8">
 	<title>Same Post - Тот же постинг, только лучше!</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styleindex.css">   
-    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <meta name="description" content="GRAPE App landing Page by Codepassenger">
+    <meta name="author" content="Codepassenger">
+	
+	<!-- Mobile Specific Meta -->	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Owl-carousel style -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+    <!-- magnific style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Custom stylesheet-->
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen">
+
+    <!-- Added google font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!--Fav and touch icons-->
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-</head>
-<body>    
-
-<div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <div class="navbar-brand"><img src="img/logo.png" width="131"></div>              
+  </head>
+  <body>
+ 
+	<!-- Preloader -->
+      <div id="faceoff">
+        <div id="preloader"></div>
+        <div class="preloader-section"></div>
+      </div>
+    <!-- Preloader end -->
+  
+    <!-- header start -->
+    <header id="home" class="navbar-fixed-top">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <h1><a class="nav-brand" href=""> <img src="img/logo_blue.png" alt="logo" width="131"></a></h1>
+              </div>
             </div>
           </div>
+        </div><!-- /.container -->
+      </nav>
+    </header>
+    <!-- header end -->
 
-          <div class="inner cover">            
+    <!-- banner start -->
+    <section id="banner" class="banner">
+      <div class="trans-bg">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12">              
+              <h2><a href="" class="lg-logo default-color">Same Post</a></h2> <!--/ .lg-logo -->
+               <div class="flex_text text-slider">
+                  <ul class="slides">
+                      <li>Тот же постинг, только лучше!</li>
+                      <li>Наш сервис работает - Вы отдыхаете.</li>
+                  </ul>
+                </div>
+                <div class="inner cover">            
             <p class="lead">
-             <a id="btn-enter" href="autopost.html"><img src="img/vk.png" width="90" height="90"></a>
+             <a id="btn-enter" href="autopost.html"><i class="fa fa-vk" aria-hidden="true"></i></a>
             </p>
           </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>© Same post 2017</p>
+                <!--/.text-slider end-->            
             </div>
           </div>
-
         </div>
+      </div> <!-- /.trans-bg -->                 
+    </section>
+    <!-- banner end -->
 
+    <!-- intro start -->
+    <section id="intro" class="intro white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <span class="sub-head wow fadeInLeft">Представляем</span>
+            <div class="title wow fadeInRight">
+              <h2>Наш проект</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="app-block wow bounceInUp" data-wow-delay=".1s">
+              <i class="fa fa-bolt"></i>
+              <h3>Быстрый</h3>
+              <p>Наш сервер очень крутой и быстрый</p>
+            </div>            
+          </div>
+          <div class="col-sm-4">
+            <div class="app-block wow bounceInUp" data-wow-delay=".2s">
+              <i class="fa fa-life-ring"></i>
+              <h3>Квалифицированная поддержка</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>            
+          </div>
+          <div class="col-sm-4">
+            <div class="app-block wow bounceInUp" data-wow-delay=".3s">
+              <i class="fa fa-paint-brush"></i>
+              <h3>Уникальный дизайн</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="app-block wow bounceInUp" data-wow-delay=".4s">
+              <i class="fa fa-angellist"></i>
+              <h3>corporate branding</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="app-block wow bounceInUp" data-wow-delay=".5s">
+              <i class="fa fa-thumbs-o-up"></i>
+              <h3>best in qulality</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="app-block wow bounceInUp" data-wow-delay=".6s">
+              <i class="fa fa-puzzle-piece"></i>
+              <h3>idea making</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>            
+          </div>
+        </div>
       </div>
+    </section>
+    <!-- intro end -->
 
-    </div>	
-</body>
+    <!-- feature start -->
+    <section id="feature" class="feature">
+      <div class="trans-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2 class="wow swing" data-wow-delay=".1s">Будущие функции</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <ul class="feature-list-left">
+                <li>
+                  <div class="feature-detail wow fadeInLeft" data-wow-delay=".4s">
+                    <h4>Custom scrollbars</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                  </div>                          
+                  <div class="feature-icon wow fadeInLeft" data-wow-delay=".3s">
+                    <i class="fa fa-exchange"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="feature-detail wow fadeInLeft" data-wow-delay=".4s">
+                    <h4>Robust demo package</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                  </div>
+                  <div class="feature-icon wow fadeInLeft" data-wow-delay=".3s">
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="feature-detail wow fadeInLeft" data-wow-delay=".4s">
+                    <h4>Responsive support</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                  </div>
+                  <div class="feature-icon wow fadeInLeft" data-wow-delay=".3s">
+                    <i class="fa fa-arrows-alt"></i>
+                  </div>                  
+                </li>
+                <li>
+                  <div class="feature-detail wow fadeInLeft" data-wow-delay=".4s">
+                    <h4>Tons of API callbacks</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                  </div>
+                  <div class="feature-icon wow fadeInLeft" data-wow-delay=".3s">
+                    <i class="fa fa-cog"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4 text-center">
+              <img class="wow bounceInUp" src="img/iphone_full.png" alt="" title="">
+            </div>
+            <div class="col-sm-4">
+              <ul class="feature-list-right">
+                <li>
+                  <div class="feature-icon wow fadeInRight" data-wow-delay=".3s">
+                    <i class="fa fa-arrows-alt"></i>
+                  </div>
+                  <div class="feature-detail wow fadeInRight" data-wow-delay=".4s">
+                    <h4>Responsive support</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="feature-icon wow fadeInRight" data-wow-delay=".3s">
+                    <i class="fa fa-cog"></i>
+                  </div>
+                  <div class="feature-detail wow fadeInRight" data-wow-delay=".4s">
+                    <h4>Tons of API callbacks</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="feature-icon wow fadeInRight" data-wow-delay=".3s">
+                    <i class="fa fa-mobile"></i>
+                  </div>
+                  <div class="feature-detail wow fadeInRight" data-wow-delay=".4s">
+                    <h4>iOS / Surface / Android</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="feature-icon wow fadeInRight" data-wow-delay=".3s">
+                    <i class="fa fa-undo"></i>
+                  </div>
+                  <div class="feature-detail wow fadeInRight" data-wow-delay=".4s">
+                    <h4>Auto-sliding</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div><!-- /.trans-bg -->
+    </section>
+    <!-- feature end -->
+
+    <!-- contact start -->
+    <section id="contact" class="contact white tab-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs text-center" role="tablist">
+              <li class="wow rollIn animated" data-wow-duration="1s"><a href="#contact-info" role="tab" data-toggle="tab"><i class="fa fa-paper-plane"></i>
+                </a></li>
+              <li class="active wow rollIn animated" data-wow-duration="2s"><a href="#contact-form" role="tab" data-toggle="tab"><i class="fa fa-envelope"></i></a></li>
+            </ul>            
+          </div>
+        </div>
+      </div>
+       <!-- Tab panes -->            
+      <div class="tab-content">
+        <div class="tab-pane contact-info" id="contact-info">
+          <div class="container">
+            <div class="row">
+            <div class="col-sm-12 text-center">            
+              <span class="sub-head">Мы здесь</span>
+              <div class="title">
+                <h2>Связь с нами</h2>
+              </div>
+            </div>
+          </div>
+            <div class="row text-center">
+              <div class="col-sm-4">
+                <div class="info-holder">
+                  <i class="fa fa-taxi"></i>
+                   <br>
+                   <p>
+                     14/4 <br>
+                     Burnaby <br>
+                     BC, Canada 
+                   </p>
+                </div>                
+              </div>
+              <div class="col-sm-4">
+                <div class="info-holder">
+                  <i class="fa fa-mobile"></i>
+                  <br>
+                  <p>+1778-885-0000
+                  <br>
+                  +1778-885-1111
+                  <br>
+                  +6698 55514 68
+                  </p>
+                </div>                
+              </div>
+              <div class="col-sm-4">
+                <div class="info-holder">
+                  <i class="fa fa-reply"></i>
+                  <br>
+                  <p>
+                    info@domain.com
+                    <br>
+                    hello@gmail.com
+                  </p>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane active contact-info" id="contact-form">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center">            
+                <span class="sub-head">Мы здесь</span>
+                <div class="title">
+                  <h2>Связь с нами</h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <form class="form-horizontal" role="form">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="span-form">
+                        <input class="form-control" type="text" placeholder="Имя" required="required">
+                      </div>
+                      <div class="span-form">
+                        <input type="text" class="form-control" placeholder="Фамилия" required="required">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email" required="required">
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Тема" required="required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <textarea name="" class="form-control btn-block" rows="3" placeholder="Введите текст..."></textarea>
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" class="btn btn-block" value="Отправить">
+                    </div>
+                  </div>
+				  <div class="col-sm-12">
+					<p class="contact-success">Ваше письмо отправлено!</p>
+					<p class="contact-error">Ошибка! Что-то пошло не так!</p>
+				  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane contact-info" id="contact-map">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center">            
+                <span class="sub-head">we are here</span>
+                <div class="title">
+                  <h2>get in touch</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="map">
+            
+          </div>
+        </div>
+      </div>  
+    </section>
+    <!-- contact end --> 
+
+    <!-- footer start -->
+    <footer id="footer">
+      <div class="trans-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <div class="copyright">
+                <p>&copy; <span>Same Post</span>2017, Все права защищены.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="go-to-top">
+            <a href="#banner"></a>
+        </div>
+        <!--/.go-to-top end-->
+      </div> <!-- /.trans-bg -->
+    </footer>
+    <!-- footer end -->   
+     
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jquery.localScroll.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/matchMedia.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/easing.js"></script>
+    
+    <script>
+    	$(document).ready(function() {
+		// "use strict";
+        $('#banner').parallax("50%", 0.5, true);
+    		$('#feature').parallax("50%", 0.5, true);
+    		$('#video').parallax("50%", 0.5, true);
+    		$('#subscription').parallax("50%", 0.5, true);
+    		$('#review').parallax("50%", 0.5, true);
+    		$('#download').parallax("50%", 0.5, true);
+        $('#footer').parallax("50%", 0.5, true);
+    	});
+
+    </script>
+       
+  </body>
 </html>

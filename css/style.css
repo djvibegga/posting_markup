@@ -527,3 +527,13 @@ input[type="file"] {
     margin-left: 5px;
     display: inline-block;
 }
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 0.8em;
+    font-style: italic;
+}
+.text-content-error {
+    padding: 19px 14px 13px;
+    height: 109px;
+}

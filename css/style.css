@@ -76,7 +76,6 @@ img{
 }
 .container {
     padding-right: 15px;
-    padding-left: 0;
 }
 .widget-area {
 background-color: #fff;
@@ -95,10 +94,6 @@ background: none repeat scroll 0 0 #f5f5f5;
 -ms-border-radius: 4px;
 -o-border-radius: 4px;
 border-radius: 4px;
-float: left;
-width: 100%;
-}
-.status-upload {
 float: left;
 width: 100%;
 }
@@ -471,7 +466,7 @@ color:#996;
 .remove-image {
     position: absolute;
     top: 0;
-    right: 15px;
+    right: 0;
     color: #bababa;
     cursor: pointer;
     width: 15px;
@@ -479,6 +474,7 @@ color:#996;
     line-height: 15px;
     font-size: 13px;
     text-align: center;
+    background-color: rgba(0,0,0,0.5);
 }
 .remove-image:hover {
     color: #f00;
@@ -536,4 +532,28 @@ input[type="file"] {
 .text-content-error {
     padding: 19px 14px 13px;
     height: 129px;
+}
+.attach-img {
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 90px;
+    overflow: hidden;
+    text-align: center;
+    background: #F1F1F1;
+}
+.img-thumbnail {
+    margin: 0 1px 5px;
+}
+.sort {
+    text-align: left;
+}
+.sortt {
+    padding-left: 0;
+}
+.radiobox {
+    margin-top: 30px;
+}
+.bott {
+    margin: 0 0 5px;
 }

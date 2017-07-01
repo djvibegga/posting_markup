@@ -110,7 +110,7 @@ ul, li {
 }
 .trans-bg {
   position: relative;
-  background: rgba(0, 167, 221, 0.70);
+  background: #3E7FB9;
   padding: 120px 0;
 }
 
@@ -510,7 +510,7 @@ header .app li {
   position: relative;
 }
 .banner {
-  background: url(../img/slider/slide-1.jpg) no-repeat fixed;
+  /* background: url(../img/slider/slide-1.jpg) no-repeat fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -549,8 +549,8 @@ section.banner-carousel {
   z-index: 2;
 }
 .lg-logo img {
-	width: 50px;
-	height:50px;
+	width: 60%;
+	height:50%;
 }
 .banner-carousel h2 .lg-logo,
 .banner h2 .lg-logo {
@@ -720,7 +720,7 @@ h3 {
 */
 
 .feature {
-  background: url(../img/feature_bg.jpg) no-repeat fixed;
+  /* background: url(../img/feature_bg.jpg) no-repeat fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -956,7 +956,7 @@ section.contact > .container {
 */
 
 #footer {
-  background: url(../img/footer_bg.jpg) no-repeat fixed;
+  /* background: url(../img/footer_bg.jpg) no-repeat fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

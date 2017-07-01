@@ -143,8 +143,8 @@
                                                         <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения с компьютера"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
                                                         <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                                                     </ul>
+                                                    <button type="button" class="btn btn-success green" id="myButton2" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить и добавить</button>
                                                     <button type="button" class="btn btn-success green" id="myButton" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить</button>
-                                                    <button type="button" class="btn btn-success green" id="myButton2" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить и добавить еще</button>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 sortt fuelux">
@@ -159,14 +159,17 @@
                                                     </label>
                                                 </div>
                                                 <div class="alert bg-info" id="radioToggleID_1">
-                                                    <input placeholder="Выберите дату и время" type="text" class="form-control" id="datetimepicker1" />
+                                                    <input placeholder="Выберите дату и время..." type="text" class="form-control" id="datetimepicker1" />
                                                 </div>
                                                 <div class="alert bg-info" id="radioToggleID_2">Пост займёт ближайшую свободную дату и время в расписании:
-                                                    <select class="selectpicker" data-live-search="true" data-width="100%">
-                                                        <option>9:00 20.07.2017</option>
-                                                        <option>10:00 20.07.2017</option>
-                                                        <option>11:00 20.07.2017</option>
+                                                    <select class="selectpicker" data-live-search="true" data-width="75px">
+                                                        <option>9:00</option>
+                                                        <option>10:00</option>
+                                                        <option>11:00</option>
                                                     </select>
+                                                    <div>
+                                                        <input placeholder="Выберите дату..." type="text" class="form-control" id="datetimepicker3" />
+                                                    </div>
                                                 </div>
                                             </div>                                            
                                         </div>
@@ -290,8 +293,8 @@
                                                     <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения с компьютера"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
                                                     <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                                                 </ul>
-                                                <button type="button" class="btn btn-success green" id="myButton1" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить</button>
-                                                <button type="button" class="btn btn-success green" id="myButton3" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить и добавить еще</button>
+                                                <button type="button" class="btn btn-success green" id="myButton3" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить и добавить</button>
+                                                <button type="button" class="btn btn-success green" id="myButton1" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить</button>                                         
                                             </div>
                                         </div>
 
@@ -307,24 +310,27 @@
                                             </label>
                                         </div>
                                         <div class="alert bg-info" id="radioToggleID_3">
-                                            <input placeholder="Выберите дату и время" type="text" class="form-control" id="datetimepicker2" />
+                                            <input placeholder="Выберите дату и время..." type="text" class="form-control" id="datetimepicker2" />
                                         </div>
                                         <div class="alert bg-info" id="radioToggleID_4">Пост займёт ближайшую свободную дату и время в расписании:
-                                            <select class="selectpicker" data-live-search="true" data-width="100%">
-                                                <option>9:00 20.07.2017</option>
-                                                <option>10:00 20.07.2017</option>
-                                                <option>11:00 20.07.2017</option>
+                                            <select class="selectpicker" data-live-search="true" data-width="75px">
+                                                <option>9:00</option>
+                                                <option>10:00</option>
+                                                <option>11:00</option>
                                             </select>
+                                            <div>
+                                                <input placeholder="Выберите дату..." type="text" class="form-control" id="datetimepicker4" />
+                                            </div>
                                         </div>
                                     </div>
-                                        <div class="col-md-6 sortt">
+                                    <div class="col-md-6 sortt">
                                         <div class="checkbox">
                                             <label>
                                               <input type="checkbox" value="">
                                               Подпись
                                             </label>
                                         </div>
-                                        </div>    
+                                    </div>    
                                     </div>
                                 </div>                                
                                 
@@ -556,7 +562,9 @@
             </script>
             <script type="text/javascript">
                 $(function () {$('#datetimepicker1').datetimepicker({language: 'ru'});
-                               $('#datetimepicker2').datetimepicker({language: 'ru'})});
+                               $('#datetimepicker2').datetimepicker({language: 'ru'})
+                               $('#datetimepicker3').datetimepicker({pickTime: false, language: 'ru'})
+                               $('#datetimepicker4').datetimepicker({pickTime: false, language: 'ru'})});
             </script>
             <script type="text/javascript">
                   $(function() {

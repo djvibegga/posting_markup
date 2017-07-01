@@ -78,7 +78,7 @@
 
             <div class="col-md-4">            
                 <h3>Дата:</h3>          
-                <div class="form-group">
+                <div>
                     <input type="text" class="form-control" id="datetimepicker1" />
                 </div>            
             </div>
@@ -88,42 +88,321 @@
             
 <!-- Расписание ================================================== --> 
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Расписание:</h3><br>
-                        <div class="col-md-2">                 
-                            <div class="input-group">
-                                <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
-                                <span class="input-group-btn">
-                                <button class="btn btn-danger" type="button" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-minus"></span></button>
-                                </span>
-                            </div>                
-                        </div>
-
-                        <div class="col-md-2">
-                            <div class="input-group">
-                                <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
-                                <span class="input-group-btn">
-                                <button class="btn btn-danger" type="button" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-minus"></span></button>
-                                </span>
+                <div class="row">                    
+                    <div class="container">
+                        <h3>Расписание:</h3>                   
+                    </div>
+                    <ul class="timew">
+                        <li class="add-time">
+                            <button type="button" class="btn btn-default btn-add" onclick="#" rel="tooltip" title="Добавить время"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
                             </div>
-                        </div>
-
-                        <div class="col-md-2">
-                            <div class="input-group">
-                                <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
-                                <span class="input-group-btn">
-                                <button class="btn btn-danger" type="button" rel="tooltip" title="Удалить"><span class="glyphicon glyphicon-minus"></span></button>
-                                </span>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
                             </div>
-                        </div>
-
-                        <div class="col-md-5">
-                            <button type="button" class="btn btn-primary" onclick="#" data-placement="top" data-toggle="popover" title="Создайте расписание!" data-content="Для того, чтобы Ваши посты автоматически распределялись по текущему расписанию, нужно создать его или назначать время публикации самостоятельно при создании поста."><span class="glyphicon glyphicon-plus"></span></button>
-                            <button type="button" class="btn btn-danger" onclick="#" rel="tooltip" title="Отменить"><span class="glyphicon glyphicon-ban-circle"></span></button>
-                            <button type="button" class="btn btn-success" onclick="#" rel="tooltip" title="Сохранить"><span class="glyphicon glyphicon-ok"></span></button>
-                        </div>
-                    </div>                    
+                            </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                            </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                            </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="time">
+                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                            <div class="remove-time">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </li>
+                        <li class="add-time">
+                            <button type="button" class="btn btn-danger btn-add" onclick="#" rel="tooltip" title="Отменить"><i class="fa fa-ban" aria-hidden="true"></i></button>
+                        </li>
+                        <li class="add-time">
+                            <button type="button" class="btn btn-success btn-add" onclick="#" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button>
+                        </li>
+                    </ul>                    
                 </div>
             </div><br><br>         
 <!-- Расписание ================================================== -->

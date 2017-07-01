@@ -140,10 +140,10 @@
                                                     <ul>
                                                         <!-- <li><a href="#audiomodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Аудио"><i class="glyphicon glyphicon-music"></i></a></li>
                                                         <li><a href="#videomodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Видео"><i class="glyphicon glyphicon-film"></i></a></li> -->                        
-                                                        <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения с компьютера"><i class="glyphicon glyphicon-picture"></i></a></li>
+                                                        <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения с компьютера"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
                                                         <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                                                     </ul>
-                                                    <button type="submit" class="btn btn-success green">Сохранить</button>
+                                                    <button type="button" class="btn btn-success green" id="myButton" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить</button>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 sortt fuelux">
@@ -280,10 +280,10 @@
                                                 <ul>
                                                     <!-- <li><a href="#audiomodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Аудио"><i class="glyphicon glyphicon-music"></i></a></li>
                                                     <li><a href="#videomodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Видео"><i class="glyphicon glyphicon-film"></i></a></li> -->                        
-                                                    <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения с компьютера"><i class="glyphicon glyphicon-picture"></i></a></li>
+                                                    <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения с компьютера"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
                                                     <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                                                 </ul>
-                                                <button type="submit" class="btn btn-success green">Сохранить</button>
+                                                <button type="button" class="btn btn-success green" id="myButton1" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить</button>
                                             </div>
                                         </div>
 
@@ -299,7 +299,7 @@
                                             </label>
                                         </div>
                                         <div class="alert bg-info" id="radioToggleID_3">
-                                            <input placeholder="Выберите дату и время" type="text" class="form-control" id="datetimepicker1" />
+                                            <input placeholder="Выберите дату и время" type="text" class="form-control" id="datetimepicker2" />
                                         </div>
                                         <div class="alert bg-info" id="radioToggleID_4">Пост займёт ближайшую свободную дату и время в расписании.</div>
                                     </div>
@@ -443,32 +443,32 @@
                                                     <tr  class="ap-tr">
                                                         <td><img src="img/2h7dglSIqyY.jpg" class="vk-post-images"><span> image-01.jpg</span></td>
                                                         <td>25.07.2017 18:25</td>
-                                                        <td><span class="glyphicon glyphicon-ok" style="color:green;" rel="tooltip" title="Пост создан"></span></td>
-                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a></td>
+                                                        <td><i class="fa fa-check" aria-hidden="true" style="color:green;" rel="tooltip" title="Пост создан"></i></td>
+                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
                                                     </tr>
                                                     <tr  class="ap-tr">
                                                         <td><img src="img/3EuAqE2LehU.jpg" class="vk-post-images"><span> image-02.jpg</span></td>
                                                         <td></td>
-                                                        <td><span class="glyphicon glyphicon-remove" style="color:#d9534f;" rel="tooltip" title="Ошибка"></span></td>
-                                                        <td><a class='btn btn-info btn-xs' href="#" rel="tooltip" data-placement="left" title="Повторить"><span class="glyphicon glyphicon-repeat"></span></a> <a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a></td>
+                                                        <td><i class="fa fa-times" aria-hidden="true" style="color:#d9534f;" rel="tooltip" title="Ошибка"></i></td>
+                                                        <td><a class='btn btn-info btn-xs' href="#" rel="tooltip" data-placement="left" title="Повторить"><i class="fa fa-refresh" aria-hidden="true"></i></a> <a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
                                                     </tr>
                                                     <tr class="ap-tr">
                                                         <td><img src="img/3sJUI33eoSM.jpg" class="vk-post-images"><span> image-03.jpg</span></td>
                                                         <td></td>
-                                                        <td><i class="fa fa-spinner fa-spin" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
-                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a></td>
+                                                        <td><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
+                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
                                                     </tr>
                                                     <tr class="ap-tr">
                                                         <td><img src="img/dQIWKABOfUs.jpg" class="vk-post-images"><span> image-04.jpg</span></td>
                                                         <td></td>
-                                                        <td><i class="fa fa-spinner fa-spin" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
-                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a></td>
+                                                        <td><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
+                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
                                                     </tr>
                                                     <tr class="ap-tr">
                                                         <td><img src="img/i0DfYUNN9Ns.jpg" class="vk-post-images"><span> image-05.jpg</span></td>
                                                         <td></td>
-                                                        <td><i class="fa fa-spinner fa-spin" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
-                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><span class="glyphicon glyphicon-remove"></span></a></td>
+                                                        <td><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
+                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -525,6 +525,16 @@
                     });
                     window.emojiPicker.discover();
                   });
-            </script>                
+            </script>
+            <script type="text/javascript">
+                $('#myButton').on('click', function () {
+                var btn = $(this).button('loading')
+                $btn.button('reset')
+                });
+                $('#myButton1').on('click', function () {
+                var btn = $(this).button('loading')
+                $btn.button('reset')
+                });
+            </script>
 </body>
 </html>

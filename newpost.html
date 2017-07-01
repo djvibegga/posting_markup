@@ -144,6 +144,7 @@
                                                         <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                                                     </ul>
                                                     <button type="button" class="btn btn-success green" id="myButton" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить</button>
+                                                    <button type="button" class="btn btn-success green" id="myButton2" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить и добавить еще</button>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 sortt fuelux">
@@ -161,7 +162,7 @@
                                                     <input placeholder="Выберите дату и время" type="text" class="form-control" id="datetimepicker1" />
                                                 </div>
                                                 <div class="alert bg-info" id="radioToggleID_2">Пост займёт ближайшую свободную дату и время в расписании.</div>
-                                            </div>
+                                            </div>                                            
                                         </div>
                                     </div>
                                     
@@ -271,7 +272,7 @@
                                     <div class="row">
                                         <select class="selectpicker bott" data-live-search="true" data-width="100%" multiple data-max-options="1" title="Выберите группу...">
                                             <option>Сочный апельсин</option>
-                                            <option>Свместные покупки</option>
+                                            <option>Совместные покупки</option>
                                             <option>Разный мусор</option>
                                         </select>
                                         <div class="widget-area no-padding blank">
@@ -284,6 +285,7 @@
                                                     <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                                                 </ul>
                                                 <button type="button" class="btn btn-success green" id="myButton1" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить</button>
+                                                <button type="button" class="btn btn-success green" id="myButton3" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить и добавить еще</button>
                                             </div>
                                         </div>
 
@@ -303,6 +305,14 @@
                                         </div>
                                         <div class="alert bg-info" id="radioToggleID_4">Пост займёт ближайшую свободную дату и время в расписании.</div>
                                     </div>
+                                        <div class="col-md-6 sortt">
+                                        <div class="checkbox">
+                                            <label>
+                                              <input type="checkbox" value="">
+                                              Подпись
+                                            </label>
+                                        </div>
+                                        </div>    
                                     </div>
                                 </div>                                
                                 
@@ -410,68 +420,87 @@
                                 
                                 <div class="container col-md-12">
                                     <div class="row">
-                                        <p>После загрузки изображений, посты будут созданы автоматически и распределены на ближайшее свободное время.</p>
-                                        <div data-fields="dropzone">
-                                            <div class="block-field field-dropzone">    
-                                                <div data-editor="">
-                                                    <div class="editor-error-popover" data-error=""></div>
-                                                    <div id="dropzone">
-                                                        <div class="dropzone-w">
-                                                            <input type="file" name="dropzone" multiple="" accept="image/jpeg, image/jpg, image/x-png, image/png">
-                                                            <div class="dropzone-icon">
-                                                                <i class="fa fa-cloud-upload" aria-hidden="true"></i>
-                                                            </div>
-                                                            <div class="dropzone-text">
-                                                                Перетащите файлы сюда <span>(или просто кликните)</span><br>
+                                        <div class="col-md-3">
+                                            <div class="row">
+                                                <select class="selectpicker bott" data-live-search="true" data-width="100%" multiple data-max-options="1" title="Выберите группу...">
+                                                    <option>Сочный апельсин</option>
+                                                    <option>Совместные покупки</option>
+                                                    <option>Разный мусор</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9">                                            
+                                            <p>После загрузки изображений, посты будут созданы автоматически и распределены на ближайшее свободное время.</p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div data-fields="dropzone">
+                                                    <div class="block-field field-dropzone">    
+                                                        <div data-editor="">
+                                                            <div class="editor-error-popover" data-error=""></div>
+                                                            <div id="dropzone">
+                                                                <div class="dropzone-w">
+                                                                    <input type="file" name="dropzone" multiple="" accept="image/jpeg, image/jpg, image/x-png, image/png">
+                                                                    <div class="dropzone-icon">
+                                                                        <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                                                    </div>
+                                                                    <div class="dropzone-text">
+                                                                        Перетащите файлы сюда <span>(или просто кликните)</span><br>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="panel panel-default">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr class="active">
-                                                        <th>Изображение</th>
-                                                        <th>Дата и время публикации</th>
-                                                        <th>Статус создания поста</th>
-                                                        <th>Действие</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr  class="ap-tr">
-                                                        <td><img src="img/2h7dglSIqyY.jpg" class="vk-post-images"><span> image-01.jpg</span></td>
-                                                        <td>25.07.2017 18:25</td>
-                                                        <td><i class="fa fa-check" aria-hidden="true" style="color:green;" rel="tooltip" title="Пост создан"></i></td>
-                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-                                                    </tr>
-                                                    <tr  class="ap-tr">
-                                                        <td><img src="img/3EuAqE2LehU.jpg" class="vk-post-images"><span> image-02.jpg</span></td>
-                                                        <td></td>
-                                                        <td><i class="fa fa-times" aria-hidden="true" style="color:#d9534f;" rel="tooltip" title="Ошибка"></i></td>
-                                                        <td><a class='btn btn-info btn-xs' href="#" rel="tooltip" data-placement="left" title="Повторить"><i class="fa fa-refresh" aria-hidden="true"></i></a> <a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-                                                    </tr>
-                                                    <tr class="ap-tr">
-                                                        <td><img src="img/3sJUI33eoSM.jpg" class="vk-post-images"><span> image-03.jpg</span></td>
-                                                        <td></td>
-                                                        <td><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
-                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-                                                    </tr>
-                                                    <tr class="ap-tr">
-                                                        <td><img src="img/dQIWKABOfUs.jpg" class="vk-post-images"><span> image-04.jpg</span></td>
-                                                        <td></td>
-                                                        <td><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
-                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-                                                    </tr>
-                                                    <tr class="ap-tr">
-                                                        <td><img src="img/i0DfYUNN9Ns.jpg" class="vk-post-images"><span> image-05.jpg</span></td>
-                                                        <td></td>
-                                                        <td><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
-                                                        <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="panel panel-default">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr class="active">
+                                                                <th>Изображение</th>
+                                                                <th>Дата и время публикации</th>
+                                                                <th>Статус создания поста</th>
+                                                                <th>Действие</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr  class="ap-tr">
+                                                                <td><img src="img/2h7dglSIqyY.jpg" class="vk-post-images"><span> image-01.jpg</span></td>
+                                                                <td>25.07.2017 18:25</td>
+                                                                <td><i class="fa fa-check" aria-hidden="true" style="color:green;" rel="tooltip" title="Пост создан"></i></td>
+                                                                <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                                            </tr>
+                                                            <tr  class="ap-tr">
+                                                                <td><img src="img/3EuAqE2LehU.jpg" class="vk-post-images"><span> image-02.jpg</span></td>
+                                                                <td></td>
+                                                                <td><i class="fa fa-times" aria-hidden="true" style="color:#d9534f;" rel="tooltip" title="Ошибка"></i></td>
+                                                                <td><a class='btn btn-info btn-xs' href="#" rel="tooltip" data-placement="left" title="Повторить"><i class="fa fa-refresh" aria-hidden="true"></i></a> <a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                                            </tr>
+                                                            <tr class="ap-tr">
+                                                                <td><img src="img/3sJUI33eoSM.jpg" class="vk-post-images"><span> image-03.jpg</span></td>
+                                                                <td></td>
+                                                                <td><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
+                                                                <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                                            </tr>
+                                                            <tr class="ap-tr">
+                                                                <td><img src="img/dQIWKABOfUs.jpg" class="vk-post-images"><span> image-04.jpg</span></td>
+                                                                <td></td>
+                                                                <td><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
+                                                                <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                                            </tr>
+                                                            <tr class="ap-tr">
+                                                                <td><img src="img/i0DfYUNN9Ns.jpg" class="vk-post-images"><span> image-05.jpg</span></td>
+                                                                <td></td>
+                                                                <td><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
+                                                                <td><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -532,6 +561,14 @@
                 $btn.button('reset')
                 });
                 $('#myButton1').on('click', function () {
+                var btn = $(this).button('loading')
+                $btn.button('reset')
+                });
+                $('#myButton2').on('click', function () {
+                var btn = $(this).button('loading')
+                $btn.button('reset')
+                });
+                $('#myButton3').on('click', function () {
                 var btn = $(this).button('loading')
                 $btn.button('reset')
                 });

@@ -585,3 +585,37 @@ input[type="file"] {
 .btn-add {
     width: 62px;
 }
+.msg {
+    background: #fefefe;
+    font-weight: bold;
+    font-size: small;
+    padding: 12px;
+    padding-left: 16px;
+    border-top: solid 3px #CCCCCC;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+       -moz-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+            box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+}
+.msg-success {
+    border-color: #4cae4c;
+    background-color: #cef2b8;
+}
+.msg-success-text {
+    color: #000;
+}
+.msg-danger {
+    border-color: #d43f3a;
+    background-color: #ec8282;
+}
+.msg-danger-text {
+    color: #000;
+}
+div.jGrowl div.jGrowl-closer {
+    color: #000;
+    border-color: #fefefe;
+    -webkit-box-shadow: 0 7px 10px -5px rgba(0,0,0,.15);
+       -moz-box-shadow: 0 7px 10px -5px rgba(0,0,0,.15);
+            box-shadow: 0 7px 10px -5px rgba(0,0,0,.15);
+}

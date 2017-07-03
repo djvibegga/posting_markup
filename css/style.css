@@ -586,28 +586,24 @@ input[type="file"] {
     width: 62px;
 }
 .msg {
-    border-top: solid 3px #CCCCCC;
     -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
        -moz-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
             box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
 }
 .msg-success {
-    border-color: #4cae4c;
-    background-color: #cef2b8;
+    background-color: #4cae4c;
 }
 .msg-success-text {
-    color: #000;
+    color: #fff;
 }
 .msg-danger {
-    border-color: #d43f3a;
-    background-color: #ec8282;
+    background-color: #d43f3a;
 }
 .msg-danger-text {
-    color: #000;
+    color: #fff;
 }
 div.jGrowl div.jGrowl-closer {
     color: #000;
-    border-color: #fefefe;
     -webkit-box-shadow: 0 7px 10px -5px rgba(0,0,0,.15);
        -moz-box-shadow: 0 7px 10px -5px rgba(0,0,0,.15);
             box-shadow: 0 7px 10px -5px rgba(0,0,0,.15);

@@ -608,3 +608,10 @@ div.jGrowl div.jGrowl-closer {
        -moz-box-shadow: 0 7px 10px -5px rgba(0,0,0,.15);
             box-shadow: 0 7px 10px -5px rgba(0,0,0,.15);
 }
+.load-img {
+    float: right!important;
+    margin: 10px;
+}
+.load-img-w {
+    font-weight: 700;
+}

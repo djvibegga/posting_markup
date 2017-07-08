@@ -547,7 +547,6 @@ input[type="file"] {
     text-align: left;
 }
 .sortt {
-    padding-left: 0;
     margin-top: 15px;
 }
 .bott {
@@ -612,6 +611,32 @@ div.jGrowl div.jGrowl-closer {
     float: right!important;
     margin: 10px;
 }
-.load-img-w {
+.uploaded {
     font-weight: 700;
+}
+.total {
+    font-weight: 700;
+}
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+.listrap {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.listrap li {
+    margin: 0;
+    padding: 10px;
+}
+.listrap a {
+    margin-left: 10px;
+    font-weight: 700;
+}
+.listrap .listrap-toggle {
+    display: inline-block;
+}
+.listrap li.active .listrap-toggle span {
+    display: block;
 }

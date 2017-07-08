@@ -55,73 +55,146 @@
 
 <!-- Контент ================================================== -->
     
-    <div class="content">
-        <div class="container">
-            <div class="row">
-                <h1 class="page-header">Профиль пользователя</h1>
-                <!-- left column -->
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <div class="text-center">
-                        <img src="http://lorempixel.com/200/200/people/9/" class="avatar img-circle img-thumbnail" alt="avatar">
-                    </div>
-                </div>
-                <!-- edit form column -->
-                <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Имя:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" type="text" placeholder="Василий">
-                            </div>
-                        </div><br>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Фамилия:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" type="text" placeholder="Петров">
-                            </div>
-                        </div><br>
-                        <div class="form-group">
-                            <label class="col-md-3 control-label">Логин:</label>
-                            <div class="col-md-8">
-                                <input class="form-control" type="text" placeholder="Никнэйм">
-                            </div>
-                        </div><br>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Email:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" type="text" placeholder="Введите Ваш email">
-                            </div>
-                        </div><br>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Часовой пояс:</label>
-                            <div class="col-lg-8">
-                                <div class="ui-select">
-                                    <select id="user_time_zone" class="form-control">
-                                        <option value="Hawaii">(GMT-10:00) Hawaii</option>
-                                        <option value="Alaska">(GMT-09:00) Alaska</option>
-                                        <option value="Pacific Time (US & Canada)">(GMT-08:00) Pacific Time (US & Canada)</option>
-                                        <option value="Arizona">(GMT-07:00) Arizona</option>
-                                        <option value="Mountain Time (US & Canada)">(GMT-07:00) Mountain Time (US & Canada)</option>
-                                        <option value="Central Time (US & Canada)" selected="selected">(GMT-06:00) Central Time (US & Canada)</option>
-                                        <option value="Eastern Time (US & Canada)">(GMT-05:00) Eastern Time (US & Canada)</option>
-                                        <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
-                                    </select>
+            <div class="content">
+                <div class="container">            
+                    <div class="row">
+
+                        <ul id="myTab" class="nav nav-tabs">
+                            <li class="active"><a href="#home" data-toggle="tab">Профиль</a></li>
+                            <li><a href="#profile" data-toggle="tab">Сообщества</a></li>   
+                        </ul>
+
+                        <div id="myTabContent" class="tab-content">
+                            <div class="tab-pane fade in active" id="home"><br>
+
+                                <div class="container">
+                                    <div class="row">
+
+    <!-- Профиль ============================================================================= -->
+
+                                        <!-- left column -->
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="text-center">
+                                                <img src="http://lorempixel.com/200/200/people/9/" class="avatar img-circle img-thumbnail" alt="avatar">
+                                            </div>
+                                        </div>
+                                        <!-- edit form column -->
+                                        <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label class="col-lg-3 control-label">Имя:</label>
+                                                    <div class="col-lg-8">
+                                                        <input class="form-control" type="text" placeholder="Василий">
+                                                    </div>
+                                                </div><br>
+                                                <div class="form-group">
+                                                    <label class="col-lg-3 control-label">Фамилия:</label>
+                                                    <div class="col-lg-8">
+                                                        <input class="form-control" type="text" placeholder="Петров">
+                                                    </div>
+                                                </div><br>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Логин:</label>
+                                                    <div class="col-md-8">
+                                                        <input class="form-control" type="text" placeholder="Никнэйм">
+                                                    </div>
+                                                </div><br>
+                                                <div class="form-group">
+                                                    <label class="col-lg-3 control-label">Email:</label>
+                                                    <div class="col-lg-8">
+                                                        <input class="form-control" type="text" placeholder="Введите Ваш email">
+                                                    </div>
+                                                </div><br>
+                                                <div class="form-group">
+                                                    <label class="col-lg-3 control-label">Часовой пояс:</label>
+                                                    <div class="col-lg-8">
+                                                        <div class="ui-select">
+                                                            <select id="user_time_zone" class="form-control">
+                                                                <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                                                                <option value="Alaska">(GMT-09:00) Alaska</option>
+                                                                <option value="Pacific Time (US & Canada)">(GMT-08:00) Pacific Time (US & Canada)</option>
+                                                                <option value="Arizona">(GMT-07:00) Arizona</option>
+                                                                <option value="Mountain Time (US & Canada)">(GMT-07:00) Mountain Time (US & Canada)</option>
+                                                                <option value="Central Time (US & Canada)" selected="selected">(GMT-06:00) Central Time (US & Canada)</option>
+                                                                <option value="Eastern Time (US & Canada)">(GMT-05:00) Eastern Time (US & Canada)</option>
+                                                                <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div><br>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label"></label>
+                                                    <div class="col-md-8">
+                                                        <input class="btn btn-success" value="Сохранить профиль" type="button">                  
+                                                        <input class="btn btn-primary" value="Обновить привязку ВК" type="reset">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+    <!-- Профиль ============================================================================= -->
+
+                                    </div>
                                 </div>
                             </div>
-                        </div><br>
-                        <div class="form-group">
-                            <label class="col-md-3 control-label"></label>
-                            <div class="col-md-8">
-                                <input class="btn btn-success" value="Сохранить профиль" type="button">
-                                <span></span>
-                                <input class="btn btn-primary" value="Обновить привязку ВК" type="reset">
+
+                            <div class="tab-pane fade" id="profile"><br>
+                                <div class="container">
+                                    <div class="row">
+
+    <!-- Группы ============================================================================= -->     
+
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <ul class="list">
+                                                            <li>
+                                                                <input class="btn btn-primary" value="Обновить список сообществ" type="button">
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <ul class="listrap">                                                    
+                                                                    <li>
+                                                                        <div class="listrap-toggle">
+                                                                            <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" width="90px" />
+                                                                        </div>
+                                                                        <a href="https://vk.com/juicy_orange">Сочный апельсин</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="row">
+                                                                <ul class="listrap">
+                                                                    <li>
+                                                                        <div class="listrap-toggle">
+                                                                            <img src="https://pp.userapi.com/c630023/v630023017/10925/lx9_-QiCOFY.jpg" class="img-circle" width="90px" />
+                                                                        </div>
+                                                                        <a href="https://vk.com/sundish">Солнце на блюде</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>    
+                                            </div>
+                                        </div>
+
+    <!-- Группы ============================================================================= -->
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>                    
-    </div>
     
 <!-- Контент ================================================== -->
     

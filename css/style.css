@@ -640,3 +640,10 @@ div.jGrowl div.jGrowl-closer {
 .listrap li.active .listrap-toggle span {
     display: block;
 }
+.clickable{
+    cursor: pointer;   
+}
+
+.panel-heading span {
+	margin-top: -20px;
+}

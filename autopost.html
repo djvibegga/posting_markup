@@ -88,43 +88,50 @@
 <!-- Расписание ================================================== --> 
             <div class="container">
                 <div class="row">                    
-                    <div class="container">
-                        <h3>Расписание:</h3>                   
+                    
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Расписание:</h3>
+                            <span class="pull-right clickable"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="panel-body">    
+                            <ul class="timew">
+                                <li class="add-time">
+                                    <button type="button" class="btn btn-primary btn-add" onclick="#" rel="tooltip" title="Распределить все посты по текущему расписанию"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+                                </li>
+                                <li class="add-time">
+                                    <button type="button" class="btn btn-default btn-add" onclick="#" rel="tooltip" title="Добавить время"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                </li>
+                                <li class="add-time">
+                                    <button type="button" class="btn btn-danger btn-add" onclick="#" rel="tooltip" title="Отменить"><i class="fa fa-ban" aria-hidden="true"></i></button>
+                                </li>
+                                <li class="add-time">
+                                    <button type="button" class="btn btn-success btn-add" onclick="#" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                </li>
+                            </ul>
+                            <ul class="timew">
+                                <li class="time">
+                                    <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
+                                    <div class="remove-time">
+                                        <i class="fa fa-times"></i>
+                                    </div>
+                                </li>
+                                <li class="time">
+                                    <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
+                                    <div class="remove-time">
+                                        <i class="fa fa-times"></i>
+                                    </div>
+                                    </li>
+                                <li class="time">
+                                    <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
+                                    <div class="remove-time">
+                                        <i class="fa fa-times"></i>
+                                    </div>
+                                </li>                       
+                            </ul>    
+                        </div>
                     </div>
-                    <ul class="timew">
-                        <li class="add-time">
-                            <button type="button" class="btn btn-primary btn-add" onclick="#" rel="tooltip" title="Распределить все посты по текущему расписанию"><i class="fa fa-exchange" aria-hidden="true"></i></button>
-                        </li>
-                        <li class="add-time">
-                            <button type="button" class="btn btn-default btn-add" onclick="#" rel="tooltip" title="Добавить время"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                        </li>
-                        <li class="add-time">
-                            <button type="button" class="btn btn-danger btn-add" onclick="#" rel="tooltip" title="Отменить"><i class="fa fa-ban" aria-hidden="true"></i></button>
-                        </li>
-                        <li class="add-time">
-                            <button type="button" class="btn btn-success btn-add" onclick="#" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button>
-                        </li>
-                    </ul>
-                    <ul class="timew">
-                        <li class="time">
-                            <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
-                            <div class="remove-time">
-                                <i class="fa fa-times"></i>
-                            </div>
-                        </li>
-                        <li class="time">
-                            <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
-                            <div class="remove-time">
-                                <i class="fa fa-times"></i>
-                            </div>
-                            </li>
-                        <li class="time">
-                            <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
-                            <div class="remove-time">
-                                <i class="fa fa-times"></i>
-                            </div>
-                        </li>                       
-                    </ul>                    
+                    
                 </div>
             </div><br><br>         
 <!-- Расписание ================================================== -->
@@ -282,6 +289,7 @@
             <script type="text/javascript" src="js/jquery.browser.js"></script>
             <script type="text/javascript" src="js/jquery.jgrowl_minimized.js"></script>
             <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="js/posting.js"></script>
             <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>

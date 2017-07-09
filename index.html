@@ -313,14 +313,9 @@
               <div class="col-sm-12">
                 <form class="form-horizontal" role="form">
                   <div class="col-sm-6">
-                    <div class="form-group">
-                      <div class="span-form">
+                      <div class="form-group">
                         <input class="form-control" type="text" placeholder="Имя" required="required">
                       </div>
-                      <div class="span-form">
-                        <input type="text" class="form-control" placeholder="Фамилия" required="required">
-                      </div>
-                    </div>
                     <div class="form-group">
                       <input type="email" class="form-control" placeholder="Email" required="required">
                     </div>
@@ -332,7 +327,13 @@
                     <div class="form-group">
                       <textarea name="" class="form-control btn-block" rows="3" placeholder="Введите текст..."></textarea>
                     </div>
-                    <div class="form-group">
+                    <div class="span-form text-center">
+                        <img id="verifyCode-image" src="http://same.pe.hu/site/captcha?v=5961f964d97eb" alt="">
+                    </div>
+                    <div class="span-form">
+                        <input type="text" id="verifyCode" class="form-control" name="verifyCode" placeholder="Текст с картинки">
+                    </div>
+                    <div class="span-form">
                       <input type="submit" class="btn btn-block" value="Отправить">
                     </div>
                   </div>

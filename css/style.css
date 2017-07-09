@@ -720,7 +720,7 @@ div.jGrowl div.jGrowl-closer {
         float: right;
     margin: 7px;
 }
-.modal-body {
+.overflow-body {
     max-height: 700px;
     overflow-y: auto;
 }

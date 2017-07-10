@@ -113,7 +113,8 @@
                                                 </div>
                                             </div>
                                     <div class="container col-md-12" style="text-overflow: hidden;">
-                                        <div class="row">
+                                        <div id="switchAlbumContainer" class="row">
+                                            <a id="switchPhotosContainerLink" href="#" style="margin: 0px 0px 0px 45px;">Выбрать верстку фотографий альбома<a/>
                                             
 <!-- Загружаемые изображения ================================================== -->                                            
                                             
@@ -311,6 +312,16 @@
 <!-- Загружаемые изображения ================================================== -->                                            
                                             
                                         </div>
+
+                                        <div id="switchPhotosContainer" class="row" style="display: none; padding: 0px 15px 0px 45px;">
+                                            <a id="switchAlbumContainerLink" href="#">Альбомы</a>
+                                            &nbsp;
+                                            <span>Выбранный альбом</span>
+                                            <div>
+                                                Здесь будет галерея изображений из выбранного альбома
+                                            </div>
+                                       </div>
+
                                     </div>
                                             
                                         </div>
@@ -807,6 +818,14 @@
                             setTimeout(function() {
                                 $(".nano").nanoScroller({ iOSNativeScrolling: true });
                             }, 500);
+                        });
+                        $('#switchPhotosContainerLink').on('click', function(e) {
+                            $('#switchPhotosContainer').show();
+                            $('#switchAlbumContainer').hide();
+                        });
+			$('#switchAlbumContainerLink').on('click', function(e) {
+                            $('#switchPhotosContainer').hide();
+                            $('#switchAlbumContainer').show();
                         });
                     });
             </script>

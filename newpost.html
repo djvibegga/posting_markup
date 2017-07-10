@@ -112,16 +112,121 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                    <div class="container col-md-12 overflow-body">
+                                    <div class="container col-md-12" style="text-overflow: hidden;">
                                         <div class="row">
                                             
 <!-- Загружаемые изображения ================================================== -->                                            
                                             
-                                            <div id="attachs-list">
+                                            <div id="attachs-list" class="nano">
+						<div class="nano-content" style="height: 300px;">
                                                 <ul class="sort-vk">
                                                     <li class="img-thumbnail">
                                                         <div class="attach-img-vk">
                                                             <img src="img/2h7dglSIqyY.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            <div class="photos_album_title_wrap">
+                                                                Название альбома
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="img-thumbnail">
+                                                        <div class="attach-img-vk">
+                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
                                                             <div class="photos_album_title_wrap">
                                                                 Название альбома
                                                             </div>
@@ -200,6 +305,7 @@
                                                         </div>
                                                     </li>
                                                 </ul>
+                                            </div>
                                             </div>
                                             
 <!-- Загружаемые изображения ================================================== -->                                            
@@ -696,7 +802,12 @@
             <script type="text/javascript" src="js/nanoscroller.min.js"></script>
             <script type="text/javascript">
                     $(document).ready(function(){    
-                    $("[rel=tooltip]").tooltip();
+                        $("[rel=tooltip]").tooltip();
+                        $('#imgmodal').on('show.bs.modal', function(e) {
+                            setTimeout(function() {
+                                $(".nano").nanoScroller({ iOSNativeScrolling: true });
+                            }, 500);
+                        });
                     });
             </script>
             <script type="text/javascript">

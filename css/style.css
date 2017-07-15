@@ -543,7 +543,7 @@ input[type="file"] {
 .attach-img-vk {
     position: relative;
     display: block;
-    width: 245px;
+    width: 258px;
     height: 165px;
     overflow: hidden;
     text-align: center;
@@ -635,24 +635,21 @@ div.jGrowl div.jGrowl-closer {
     list-style-type: none;
     padding: 0;
 }
-.listrap {
+.listrap-group {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.listrap li {
+.listrap-group li {
     margin: 0;
     padding: 10px;
 }
-.listrap a {
+.listrap-group a {
     margin-left: 10px;
     font-weight: 700;
 }
-.listrap .listrap-toggle {
+.listrap-group .listrap-group-toggle {
     display: inline-block;
-}
-.listrap li.active .listrap-toggle span {
-    display: block;
 }
 .clickable{
     cursor: pointer;   
@@ -724,8 +721,46 @@ div.jGrowl div.jGrowl-closer {
     max-height: 700px;
     overflow-y: auto;
 }
-
 /*Nano scroller*/
 .modal .nano > .nano-content {
     position: relative;
+}
+.listrap {
+    list-style-type: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.listrap li.active, .listrap li:hover {
+    background-color: #d9edf7;
+}
+
+.listrap strong {
+    margin-left: 10px;
+}
+.listrap .listrap-toggle span {
+    background-color: #428bca;
+    opacity: 0.8;
+    z-index: 100;
+    width: 258px;
+    height: 165px;
+    display: none;
+    position: absolute;
+    text-align: center;
+    line-height: 170px;
+    font-size: 50px;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.listrap .listrap-toggle span:before {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+}
+
+.listrap li.active .listrap-toggle span {
+    display: block;
 }

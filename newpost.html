@@ -512,175 +512,12 @@
                     <div class="row">    
                         <div class="bs-example bs-example-tabs">
                             <ul id="myTab" class="nav nav-tabs">
-                                <li class="active"><a href="#home" data-toggle="tab">Личная страница</a></li>
-                                <li><a href="#profile" data-toggle="tab">Стена сообщества</a></li>
-                                <li><a href="#profile1" data-toggle="tab">Пакетная загрузка постов-картинок</a></li>
+                                <li class="active"><a href="#home" data-toggle="tab">Настройки публикации</a></li>
+                                <li><a href="#profile" data-toggle="tab">Пакетная загрузка постов-картинок</a></li>
                                 <li class="load-img">Загружено изображений <span class="uploaded">5</span> из <span class="total">20</span> <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i></li>   
                             </ul>
                             <div id="myTabContent" class="tab-content">
                                 <div class="tab-pane fade in active" id="home"><br>
-                                    
-<!-- Текстовое поле с выбором даты ================================================== -->                                    
-                                    
-                                    <div class="col-md-6">
-                                        <div class="row">
-                                            <div class="widget-area no-padding blank">
-                                                <div class="status-upload">
-                                                    <textarea class="form-control textarea-control" placeholder="Введите текст..." data-emojiable="true"></textarea>
-
-                                                <!--<div class="attachments-w">
-                                                <div id="emoji">
-                                                <a class="btn-attach btn-attach-emoji" href="#">
-                                                <i class="fa fa-smile-o fa-fw"></i>
-                                                </a>
-                                                </div>
-                                                </div> -->
-
-                                                    <ul>
-                                                        <!-- <li><a href="#audiomodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Аудио"><i class="glyphicon glyphicon-music"></i></a></li>
-                                                        <li><a href="#videomodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Видео"><i class="glyphicon glyphicon-film"></i></a></li> -->                        
-                                                        <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения с компьютера"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-                                                    </ul>
-                                                    <button type="button" class="btn btn-success green" id="myButton2" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить и добавить</button>
-                                                    <button type="button" class="btn btn-success green" id="myButton" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить</button>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 sortt fuelux">
-                                                <div class="radio radiobox">
-                                                    <label class="radio-custom" data-initialize="radio" id="myCustomRadioLabel8">
-                                                        <input class="sr-only" data-toggle="#radioToggleID_1" name="radioEx3" type="radio" value="option1">
-                                                        Выбрать дату и время публикации
-                                                    </label><br><br>
-                                                    <label class="radio-custom" data-initialize="radio" id="myCustomRadioLabel8">
-                                                        <input class="sr-only" data-toggle="#radioToggleID_2" name="radioEx3" type="radio" value="option1">
-                                                        Опубликовать по расписанию
-                                                    </label>
-                                                </div>
-                                                <div class="alert bg-info" id="radioToggleID_1">
-                                                    <input placeholder="Выберите дату и время..." type="text" class="form-control" id="datetimepicker1" />
-                                                </div>
-                                                <div class="alert bg-info" id="radioToggleID_2">Пост займёт ближайшую свободную дату и время в расписании:
-                                                    <select class="selectpicker" data-live-search="true" data-width="75px">
-                                                        <option>9:00</option>
-                                                        <option>10:00</option>
-                                                        <option>11:00</option>
-                                                    </select>
-                                                    <div>
-                                                        <input placeholder="Выберите дату..." type="text" class="form-control" id="datetimepicker3" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 sortt">
-                                                <div class="checkbox">
-                                                     <label>
-                                                      <input type="checkbox" value="">
-                                                      Повторять
-                                                     </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-<!-- Текстовое поле с выбором даты ================================================== -->                                    
-
-                                    <div class="col-md-6">
-                                        <div class="row">
-                                            
-<!-- Загружаемые изображения ================================================== -->                                            
-                                            
-                                            <div id="attachs-list">
-                                                <ul class="sort">
-                                                    <li class="img-thumbnail img-check">
-                                                        <div class="attach-img">
-                                                            <img src="img/2h7dglSIqyY.jpg" alt="">
-                                                            <div class="remove-image">
-                                                                <i class="fa fa-times"></i>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="img-thumbnail img-check">
-                                                        <div class="attach-img">
-                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
-                                                            <div class="remove-image">
-                                                                <i class="fa fa-times"></i>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="img-thumbnail img-check">
-                                                        <div class="attach-img">
-                                                            <img src="img/i0DfYUNN9Ns.jpg" alt="">
-                                                            <div class="remove-image">
-                                                                <i class="fa fa-times"></i>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="img-thumbnail img-check">
-                                                        <div class="attach-img">
-                                                            <img src="img/3sJUI33eoSM.jpg" alt="">
-                                                            <div class="remove-image">
-                                                                <i class="fa fa-times"></i>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="img-thumbnail img-check">
-                                                        <div class="attach-img">
-                                                            <img src="img/RAwi2AmD8eQ.jpg" alt="">
-                                                            <div class="remove-image">
-                                                                <i class="fa fa-times"></i>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="img-thumbnail img-check">
-                                                        <div class="attach-img">
-                                                            <img src="img/hOok_FFG5Gk.jpg" alt="">
-                                                            <div class="remove-image">
-                                                                <i class="fa fa-times"></i>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="img-thumbnail img-check">
-                                                        <div class="attach-img">
-                                                            <img src="img/dQIWKABOfUs.jpg" alt="">
-                                                            <div class="remove-image">
-                                                                <i class="fa fa-times"></i>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="img-thumbnail img-check">
-                                                        <div class="attach-img">
-                                                            <img src="img/xjvNNxQsIj4.jpg" alt="">
-                                                            <div class="remove-image">
-                                                                <i class="fa fa-times"></i>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="img-thumbnail img-check">
-                                                        <div class="attach-img">
-                                                            <img src="img/2.jpg" alt="">
-                                                            <div class="remove-image">
-                                                                <i class="fa fa-times"></i>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li class="img-thumbnail img-check">
-                                                        <div class="attach-img">
-                                                            <img src="img/4nsgkUl1tsM.jpg" alt="">
-                                                            <div class="remove-image">
-                                                                <i class="fa fa-times"></i>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            
-<!-- Загружаемые изображения ================================================== -->                                            
-                                            
-                                        </div>
-                                    </div>	
-                                </div>
-
-                            <div class="tab-pane fade" id="profile"><br>
                                 
 <!-- Текстовое поле с выбором даты ================================================== -->                                
                                 
@@ -845,7 +682,7 @@
                                 </div>
                             </div>
                                 
-                            <div class="tab-pane fade" id="profile1"><br>
+                            <div class="tab-pane fade" id="profile"><br>
                                 
 <!-- Пакетная загрузка изображений ================================================== -->                                
                                 

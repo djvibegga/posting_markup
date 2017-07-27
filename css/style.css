@@ -251,6 +251,7 @@ color:#996;
     width: 500px;
     color: #3E7FB9;
     text-align: center;
+    background-color: #fff;
 }
 .more:hover {
     border: 1px solid #337ab7!important;
@@ -560,6 +561,9 @@ input[type="file"] {
     text-align: left;
     padding: 0 40px 0 40px;
 }
+.navmodal {
+    padding: 0 0 0 15px;
+}
 .sortt {
     margin-top: 15px;
 }
@@ -711,11 +715,10 @@ div.jGrowl div.jGrowl-closer {
     width: 60px;
     float: right;
     display: inline-block;
+    margin: 0 15px 0 0px;
 }
 .random-txt {
     list-style-type: none;
-        float: right;
-    margin: 7px;
 }
 .overflow-body {
     max-height: 700px;
@@ -769,4 +772,9 @@ div.jGrowl div.jGrowl-closer {
 }
 .margin-text {
     margin: 7px 0 0 0;
+}
+.navbar-more {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
 }

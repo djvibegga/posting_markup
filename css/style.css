@@ -241,7 +241,7 @@ color:#996;
     color: #FFF!important;
     opacity: 1;
 }
-#more {
+.more {
     font-weight: 700;
     font-size: 14px;
     border: 1px solid #3E7FB9;
@@ -252,7 +252,7 @@ color:#996;
     color: #3E7FB9;
     text-align: center;
 }
-#more:hover {
+.more:hover {
     border: 1px solid #337ab7!important;
     color: #fff!important;
     background-color: #3E7FB9;

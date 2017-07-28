@@ -226,7 +226,6 @@ color:#996;
     padding-left: 10px;
     padding-right: 10px;
     width: 36px;
-    left: -10px;
     color: #84B4E0;
 }
 #new-post:hover {
@@ -777,4 +776,10 @@ div.jGrowl div.jGrowl-closer {
     list-style-type: none;
     text-align: center;
     padding: 0;
+}
+.menu-user {
+    margin: 0 10px 0 0;
+}
+.dropdown-menu {
+    margin: 0 -10px 0 0;
 }

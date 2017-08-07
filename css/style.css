@@ -826,7 +826,7 @@ div.jGrowl div.jGrowl-closer {
 	transition:margin 0.3s linear;	
 }
 .btn-toolbar {
-    padding: 15px 0 0px 0;
+    padding: 15px 0 0 0;
     text-align: center;
 }
 .take-screenshot {

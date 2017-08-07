@@ -794,3 +794,44 @@ div.jGrowl div.jGrowl-closer {
 .dropdown-menu {
     margin: 0 -10px 0 0;
 }
+.send-feedback {
+    border-color: #3E7FB9;
+    border-left: 0;
+    border-right: 0;
+    background: #fefefe;
+    color: #666666;
+    font-weight: bold;
+    font-size: small;
+    padding: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    margin-bottom: -3px;
+    right: 150px;
+    top : 100%; 
+	left : 100%;	
+	margin-top : -7px;
+	margin-left : -311px;
+    -webkit-box-shadow: 0 1px 9px 5px rgba(0,0,0,.08);
+       -moz-box-shadow: 0 1px 9px 5px rgba(0,0,0,.08);
+            box-shadow: 0 1px 9px 5px rgba(0,0,0,.08);
+}
+.send-feedback:hover{
+	margin-top : -35px;
+	margin-left : -311px;	
+	-moz-transition:margin 0.3s linear;	
+	-o-transition:margin 0.3s linear;	
+	-webkit-transition:margin 0.3s linear;	
+	-ms-transition:margin 0.3s linear;	
+	transition:margin 0.3s linear;	
+}
+.btn-toolbar {
+    padding: 15px 0 0px 0;
+    text-align: center;
+}
+.take-screenshot {
+    top: 89%;
+    left: 96%;
+    margin-top: -35px;
+    margin-left: -311px;
+}

@@ -571,6 +571,9 @@ input[type="file"] {
     text-align: left;
     padding: 0 40px 0 40px;
 }
+.sort-view {
+    padding: 0px 0px 0px 15px;
+}
 .navmodal {
     padding: 0 0 0 15px;
 }
@@ -834,4 +837,21 @@ div.jGrowl div.jGrowl-closer {
     left: 96%;
     margin-top: -35px;
     margin-left: -311px;
+}
+.btn-setings {
+    float: right!important;
+    margin: 9px 7px 0px 0px!important;
+}
+.btn-toolbar {
+    padding: 6px!important;
+}
+.txt-view {
+    text-align: center;
+}
+.btn-space {
+    margin: 0 7px 0 0;
+}
+.button-edit {
+    margin-right: 0px!important;
+    margin-top: 0px!important;
 }

@@ -522,6 +522,25 @@
                             <ul id="myTab" class="nav nav-tabs">
                                 <li class="active"><a href="#home" data-toggle="tab">Настройка публикации</a></li>
                                 <li><a href="#profile" data-toggle="tab">Пакетная загрузка публикаций</a></li>
+                                <li class="actions">
+				    <div id="inbox">
+                                         <div class="fab btn-group show-on-hover dropup">
+                                              <div data-toggle="tooltip" data-placement="left" title="Редактировать" style="margin-left: 42px;">
+                          <button type="button" class="btn btn-success btn-io dropdown-toggle" data-toggle="dropdown">
+                            <span class="fa fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
+                                <i class="fa fa-plus fa-stack-1x fa-inverse fab-primary"></i>
+                                <i class="fa fa-pencil fa-stack-1x fa-inverse fab-secondary"></i>
+                            </span>
+                          </button></div>
+                          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <li style="display: inline-block;"><a href="#" data-toggle="tooltip" data-placement="left" title="Coffee"><i class="fa fa-coffee"></i></a></li>
+                            <li style="display: inline-block;"><a href="#" data-toggle="tooltip" data-placement="left" title="LiveChat"><i class="fa fa-comments-o"></i></a></li>
+                            <li style="display: inline-block;"><a href="#" data-toggle="tooltip" data-placement="left" title="Reminders"><i class="fa fa-hand-o-up"></i></a></li>
+                            <li style="display: inline-block;"><a href="#" data-toggle="tooltip" data-placement="left" title="Invites"><i class="fa fa-ticket"></i></a></li>
+                          </ul>
+                        </div>
+                               </div></li>
                                 <li class="load-img">Загружено изображений <span class="uploaded">5</span> из <span class="total">20</span> <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i></li>   
                             </ul>
                             <div id="myTabContent" class="tab-content">
@@ -818,24 +837,7 @@
            
             <div class="container">
                 <div class="row">
-                    <div id="inbox">
-                        <div class="fab btn-group show-on-hover dropup">
-                              <div data-toggle="tooltip" data-placement="left" title="Редактировать" style="margin-left: 42px;">
-                          <button type="button" class="btn btn-success btn-io dropdown-toggle" data-toggle="dropdown">
-                            <span class="fa fa-stack fa-2x">
-                                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
-                                <i class="fa fa-plus fa-stack-1x fa-inverse fab-primary"></i>
-                                <i class="fa fa-pencil fa-stack-1x fa-inverse fab-secondary"></i>
-                            </span>
-                          </button></div>
-                          <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Coffee"><i class="fa fa-coffee"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="LiveChat"><i class="fa fa-comments-o"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Reminders"><i class="fa fa-hand-o-up"></i></a></li>
-                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Invites"><i class="fa fa-ticket"></i></a></li>
-                          </ul>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
     
@@ -952,7 +954,7 @@
             <script>
                 $('#button').toolbar({
                     content: '#toolbar-options',
-                    position: 'bottom',
+                    position: 'left',
                     style: 'primary',
                     event: 'click',
                     hideOnClick: true

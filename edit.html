@@ -552,7 +552,7 @@
                                                             <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения с компьютера"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
                                                             <li><a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                                                         </ul>
-                                                        <!-- <button type="button" class="btn btn-success green" id="myButton3" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить и добавить</button> -->
+                                                        <!-- <button type="button" class="btn btn-success green" id="myButton3" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить и добавить</button>
                                                         
                                                         <ul class="btn-setings">
                                                             <li>    
@@ -565,7 +565,7 @@
                                                             <li>
                                                                 <button type="button" class="btn btn-success green button-edit" id="myButton1" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить</button>
                                                             </li>
-                                                        </ul>
+                                                        </ul> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -811,11 +811,34 @@
                             </div>
                             </div>
                         </div>
-                    </div>    
+                    </div>                    
                 </div>
             </div>
 <!-- Создание поста ================================================== -->
            
+            <div class="container">
+                <div class="row">
+                    <div id="inbox">
+                        <div class="fab btn-group show-on-hover dropup">
+                              <div data-toggle="tooltip" data-placement="left" title="Редактировать" style="margin-left: 42px;">
+                          <button type="button" class="btn btn-success btn-io dropdown-toggle" data-toggle="dropdown">
+                            <span class="fa fa-stack fa-2x">
+                                <i class="fa fa-circle fa-stack-2x fab-backdrop"></i>
+                                <i class="fa fa-plus fa-stack-1x fa-inverse fab-primary"></i>
+                                <i class="fa fa-pencil fa-stack-1x fa-inverse fab-secondary"></i>
+                            </span>
+                          </button></div>
+                          <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Coffee"><i class="fa fa-coffee"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="LiveChat"><i class="fa fa-comments-o"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Reminders"><i class="fa fa-hand-o-up"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="left" title="Invites"><i class="fa fa-ticket"></i></a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
 <!-- Футер ================================================== -->           
             <footer>
                 <div class="container-foot">
@@ -934,6 +957,12 @@
                     event: 'click',
                     hideOnClick: true
                 });
+                $('.fab').hover(function () {
+                    $(this).toggleClass('active');
+                });
+                $(function () {
+                  $('[data-toggle="tooltip"]').tooltip()
+                })
             </script>
 </body>
 </html>

@@ -849,6 +849,7 @@ div.jGrowl div.jGrowl-closer {
     width: 51px;
     padding: 5px 5px 0px 5px;
     border-right: solid 3px #3E7FB9;
+    z-index: 999999;
     -webkit-border-radius: 0 0 5px 0;
     -moz-border-radius: 0 0 5px 0;
     -webkit-box-shadow: 0 0px 7px 3px rgba(0,0,0,.08);

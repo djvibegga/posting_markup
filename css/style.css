@@ -847,8 +847,7 @@ div.jGrowl div.jGrowl-closer {
     left: -45px;
     background: #fff;
     width: 51px;
-    padding: 5px;
-    height: 123px;
+    padding: 5px 5px 0px 5px;
     border-right: solid 3px #3E7FB9;
     -webkit-border-radius: 0 0 5px 0;
     -moz-border-radius: 0 0 5px 0;
@@ -871,6 +870,7 @@ div.jGrowl div.jGrowl-closer {
     display: inline-block;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .edit li {
     margin: 0 0 5px 0;

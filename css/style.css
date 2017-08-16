@@ -838,9 +838,6 @@ div.jGrowl div.jGrowl-closer {
     margin-top: -35px;
     margin-left: -311px;
 }
-.txt-view {
-    text-align: center;
-}
 #slideout {
     position: fixed;
     top: 130px;
@@ -882,4 +879,33 @@ div.jGrowl div.jGrowl-closer {
 }
 .scopy {
     font-size: 12px!important;
+}
+.post_img {
+    float: left;
+    width: 50px;
+}
+.post_header {
+    padding: 0px 15px 10px 15px;
+}
+.post_author {
+    font-weight: 700;
+}
+.post_date {
+    font-size: 12px;
+    color: #939393;
+}
+.post_info {
+    margin-left: 60px;
+    padding-top: 5px;
+}
+.post_text {
+    margin: 0 0px 15px 0;
+}
+.edit_btn {
+    float: right;
+        margin: 7px 15px 10px 15px;
+}
+.view_post {
+    height: 421px;
+    margin: 0px 25px 0px 25px;
 }

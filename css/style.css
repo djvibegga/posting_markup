@@ -937,3 +937,7 @@ div.jGrowl div.jGrowl-closer {
     opacity: 0;
     cursor: pointer;
 }
+.img-pc-icon:hover {
+    background: none repeat scroll 0 0 #606060;
+    color: #fff;
+}

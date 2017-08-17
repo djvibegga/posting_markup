@@ -941,3 +941,6 @@ div.jGrowl div.jGrowl-closer {
     background: none repeat scroll 0 0 #606060;
     color: #fff;
 }
+.img-pc input[type="file"] {
+    display: none;
+}

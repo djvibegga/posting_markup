@@ -333,6 +333,7 @@ color:#996;
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-bottom: 15px;
+    cursor: pointer;
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;

@@ -904,7 +904,7 @@ div.jGrowl div.jGrowl-closer {
 }
 .edit_btn {
     float: right;
-        margin: 7px 15px 10px 15px;
+    margin: 7px 15px 10px 15px;
 }
 .view_post {
     height: 421px;
@@ -944,4 +944,20 @@ div.jGrowl div.jGrowl-closer {
 }
 .img-pc input[type="file"] {
     display: none;
+}
+.rep_choo {
+    float: left;
+    margin-top: 7px;
+}
+.repeat {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+.repeat_time {
+    width: 62px;
+    margin-left: 170px;
+}
+.repeat-radiobox {
+    margin-bottom: 10px!important;
 }

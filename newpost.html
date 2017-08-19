@@ -584,10 +584,10 @@
                                         </div>
                                     <div class="col-md-6 sortt fuelux">
                                         <div class="radio radiobox">
-                                            <label class="radio-custom" data-initialize="radio" id="myCustomRadioLabel8">
+                                            <label class="radio-custom repeat-radiobox" data-initialize="radio" id="myCustomRadioLabel8">
                                                 <input class="sr-only" data-toggle="#radioToggleID_3" name="radioEx3" type="radio" value="option1">
                                                 Выбрать дату и время публикации
-                                            </label><br><br>
+                                            </label>
                                             <label class="radio-custom" data-initialize="radio" id="myCustomRadioLabel8">
                                                 <input class="sr-only" data-toggle="#radioToggleID_4" name="radioEx3" type="radio" value="option1">
                                                 Опубликовать по расписанию
@@ -596,15 +596,7 @@
                                         <div class="alert bg-info" id="radioToggleID_3">
                                             <input placeholder="Выберите дату и время..." type="text" class="form-control" id="datetimepicker2" />
                                         </div>
-                                        <div class="alert bg-info" id="radioToggleID_4">Пост займёт ближайшую свободную дату и время в расписании:
-                                            <select class="selectpicker" data-live-search="true" data-width="75px">
-                                                <option>9:00</option>
-                                                <option>10:00</option>
-                                                <option>11:00</option>
-                                            </select>
-                                            <div>
-                                                <input placeholder="Выберите дату..." type="text" class="form-control" id="datetimepicker4" />
-                                            </div>
+                                        <div class="alert bg-info" id="radioToggleID_4">Пост займёт ближайшую свободную дату и время в расписании.
                                         </div>
                                     </div>
                                     <div class="col-md-6 sortt fuelux">
@@ -614,11 +606,35 @@
                                             <span class="checkbox-label">Подпись</span>
                                           </label>
                                         </div>
-                                        <div class="checkbox" id="myCheckbox">
-                                          <label class="checkbox-custom" data-initialize="checkbox">
-                                            <input class="sr-only" type="checkbox" value="">
-                                            <span class="checkbox-label">Повторять</span>
-                                          </label>
+                                        <div class="radio radiobox">
+                                            <label class="radio-custom repeat-radiobox" data-initialize="radio" id="myCustomRadioLabel8">
+                                                <input class="sr-only" data-toggle="#radioToggleID_5" name="radioEx3" type="radio" value="option1">Повторять ежедневно</label>
+                                            <label class="radio-custom" data-initialize="radio" id="myCustomRadioLabel8">
+                                                <input class="sr-only" data-toggle="#radioToggleID_6" name="radioEx3" type="radio" value="option1">Настраиваемый повтор</label>
+                                        </div>
+                                        <div class="alert bg-info" id="radioToggleID_5">
+                                            Публикация будет повторяться каждый день в выбраное Вами время.
+                                        </div>
+                                        <div class="alert bg-info" id="radioToggleID_6">
+                                            <ul class="repeat">
+                                                <p class="rep_choo">Повторять каждые(ый):</p>
+                                                <li class="repeat_time">                                                    
+                                                    <input class="form-control" type="text" id="datetimepicker5" placeholder="00:00"/>
+                                                </li>
+                                                <div class="checkbox" id="myCheckbox">
+                                                  <label class="checkbox-custom" data-initialize="checkbox">
+                                                    <input class="sr-only" type="checkbox" value="">
+                                                    <span class="checkbox-label">Исключить время:</span>
+                                                  </label>
+                                                </div>
+                                                c
+                                                <li class="time">                                                    
+                                                    <input class="form-control" type="text" id="datetimepicker6" placeholder="00:00"/>
+                                                </li>по 
+                                                <li class="time">
+                                                    <input class="form-control" type="text" id="datetimepicker7" placeholder="00:00"/>
+                                                </li>
+                                            </ul>    
                                         </div>
                                     </div>    
                                     </div>
@@ -873,6 +889,9 @@
                                $('#datetimepicker2').datetimepicker({language: 'ru'})
                                $('#datetimepicker3').datetimepicker({pickTime: false, language: 'ru'})
                                $('#datetimepicker4').datetimepicker({pickTime: false, language: 'ru'})});
+                               $("#datetimepicker5").datetimepicker({pickDate: false, language: 'ru'});
+                               $("#datetimepicker6").datetimepicker({pickDate: false, language: 'ru'});
+                               $("#datetimepicker7").datetimepicker({pickDate: false, language: 'ru'});
             </script>
             <script type="text/javascript">
                   $(function() {

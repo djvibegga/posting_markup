@@ -987,3 +987,25 @@ div.jGrowl div.jGrowl-closer {
     text-overflow: ellipsis;
     background-image: url(../img/album_top_shadow.png);
 }
+.faq-panel {
+    background: #fefefe;
+    padding: 12px;
+    padding-left: 16px;
+    border-top: solid 3px #3E7FB9;
+    border-radius: 5px;
+    margin-bottom: 10px!important;
+    -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+       -moz-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+            box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);    
+}
+.panel-default>.panel-heading {
+    color: #000;
+    background-color: #fff;
+    border-color: #ddd;
+}
+.panel-title>a {
+    text-decoration: none;
+}
+.panel-title>a:hover {
+    text-decoration: none;
+}

@@ -475,6 +475,7 @@ color:#996;
     line-height: 15px;
     font-size: 13px;
     text-align: center;
+    border-radius: 0px 0px 0px 3px;
     background-color: rgba(0,0,0,0.5);
 }
 .remove-image:hover {
@@ -1016,4 +1017,32 @@ div.jGrowl div.jGrowl-closer {
 }
 .img-thumbnail {
     margin-bottom: 4px;
+}
+.browser-text {
+    color: #3E7FB9;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 30px 0px 30px 0px;
+}
+.browser {
+    display: inline-block;
+    margin: 20px;
+}
+.error-code {
+    font-size: 250px;
+    font-weight: 700;
+    color: #3E7FB9;
+    margin: 70px 0px 0px 0px;
+}
+.error-text {
+    font-size: 19px;
+    color: #3E7FB9;
+    margin-top: 90px;
+}
+.btn-main {
+    text-decoration: underline;
+}
+.error-msg {
+    font-size: 30px;
+    color: #3E7FB9;
 }

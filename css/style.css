@@ -1026,7 +1026,7 @@ div.jGrowl div.jGrowl-closer {
 }
 .browser {
     display: inline-block;
-    margin: 20px;
+    /*margin: 20px;*/
 }
 .error-code {
     font-size: 250px;

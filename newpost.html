@@ -720,7 +720,46 @@
                                             <span class="checkbox-label">От имени пользователя</span>
                                           </label>
                                         </div>
-                                        <div class="radio radiobox">
+                                        <div class="checkbox" id="myCheckbox8">
+                                            <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" data-toggle="#checkboxToggleID" type="checkbox" value="option1">
+                                                <span class="checkbox-label">Повтор</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="alert bg-info" id="checkboxToggleID">
+                                                <div class="repeat-day-selector">
+                                                    <p class="rep_choo">Каждый(ые):</p>
+                                                    <div class="input-group spinner select-day">
+                                                        <input type="text" class="form-control" value="0" min="0" max="10">
+                                                        <div class="input-group-btn-vertical">
+                                                          <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                                          <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="repeat-day-selector">
+                                                    <p class="rep_choo">Через:</p>
+                                                    <input class="form-control repeat_time" type="text" id="datetimepicker5" placeholder="00:00"/>
+                                                </div>
+                                                <div class="checkbox" id="myCheckbox">
+                                                  <label class="checkbox-custom" data-initialize="checkbox">
+                                                    <input class="sr-only" type="checkbox" value="">
+                                                    <span class="checkbox-label">Исключить время:</span>
+                                                  </label>
+                                                </div>
+                                            <ul class="repeat">
+                                                c
+                                                <li class="time">                                                    
+                                                    <input class="form-control" type="text" id="datetimepicker6" placeholder="00:00"/>
+                                                </li>по 
+                                                <li class="time">
+                                                    <input class="form-control" type="text" id="datetimepicker7" placeholder="00:00"/>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <!-- <div class="radio radiobox">
                                             <label class="radio-custom repeat-radiobox" data-initialize="radio" id="myCustomRadioLabel8">
                                                 <input class="sr-only" data-toggle="#radioToggleID_5" name="radioEx3" type="radio" value="option1">Повторять ежедневно</label>
                                             <label class="radio-custom" data-initialize="radio" id="myCustomRadioLabel8">
@@ -749,7 +788,7 @@
                                                     <input class="form-control" type="text" id="datetimepicker7" placeholder="00:00"/>
                                                 </li>
                                             </ul>    
-                                        </div>
+                                        </div> -->
                                     </div>    
                                     </div>
                                 </div>                                

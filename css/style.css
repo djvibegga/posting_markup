@@ -553,7 +553,7 @@ input[type="file"] {
     cursor: pointer;
 }
 .img-thumbnail-ext {
-    margin: 0px 0px 3px 0px;
+    margin: 0px 2px 2px 0px;
     display: inline-block;
     max-width: 100%;
     height: auto;
@@ -1016,7 +1016,7 @@ div.jGrowl div.jGrowl-closer {
     margin-left: 30px;
 }
 .img-thumbnail {
-    margin-bottom: 4px;
+    margin: 0px 4px 4px 0px
 }
 .browser-text {
     color: #3E7FB9;

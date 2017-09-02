@@ -1058,3 +1058,6 @@ div.jGrowl div.jGrowl-closer {
 .select-day {
     width: 60px;
 }
+.emoji-wysiwyg-editor {
+    min-height: 150px;
+}

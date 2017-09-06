@@ -1061,3 +1061,12 @@ div.jGrowl div.jGrowl-closer {
 .emoji-wysiwyg-editor {
     min-height: 150px;
 }
+.siu-msg {
+    font-size: 30px;
+    color: #3E7FB9;
+    margin-top: 90px;
+}
+.siu-logo {
+    font-size: 70px;
+    color: #3E7FB9;
+}

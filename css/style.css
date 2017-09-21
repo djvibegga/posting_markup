@@ -1070,3 +1070,6 @@ div.jGrowl div.jGrowl-closer {
     font-size: 70px;
     color: #3E7FB9;
 }
+.container-foot>p {
+    margin-left: 70px;
+}

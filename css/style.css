@@ -1076,3 +1076,12 @@ div.jGrowl div.jGrowl-closer {
 .copyright {
     text-align: center;
 }
+.copyright>a {
+    color: #3E7FB9;
+}
+.copyright>a:visited {
+    color: #3E7FB9;
+}
+.copyright>a:active {
+    color: #3E7FB9;
+}

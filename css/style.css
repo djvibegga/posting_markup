@@ -1073,3 +1073,10 @@ div.jGrowl div.jGrowl-closer {
 .container-foot>p {
     margin-left: 70px;
 }
+.group {
+    float: right;
+    margin-right: 70px;
+}
+.copyright {
+    margin-left: 70px;
+}

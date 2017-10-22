@@ -1085,3 +1085,20 @@ div.jGrowl div.jGrowl-closer {
 .copyright>a:active {
     color: #3E7FB9;
 }
+#btn-next {
+    display: inline-block;
+    font-size: 19px;
+    padding: 5px;
+    color: #3E7FB9;
+    border: 3px solid #3E7FB9;
+    width: 450px;
+    border-radius: 33px;
+    text-decoration: none;
+}
+#btn-next:hover {
+    border: 3px solid #339900!important;
+    color: #339900!important;
+    background-color: #fff;
+    opacity: 1;
+    
+}

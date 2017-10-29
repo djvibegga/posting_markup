@@ -1110,18 +1110,3 @@ div.jGrowl div.jGrowl-closer {
     background-color: #fff;
     opacity: 1;    
 }
-.remove-link {
-    position: absolute;
-    top: 5px;
-    right: 0;
-    color: #b5b5b5;
-    cursor: pointer;
-    width: 15px;
-    height: 15px;
-    line-height: 15px;
-    font-size: 13px;
-    text-align: center;
-}
-.remove-link:hover {
-    color: #f00;
-}

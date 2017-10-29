@@ -583,6 +583,15 @@ input[type="file"] {
 .bott {
     margin: 0 0 5px;
 }
+.bott-post {
+    margin: 0 0 5px;
+    width: 290px!important;
+}
+.bott-repost {
+    margin: 0 0 5px;
+    width: 290px!important;
+    float: right!important;
+}
 .remove-time {
     position: absolute;
     top: 0;
@@ -1101,12 +1110,9 @@ div.jGrowl div.jGrowl-closer {
     background-color: #fff;
     opacity: 1;    
 }
-.link {
-    margin: 10px 0px 0px 0px;
-}
 .remove-link {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 0;
     color: #b5b5b5;
     cursor: pointer;

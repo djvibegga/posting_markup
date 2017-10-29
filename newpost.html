@@ -160,7 +160,7 @@
                                                             <img src="img/2h7dglSIqyY.jpg" alt="">
                                                             <div class="photos_album_title_wrap">
                                                                 <div class="checkbox" id="myCheckbox">
-                                                                  <label class="checkbox-custom" data-initialize="checkbox">
+                                                                  <label class="checkbox-custom" data-initialize="checkbox" rel="tooltip" title="Выбрать альбом">
                                                                     <input class="sr-only" type="checkbox" value="">
                                                                     <span class="checkbox-label">Название альбома</span>
                                                                   </label>
@@ -649,9 +649,9 @@
                                 
                                 <div class="col-md-6">
                                     <div class="row">                                        
-                                        <div class="col-md-12">
+                                        <div class="col-md-6">
                                             <div class="row">
-                                                <select class="selectpicker bott" data-live-search="true" data-width="100%" multiple data-max-options="1" title="Выберите куда постить...">
+                                                <select class="selectpicker bott-post" data-live-search="true" multiple data-max-options="1" title="Выберите куда постить...">
                                                     <optgroup label="Личная страница">
                                                         <option>Моя страница</option>
                                                     </optgroup>
@@ -661,6 +661,24 @@
                                                         <option>Разный мусор</option>
                                                     </optgroup>    
                                                 </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <select class="selectpicker bott-repost" data-live-search="true" multiple data-max-options="1" title="Выберите куда репостить...">
+                                                    <optgroup label="Личная страница">
+                                                        <option>Моя страница</option>
+                                                    </optgroup>
+                                                    <optgroup label="Сообщества">
+                                                        <option>Сочный апельсин</option>
+                                                        <option>Совместные покупки</option>
+                                                        <option>Разный мусор</option>
+                                                    </optgroup>    
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row">
                                                 <div class="widget-area no-padding blank">
                                                     <div class="status-upload">
                                                         <textarea class="form-control textarea-control" placeholder="Введите текст..." data-emojiable="true"></textarea>
@@ -678,9 +696,9 @@
                                                             <li>
                                                                 <a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a>
                                                             </li>
-                                                            <li>
+                                                            <!-- <li>
                                                                 <a href="#" rel="tooltip" data-placement="bottom" title="Прикрепить ссылку"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                                            </li>
+                                                            </li> -->
                                                         </ul>
                                                         <button type="button" class="btn btn-success green" id="myButton3" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button>
                                                         <button type="button" class="btn btn-success green" id="myButton1" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить и добавить еще"><i class="fa fa-check" aria-hidden="true"></i> <i class="fa fa-arrow-right" aria-hidden="true"></i></button>                                         
@@ -688,58 +706,66 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
+                                        <!-- <div class="col-md-12">
                                             <div class="row">
                                                 <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
                                                 <div class="remove-link">
                                                     <i class="fa fa-times"></i>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     <div class="col-md-6 sortt">
                                         <div class="radio radiobox">
-                                            <label class="radio-custom repeat-radiobox" data-initialize="radio" id="myCustomRadioLabel8">
-                                                <input class="sr-only" data-toggle="#radioToggleID_7" name="radioEx3" type="radio" value="option1">
+                                            <label class="radio-custom repeat-radiobox" data-initialize="radio" id="post-menu">
+                                                <input class="sr-only" data-toggle="#radioToggle_1" name="radioEx3" type="radio" value="option1">
                                                 Опубликовать немедленно
                                             </label>
-                                            <label class="radio-custom repeat-radiobox" data-initialize="radio" id="myCustomRadioLabel8">
-                                                <input class="sr-only" data-toggle="#radioToggleID_3" name="radioEx3" type="radio" value="option1">
+                                            <label class="radio-custom repeat-radiobox" data-initialize="radio" id="post-menu">
+                                                <input class="sr-only" data-toggle="#radioToggle_2" name="radioEx3" type="radio" value="option1">
                                                 Выбрать дату и время публикации
                                             </label>
-                                            <label class="radio-custom" data-initialize="radio" id="myCustomRadioLabel8">
-                                                <input class="sr-only" data-toggle="#radioToggleID_4" name="radioEx3" type="radio" value="option1">
+                                            <label class="radio-custom" data-initialize="radio" id="post-menu">
+                                                <input class="sr-only" data-toggle="#radioToggle_3" name="radioEx3" type="radio" value="option1">
                                                 Опубликовать по расписанию
                                             </label>
                                         </div>
-                                        <div class="alert bg-info" id="radioToggleID_3">
+                                        <div class="alert bg-info" id="radioToggle_1">Публикация займёт текущую дату и время, будет мгновенно опубликована в социальную сеть.
+                                        </div>
+                                        <div class="alert bg-info" id="radioToggle_2">
                                             <input placeholder="Выберите дату и время..." type="text" class="form-control" id="datetimepicker2" />
                                         </div>
-                                        <div class="alert bg-info" id="radioToggleID_4">Пост займёт ближайшую свободную дату и время в расписании.
-                                        </div>
-                                        <div class="alert bg-info" id="radioToggleID_7">Публикация займёт текущую дату и время, будет мгновенно опубликована в социальную сеть.
-                                        </div>
+                                        <div class="alert bg-info" id="radioToggle_3">Пост займёт ближайшую свободную дату и время в расписании.
+                                        </div>                                        
                                     </div>
                                     <div class="col-md-6 sortt">
-                                        <div class="checkbox" id="myCheckbox">
+                                        <div class="checkbox" id="signature">
                                           <label class="checkbox-custom" data-initialize="checkbox">
                                             <input class="sr-only" type="checkbox" value="">
                                             <span class="checkbox-label">Подпись</span>
                                           </label>
                                         </div>
-                                        <div class="checkbox" id="myCheckbox">
+                                        <div class="checkbox" id="username">
                                           <label class="checkbox-custom" data-initialize="checkbox">
                                             <input class="sr-only" type="checkbox" value="">
                                             <span class="checkbox-label">От имени пользователя</span>
                                           </label>
                                         </div>
-                                        <div class="checkbox" id="myCheckbox8">
+                                        <div class="checkbox" id="addlink">
                                             <label class="checkbox-custom" data-initialize="checkbox">
-                                                <input class="sr-only" data-toggle="#checkboxToggleID" type="checkbox" value="option1">
+                                                <input class="sr-only" data-toggle="#Addlink" type="checkbox" value="option1">
+                                                <span class="checkbox-label">Прикрепить ссылку</span>
+                                            </label>
+                                        </div>
+                                        <div class="alert bg-info" id="Addlink">
+                                            <input type="link" class="form-control" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                        </div>                                        
+                                        <div class="checkbox" id="repeat">
+                                            <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" data-toggle="#Repeat" type="checkbox" value="option1">
                                                 <span class="checkbox-label">Повтор</span>
                                             </label>
                                         </div>
-
-                                        <div class="alert bg-info" id="checkboxToggleID">
+                                        <div class="alert bg-info" id="Repeat">
                                                 <div class="repeat-day-selector">
                                                     <p class="rep_choo">Каждый(ые):</p>
                                                     <div class="input-group spinner select-day">
@@ -754,7 +780,7 @@
                                                     <p class="rep_choo">Через:</p>
                                                     <input class="form-control repeat_time" type="text" id="datetimepicker5" placeholder="00:00"/>
                                                 </div>
-                                                <div class="checkbox" id="myCheckbox">
+                                                <div class="checkbox" id="exclude-time">
                                                   <label class="checkbox-custom" data-initialize="checkbox">
                                                     <input class="sr-only" type="checkbox" value="">
                                                     <span class="checkbox-label">Исключить время:</span>
@@ -770,17 +796,17 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        
+                                                                                                                    
                                         <!-- <div class="radio radiobox">
-                                            <label class="radio-custom repeat-radiobox" data-initialize="radio" id="myCustomRadioLabel8">
-                                                <input class="sr-only" data-toggle="#radioToggleID_5" name="radioEx3" type="radio" value="option1">Повторять ежедневно</label>
-                                            <label class="radio-custom" data-initialize="radio" id="myCustomRadioLabel8">
-                                                <input class="sr-only" data-toggle="#radioToggleID_6" name="radioEx3" type="radio" value="option1">Настраиваемый повтор</label>
+                                            <label class="radio-custom repeat-radiobox" data-initialize="radio" id="my9">
+                                                <input class="sr-only" data-toggle="#radioToggle_5" name="radioEx3" type="radio" value="option1">Повторять ежедневно</label>
+                                            <label class="radio-custom" data-initialize="radio" id="my9">
+                                                <input class="sr-only" data-toggle="#radioToggle_6" name="radioEx3" type="radio" value="option1">Настраиваемый повтор</label>
                                         </div>
-                                        <div class="alert bg-info" id="radioToggleID_5">
+                                        <div class="alert bg-info" id="radioToggle_5">
                                             Публикация будет повторяться каждый день в выбраное Вами время.
                                         </div>
-                                        <div class="alert bg-info" id="radioToggleID_6">
+                                        <div class="alert bg-info" id="radioToggle_6">
                                             <ul class="repeat">
                                                 <p class="rep_choo">Повторять каждые(ый):</p>
                                                 <li class="repeat_time">                                                    

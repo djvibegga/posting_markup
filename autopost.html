@@ -457,10 +457,10 @@
 		        			(Math.round(date.getTime() / 1000) - 5 * 24 * 3600) * 1000
 		    			).format('YYYY-MM-DD');
 		            	if ($.inArray(formattedDate, active_dates) != -1) {
-		            		return "green";
+		            		return "filled";
 		            	}
 		            	if ($.inArray(formattedDate, full_dates) != -1) {
-		            		return false;
+		            		return "full";
 		            	}
 		            }
                        }

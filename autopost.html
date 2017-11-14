@@ -8,6 +8,7 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/jquery.jgrowl.css">
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
@@ -431,6 +432,7 @@
             <script type="text/javascript" src="js/jquery.jgrowl_minimized.js"></script>
             <script type="text/javascript" src="js/bootstrap.min.js"></script>
             <script type="text/javascript" src="js/posting.js"></script>
+            <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
             <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
@@ -443,7 +445,26 @@
                 })
             </script>
             <script type="text/javascript">
-                $(function () {$('#datetimepicker1').datetimepicker({pickTime: false, language: 'ru'});
+                $(function () {$('#datetimepicker1').datepicker({
+			pickTime: false,
+			language: 'ru',
+                        'todayHighlight': true,
+			'beforeShowDay': function(date) {
+		            var active_dates = ["2017-11-17", "2017-11-20", "2017-11-30"];
+		            var full_dates = ["2017-11-23", "2017-11-24", "2017-11-25"];
+		            if (date.getMonth() == (new Date()).getMonth()) {
+		            	var formattedDate = moment(
+		        			(Math.round(date.getTime() / 1000) - 5 * 24 * 3600) * 1000
+		    			).format('YYYY-MM-DD');
+		            	if ($.inArray(formattedDate, active_dates) != -1) {
+		            		return "green";
+		            	}
+		            	if ($.inArray(formattedDate, full_dates) != -1) {
+		            		return false;
+		            	}
+		            }
+                       }
+		});
                                $("#datetimepicker2").datetimepicker({pickDate: false, language: 'ru'});
                                $("#datetimepicker3").datetimepicker({pickDate: false, language: 'ru'});
                                $("#datetimepicker4").datetimepicker({pickDate: false, language: 'ru'})});

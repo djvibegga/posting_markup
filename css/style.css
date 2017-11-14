@@ -1110,6 +1110,11 @@ div.jGrowl div.jGrowl-closer {
     background-color: #fff;
     opacity: 1;    
 }
+.text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .datepicker .datepicker-days tr .day.green {
     color: white;

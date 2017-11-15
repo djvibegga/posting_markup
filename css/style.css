@@ -1116,11 +1116,11 @@ div.jGrowl div.jGrowl-closer {
     text-overflow: ellipsis;
 }
 
-.datepicker .datepicker-days tr .day.filled {
+.datepicker .datepicker-days tr .day.filled:not(.active):not(.today) {
     color: white;
     background: green;
 }
-.datepicker .datepicker-days tr .day.full {
+.datepicker .datepicker-days tr .day.full:not(.active):not(.today) {
     color: white;
     background: gray;
 }

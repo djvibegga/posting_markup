@@ -649,23 +649,9 @@
                                 
                                 <div class="col-md-6">
                                     <div class="row">                                        
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="row">
-                                                <select class="selectpicker bott-post" data-live-search="true" multiple data-max-options="1" title="Выберите куда постить...">
-                                                    <optgroup label="Личная страница">
-                                                        <option>Моя страница</option>
-                                                    </optgroup>
-                                                    <optgroup label="Сообщества">
-                                                        <option>Сочный апельсин</option>
-                                                        <option>Совместные покупки</option>
-                                                        <option>Разный мусор</option>
-                                                    </optgroup>    
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="row">
-                                                <select class="selectpicker bott-repost" data-live-search="true" multiple data-max-options="1" title="Выберите куда репостить...">
+                                                <select class="selectpicker bott" data-live-search="true" data-max-options="1" title="Выберите куда постить..." data-width="100%">
                                                     <optgroup label="Личная страница">
                                                         <option>Моя страница</option>
                                                     </optgroup>
@@ -762,6 +748,12 @@
                                                 <span class="checkbox-label">Повторять</span>
                                             </label>
                                         </div>
+                                        <div class="checkbox" id="repost">
+                                            <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" data-toggle="#Repost" type="checkbox" value="option1">
+                                                <span class="checkbox-label">Репост</span>
+                                            </label>
+                                        </div>
                                         <div class="alert bg-info" id="Addlink">
                                             <input type="link" class="form-control" id="exampleInputEmail1" placeholder="Введите ссылку">
                                         </div>
@@ -812,6 +804,20 @@
                                             <div class="">                                                
                                                 <input placeholder="Выберите дату и время..." type="text" class="form-control" id="datetimepicker2" />
                                             </div>
+                                        </div>
+                                        <div class="alert bg-info" id="Repost">
+                                            <div class="">
+                                                <select class="selectpicker" data-live-search="true" data-max-options="1" title="Выберите куда репостить..." data-width="100%">
+                                                    <optgroup label="Личная страница">
+                                                        <option>Моя страница</option>
+                                                    </optgroup>
+                                                    <optgroup label="Сообщества">
+                                                        <option>Сочный апельсин</option>
+                                                        <option>Совместные покупки</option>
+                                                        <option>Разный мусор</option>
+                                                    </optgroup>    
+                                                </select>
+                                            </div>                                            
                                         </div>
                                                                                                                     
                                         <!-- <div class="radio radiobox">

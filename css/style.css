@@ -583,15 +583,6 @@ input[type="file"] {
 .bott {
     margin: 0 0 5px;
 }
-.bott-post {
-    margin: 0 0 5px;
-    width: 290px!important;
-}
-.bott-repost {
-    margin: 0 0 5px;
-    width: 290px!important;
-    float: right!important;
-}
 .remove-time {
     position: absolute;
     top: 0;

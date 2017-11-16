@@ -1115,7 +1115,9 @@ div.jGrowl div.jGrowl-closer {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+.repeat-menu {
+    margin: 0px 0px 10px 0px;
+}
 .datepicker .datepicker-days tr .day.filled {
     color: white;
     background: green;
@@ -1123,4 +1125,11 @@ div.jGrowl div.jGrowl-closer {
 .datepicker .datepicker-days tr .day.full {
     color: white;
     background: gray;
+}
+.ds {
+    display: inline-block;
+}
+.repeat-day-selector>span {
+    vertical-align: 50%;
+    margin-left: 2px;
 }

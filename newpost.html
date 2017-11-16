@@ -759,33 +759,41 @@
                                         <div class="checkbox" id="repeat">
                                             <label class="checkbox-custom" data-initialize="checkbox">
                                                 <input class="sr-only" data-toggle="#Repeat" type="checkbox" value="option1">
-                                                <span class="checkbox-label">Повтор</span>
+                                                <span class="checkbox-label">Повторять</span>
                                             </label>
                                         </div>
                                         <div class="alert bg-info" id="Addlink">
                                             <input type="link" class="form-control" id="exampleInputEmail1" placeholder="Введите ссылку">
                                         </div>
                                         <div class="alert bg-info" id="Repeat">
-                                                <div class="repeat-day-selector">
+                                            <div class="repeat-menu">
+                                                <select class="form-control">
+                                                  <option>Дни</option>
+                                                  <option>Часы (Минуты)</option>
+                                                </select>
+                                            </div>
+                                            <div class="repeat-day-selector">
                                                     <p class="rep_choo">Каждый(ые):</p>
+                                                <div class="ds">
                                                     <div class="input-group spinner select-day">
-                                                        <input type="text" class="form-control" value="0" min="0" max="10">
+                                                        <input type="text" class="form-control" value="0" min="0" max="365">
                                                         <div class="input-group-btn-vertical">
                                                           <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
                                                           <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
                                                         </div>
                                                     </div>
+                                                </div><span> дн</span>
                                                 </div>
-                                                <div class="repeat-day-selector">
-                                                    <p class="rep_choo">Через:</p>
-                                                    <input class="form-control repeat_time" type="text" id="datetimepicker5" placeholder="00:00"/>
-                                                </div>
-                                                <div class="checkbox" id="exclude-time">
-                                                  <label class="checkbox-custom" data-initialize="checkbox">
-                                                    <input class="sr-only" type="checkbox" value="">
-                                                    <span class="checkbox-label">Исключить время:</span>
-                                                  </label>
-                                                </div>
+                                            <div class="repeat-day-selector">
+                                                <p class="rep_choo">Каждый(ые):</p>
+                                                <input class="form-control repeat_time" type="text" id="datetimepicker5" placeholder="00:00"/> час (мин)
+                                            </div>
+                                            <div class="checkbox" id="exclude-time">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Исключить время:</span>
+                                              </label>
+                                            </div>
                                             <ul class="repeat">
                                                 c
                                                 <li class="time">                                                    
@@ -795,6 +803,15 @@
                                                     <input class="form-control" type="text" id="datetimepicker7" placeholder="00:00"/>
                                                 </li>
                                             </ul>
+                                            <div class="checkbox" id="exclude-time">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Остановить публикацию:</span>
+                                              </label>
+                                            </div>
+                                            <div class="">                                                
+                                                <input placeholder="Выберите дату и время..." type="text" class="form-control" id="datetimepicker2" />
+                                            </div>
                                         </div>
                                                                                                                     
                                         <!-- <div class="radio radiobox">

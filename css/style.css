@@ -1124,3 +1124,9 @@ div.jGrowl div.jGrowl-closer {
     vertical-align: 50%;
     margin-left: 2px;
 }
+.terms-title {
+    font-size: 19px;
+}
+.terms-text {
+    text-indent: 20px;
+}

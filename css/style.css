@@ -343,6 +343,7 @@ color:#996;
     width: 100%;
 	height: 196px;
     background: #3E7FB9;
+    border-radius: 3px 3px 0px 0px;
 }
 
 .home-post img {

@@ -895,6 +895,7 @@ div.jGrowl div.jGrowl-closer {
 .post_date {
     font-size: 12px;
     color: #939393;
+    float: left;
 }
 .post_info {
     width: 300px;
@@ -1129,4 +1130,36 @@ div.jGrowl div.jGrowl-closer {
 }
 .terms-text {
     text-indent: 20px;
+}
+.repost-done {
+    margin: -2px 3px 0px 0px;
+    float: left;
+}
+.repost_img {
+    float: left;
+    width: 50px;
+}
+.repost_header {
+    padding: 0px 0px 10px 0px;
+}
+.repost_author {
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.repost_text {
+    font-size: 12px;
+    color: #939393;
+    margin: 0 0px 15px 0;    
+}
+.repost_text>p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.repost_info {
+    width: 187px;
+    margin-left: 60px;
+    padding-top: 5px;
 }

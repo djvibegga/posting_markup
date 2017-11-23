@@ -887,6 +887,7 @@ div.jGrowl div.jGrowl-closer {
     padding: 0px 0px 10px 0px;
 }
 .post_author {
+    width: 300px;
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
@@ -1143,6 +1144,7 @@ div.jGrowl div.jGrowl-closer {
     padding: 0px 0px 10px 0px;
 }
 .repost_author {
+    width: 187px;
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Same Post - Тот же постинг, только лучше!</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/jquery.jgrowl.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+<body>
+    
+<!-- Панель навигации ================================================== -->
+    
+            <header>
+                <nav class="navbar navbar-default menu navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="autopost.html"><img src="img/logo.png" width="131"></a>
+                        </div>
+                        
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="notifications.html">Уведомления</a></li>
+                                <li><a href="autopost.html">АвтоПост</a></li>
+                                <li><a href="schedule.html">Расписание</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                            </ul>        
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="menu-user"><a id="user-profile" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
+                                <ul class="dropdown-menu">
+                                <div class="arrow-user"></div>
+                                <li class="username ng-binding"><span class="glyphicon glyphicon-user"></span> Евгений Марилёв</li>
+                                <li class="divider"></li>
+                                <li class="munu-drop"><a href="user.html"><span class="glyphicon glyphicon-cog"></span> Настройки</a></li>
+                                <li class="divider"></li>
+                                <li class="munu-drop"><a href="index.html"><span class="glyphicon glyphicon-off"></span> Выход</a></li>
+                                </ul></li>
+                                <li class="active-link"><a id="new-post" href="newpost.html">Добавить пост +</a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+    
+<!-- Панель навигации ================================================== -->
+    
+            <div class="content"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="alert alert-danger fade in">
+                              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                              <strong>Внимание!</strong> Требуется обновить привязку аккаунта ВКонтакте.
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="panel-group" id="accordion">
+                              <div class="panel panel-default faq-panel">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                            Введение
+                                          </a>
+                                        </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                      <p>Same Post - создан специально для автоматизации размещения записей в сообщества ВКонтакте. Идеально подойдет как для организаторов совместных покупок, так и для владельцев сообществ. Наша цель состоит в том, чтобы создать удобный и простой в использовании сервис автоматической публикации отложенных записей. Мы постоянно совершенствуем наш сервис и лучшие функции еще впереди...</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default faq-panel">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                            Ограничения и правила использования <i class="fa fa-vk" aria-hidden="true"></i>
+                                          </a>
+                                        </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                      <p class="bold">Сколько записей можно опубликовать на стене сообщества в сутки?</p>
+                                      <p class="paragraf">50 публикаций в сутки — оптимальное количество, позволяющее успешно поддерживать активность сообщества и в то же время беречь ленты участников от «затопления» бесконечным потоком записей, среди которых теряются обновления друзей и прочая важная информация.</p>
+                                      <p class="bold">Сколько записей можно опубликовать в сутки от имени пользователя?</p>
+                                      <p class="paragraf">150 публикаций в сутки - спросите почему? Только сами Администраторы <i class="fa fa-vk" aria-hidden="true"></i> могут ответить вам на этот вопрос.</p>
+                                      <p class="bold">Пользователю при использовании Сайта запрещается:</p>
+                                      <p><b>6.3.4.</b> загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая:</p>
+                                      <p class="paragraf"><b>(а)</b>  содержит угрозы, дискредитирует, оскорбляет, порочит честь и достоинство или деловую репутацию или нарушает неприкосновенность частной жизни других Пользователей или третьих лиц;</p>
+                                      <p class="paragraf"><b>(б)</b> нарушает права несовершеннолетних лиц;</p>
+                                      <p class="paragraf"><b>(в)</b> является вульгарной или непристойной, содержит порнографические изображения и тексты или сцены сексуального характера с участием несовершеннолетних;</p>
+                                      <p class="paragraf"><b>(г)</b> содержит сцены бесчеловечного обращения с животными;</p>
+                                      <p class="paragraf"><b>(д)</b> содержит описание средств и способов суицида, любое подстрекательство к его совершению;</p>
+                                      <p class="paragraf"><b>(е)</b> пропагандирует и/или способствует разжиганию расовой, религиозной, этнической ненависти или вражды, пропагандирует фашизм или идеологию расового превосходства;</p>
+                                      <p class="paragraf"><b>(ж)</b> содержит экстремистские материалы;</p>
+                                      <p class="paragraf"><b>(з)</b>  пропагандирует преступную деятельность или содержит советы, инструкции или руководства по совершению преступных действий;</p>
+                                      <p class="paragraf"><b>(и)</b> содержит информацию ограниченного доступа, включая, но не ограничиваясь, государственной и коммерческой тайной, информацией о частной жизни третьих лиц;</p>
+                                      <p class="paragraf"><b>(к)</b> содержит рекламу или описывает привлекательность употребления наркотических веществ, в том числе «цифровых наркотиков»  (звуковых файлов, оказывающих воздействие на мозг человека за счет бинауральных ритмов), информацию о распространении наркотиков, рецепты их изготовления и советы по употреблению</p>
+                                      <p class="paragraf"><b>(л)</b> носит мошеннический характер;</p>
+                                      <p class="paragraf"><b>(м)</b> а также нарушает иные права и интересы граждан и юридических лиц или требования законодательства Российской Федерации.</p>
+                                      <a href="https://vk.com/terms">Полные и всегда актуальные правила пользования Сайтом ВКонтакте</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-default faq-panel">
+                                <div class="panel-heading">
+                                  <h4 class="panel-title">
+                                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                            Для чего нужно расписание и как им пользоваться
+                                          </a>
+                                        </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                      <p>Функция расписания была придумана для того, чтобы при создании новой записи не нужно было вводить дату и время её публикации, так как каждая новая запись после её сохранения будет автоматически занимать ближайшую свободную дату и время.</p>
+
+                                      <p>Для создания расписания следует выбрать в выпадающем меню <img src="img/dropdown.png" style="border-radius: 5px;">, где требуется его создать;</p>
+                                      <p>Добавить временной блок нажав на кнопку <img src="img/plus.png" style="border-radius: 5px;">;</p>
+                                      <p>В появившемся временном блоке <img src="img/time.png" style="border-radius: 5px;"> выбрать нужное время публикации;</p>
+                                      <p>Нажать на кнопку <img src="img/btn-save.png" style="border-radius: 5px;"> для сохранения.</p>
+                                      <p>Таким образом можно запланировать до 50 временных блоков для сообщества и 150 для личной страницы.</p>
+                                      <p>Так будет выглядеть готовое расписание:</p><center><img src="img/schedule.png"></center><br>
+                                      <p>Если Вам потребуется отредактировать расписание, то следует просто изменить временной блок, либо удалить его, нажав крестик в правом верхнем углу.</p>
+
+                                      <p><b>ВАЖНО!</b> Если вы изменили расписание, то запланированные записи не меняют свою дату и время публикации (в дальнейшем будет введена кнопка для распределения уже запланированных записей по измененному расписанию).</p>
+
+                                      <p>Чтобы воспользоваться расписанием его нужно просто создать, а далее при создании новых записей, пункт «Опубликовать по расписанию» будет включен по умолчанию - это означает, что сохранённая публикация займёт свободную дату и время.</p> 
+
+                                      <p>Если Вы не желаете в данный момент планировать публикацию по расписанию, то можно выбрать одну из функций: «Опубликовать немедленно» или «Выбрать дату и время».</p>
+                                  </div>
+                                </div>
+                              </div>
+                                <div class="panel panel-default faq-panel">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                Как создать публикацию
+                                              </a>
+                                            </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        <p>Нажать на кнопку <img src="img/btn-add-post.png" style="border-radius: 19px;">;</p>
+                                        <p>В выпадающем меню выбрать куда будет публиковаться запись <img src="img/dropdown.png" style="border-radius: 5px;">;</p>
+                                        <p>Ввести текст;</p>
+                                        <p>Добавить изображение с "ПК" или "VK" <img src="img/btn-add-pcvk.png" style="border-radius: 30px;">;</p>
+                                        <p>Выбрать время публикации: «Опубликовать немедленно», «Выбрать дату и время», «Опубликовать по расписанию»;</p>
+                                        <p>Выбрать нужные опции (если эти опции Вам не нужны, то оставьте их без изменений): «Повторять ежедневно», «От имени пользователя», «Подпись»;</p>
+                                        <p>Нажать кнопку «Сохранить» или «Сохранить и продолжить» (после нажатия кнопки «Сохранить и продолжить» текущая запись сохранится и откроется страница добавления следующей записи).</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                 <div class="panel panel-default faq-panel">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                                Где находится список сообществ и как его обновить
+                                              </a>
+                                            </h4>
+                                    </div>
+                                    <div id="collapseFive" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        <p>Список сообществ находится в настройках Вашего профиля, нажмите кнопку меню пользователя <img src="img/btn-user.png" style="border-radius: 19px;">, в открывшемся меню выберите пункт "Настройки", далее перейдите во вкладку "Cообщества" (если требуется обновить список сообществ, то нажмите на кнопку "Обновить список сообществ")</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default faq-panel">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                              <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                                Как можно обновить привязку профиля <i class="fa fa-vk" aria-hidden="true"></i>
+                                              </a>
+                                            </h4>
+                                    </div>
+                                    <div id="collapseSix" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                        <p>Нажмите кнопку меню пользователя <img src="img/btn-user.png" style="border-radius: 19px;"> и в открывшемся меню выберите пункт "Настройки", нажмите на кнопку "Обновить привязку <i class="fa fa-vk" aria-hidden="true"></i>"</p>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 85px;"></div>
+            </div>
+            
+<!-- Футер ================================================== -->              
+            <footer>
+                <div class="container-foot">
+
+                    <hr>
+                    <div class="col-md-12">
+                        <p class="copyright"><a href="https://vk.com/samepost">Группа ВКонтакте</a></p><br>
+                    </div>
+                    
+                </div>
+            </footer>    
+<!-- Футер ================================================== -->
+    
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+            <script type="text/javascript" src="js/jquery.browser.js"></script>
+            <script type="text/javascript" src="js/jquery.jgrowl_minimized.js"></script>
+            <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){    
+                $("[rel=tooltip]").tooltip();
+                });
+                $(function () {
+                $('[data-toggle="popover"]').popover('show')
+                })
+            </script>    
+</body>
+</html>

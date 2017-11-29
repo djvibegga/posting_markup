@@ -274,12 +274,15 @@ color:#996;
     background: #FFF;
     transform: rotateZ(45deg);
 }
-.username {
+/*.username {
     display: block;
     height: 50px;
     line-height: 55px;
     margin: 0;
     text-align: center;
+}*/
+.usersettings {
+    margin-top: 7px;
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
     padding: 7px;

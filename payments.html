@@ -76,10 +76,26 @@
                                 <th>Дата и время окончания</th>
                                 <th>Статус подключения</th>
                                 <th>Период оплаты</th>
-                                <th>Стоимость</th>
+                                <th class="currency">
+                                    <div>
+                                        <span class="text-currency">Стоимость:</span>
+                                        <select class="form-control choice-currency">
+                                          <option>руб.</option>
+                                          <option>грн.</option>
+                                        </select>
+                                    </div>
+                                    <!-- <a class="currency" href=""><span class="rub">Р</span></a> | <a class="currency" href=""><span>грн.</span></a> -->
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- <tr class="ap-tr-currency">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>Выбрать валюту: <a href=""><span class="rub">Р</span></a> | <a href=""><span>грн.</span></a></td>
+                            </tr> -->
                             <tr class="ap-tr">
                                 <td>АвтоПост</td>
                                 <td>25.07.2019 17:25</td>

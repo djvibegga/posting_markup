@@ -1248,3 +1248,13 @@ div.jGrowl div.jGrowl-closer {
   display: inline-block;
   width: 7px;
 }
+.currency {
+    width: 175px;
+}
+.text-currency {
+    float: left;
+    margin: 7px 5px 0px 0px;
+}
+.choice-currency {
+    width: 75px;
+}

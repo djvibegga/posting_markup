@@ -1240,3 +1240,11 @@ div.jGrowl div.jGrowl-closer {
 .btn-payment {
     float: right;
 }
+.rub {
+  font-family: arial;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  line-height: 3px;
+  display: inline-block;
+  width: 7px;
+}

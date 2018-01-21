@@ -111,7 +111,10 @@ ul, li {
 .trans-bg {
   position: relative;
   background: #3E7FB9;
-  padding: 30px 0px 0px 0px;
+  padding: 120px 0px;
+}
+.trans-bg-top {
+  padding: 30px 0px 0px 0px!important;
 }
 
 ::-moz-selection { background: #A9D0F5; color: #5F5A5A }

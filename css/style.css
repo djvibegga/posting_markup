@@ -622,6 +622,62 @@ input[type="file"] {
 .btn-add {
     width: 62px;
 }
+.offer {
+    background: #fff;
+    padding: 12px;
+    padding-left: 16px;
+    border-top: solid 3px #CCCCCC;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+       -moz-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+            box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+}
+.offer-clear {
+    border-color: #fefefe;
+    -webkit-box-shadow: 0 7px 10px -5px rgba(0,0,0,.15);
+       -moz-box-shadow: 0 7px 10px -5px rgba(0,0,0,.15);
+            box-shadow: 0 7px 10px -5px rgba(0,0,0,.15);
+}
+.offer-info {
+    border-color: #b8dbf2;
+}
+.offer-success {
+    border-color: #4cae4c;
+}
+.offer-warning {
+    border-color: rgba(255,165,0,.5);
+    font-size: 19px;
+}
+.offer-danger {
+    border-color: #ec8282;
+}
+.offer-primary {
+    border-color: #9ca6f1;
+}
+.offer-magick {
+    border-color: #e0b8f2;
+}
+.offer-info-text {
+    color: #39b3d7;
+}
+.offer-success-text {
+    color: #4cae4c;
+    font-size: 19px;
+}
+.offer-warning-text {
+    color: #db9e34;
+}
+.offer-danger-text {
+    color: #c9302c;
+    font-size: 19px;
+}
+.offer-primary-text {
+    color: rgba(47,106,215,.9);
+}
+.offer-magick-text {
+    color: #bb39d7;
+}
 .msg {
     -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
        -moz-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);

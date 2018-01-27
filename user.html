@@ -44,13 +44,11 @@
                                 <li class="menu-user"><a id="user-profile" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
                                 <ul class="dropdown-menu">
                                 <div class="arrow-user"></div>
-                                <!--<li class="username ng-binding"><span class="glyphicon glyphicon-user"></span> Евгений Марилёв</li>
-                                <li class="divider"></li>-->
                                 <li class="usersettings"><a href="user.html"><span class="glyphicon glyphicon-cog"></span> Настройки</a></li>
                                 <li class="divider"></li>
                                 <li><a href="index.html"><span class="glyphicon glyphicon-off"></span> Выход</a></li>
                                 </ul></li>
-                                <li class="active-link"><a id="new-post" href="newpost.html">Добавить пост +</a></li> 
+                                <li class="add-post"><a id="new-post" href="newpost.html">Добавить пост +</a></li> 
                             </ul>
                         </div>
                     </div>
@@ -67,8 +65,7 @@
 
                         <ul id="myTab" class="nav nav-tabs">
                             <li class="active"><a href="#home" data-toggle="tab">Профиль</a></li>
-                            <li><a href="#profile" data-toggle="tab">Сообщества</a></li> 
-                            <li><a href="#default" data-toggle="tab">Настройки по умолчанию</a></li>
+                            <li><a href="#profile" data-toggle="tab">Сообщества</a></li>
                         </ul>
 
                         <div id="myTabContent" class="tab-content">
@@ -78,43 +75,24 @@
                                     <div class="row">
 
     <!-- Профиль ============================================================================= -->
-
-                                        <!-- left column -->
-                                        <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <div class="text-center">
-                                                <img src="http://lorempixel.com/200/200/people/9/" class="avatar img-circle img-thumbnail" alt="avatar">
-                                            </div>
-                                        </div>
-                                        <!-- edit form column -->
-                                        <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+                                        
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 personal-info-left">
                                             <form class="form-horizontal" role="form">
                                                 <div class="form-group">
-                                                    <label class="col-lg-3 control-label">Имя:</label>
-                                                    <div class="col-lg-8">
+                                                    <label class="col-lg-6">Имя:</label>
+                                                    <div class="col-lg-12">
                                                         <input class="form-control" type="text" placeholder="Василий">
                                                     </div>
                                                 </div><br>
                                                 <div class="form-group">
-                                                    <label class="col-lg-3 control-label">Фамилия:</label>
-                                                    <div class="col-lg-8">
+                                                    <label class="col-lg-6">Фамилия:</label>
+                                                    <div class="col-lg-12">
                                                         <input class="form-control" type="text" placeholder="Петров">
                                                     </div>
                                                 </div><br>
                                                 <div class="form-group">
-                                                    <label class="col-lg-3 control-label">Логин:</label>
-                                                    <div class="col-lg-8">
-                                                        <input class="form-control" type="text" placeholder="Никнэйм">
-                                                    </div>
-                                                </div><br>
-                                                <div class="form-group">
-                                                    <label class="col-lg-3 control-label">Email:</label>
-                                                    <div class="col-lg-8">
-                                                        <input class="form-control" type="text" placeholder="Введите Ваш email">
-                                                    </div>
-                                                </div><br>
-                                                <div class="form-group">
-                                                    <label class="col-lg-3 control-label">Часовой пояс:</label>
-                                                    <div class="col-lg-8">
+                                                    <label class="col-lg-6">Часовой пояс:</label>
+                                                    <div class="col-lg-12">
                                                         <div class="ui-select">
                                                             <select id="user_time_zone" class="form-control">
                                                                 <option value="Hawaii">(GMT-10:00) Hawaii</option>
@@ -128,18 +106,51 @@
                                                             </select>
                                                         </div>
                                                     </div>
-                                                </div><br>
-                                                <div class="form-group">
-                                                    <label class="col-md-3 control-label"></label>
-                                                    <div class="col-md-8 text-center">
-                                                        <button type="button" class="btn btn-success user-button">Сохранить <i class="fa fa-check" aria-hidden="true"></i></button>
-                                                        <button type="button" class="btn btn-primary user-button">Обновить привязку <i class="fa fa-vk" aria-hidden="true"></i></button>
-                                                        <button type="button" class="btn btn-danger user-button">Удалить профиль <i class="fa fa-times" aria-hidden="true"></i></button>
-                                                    </div>
-                                                </div>
+                                                </div><br>                                                
                                             </form>
                                         </div>
-
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 personal-info-center">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label class="col-lg-12">Страница по умолчанию:</label>
+                                                    <div class="col-lg-12">
+                                                        <select class="selectpicker bott" data-live-search="true" data-width="100%" multiple data-max-options="1" title="Выберите страницу или сообщество...">
+                                                                <option>Моя страница</option>
+                                                                <option>Сочный апельсин</option>
+                                                                <option>Совместные покупки</option>
+                                                                <option>Разный мусор</option>  
+                                                        </select>
+                                                    </div>
+                                                </div><br>
+                                            </form>    
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 personal-info-right"> 
+                                            <form class="form-horizontal" role="form">
+                                                <div class="checkbox text-center" id="default-delete">
+                                                    <label class="checkbox-custom" data-initialize="checkbox">
+                                                        <input class="sr-only" data-toggle="#Default-delete" type="checkbox" value="option1">
+                                                        <span class="checkbox-label"><b>Автоматически удалять записи из ВКонтакте</b></span>
+                                                    </label>
+                                                </div><br>
+                                                <div class="alert bg-info" id="Default-delete">
+                                                    <div>
+                                                    При удалении записей из сервиса будут автоматически
+                                                    удалены и связанные записи в ВКонтакте.
+                                                    <div class="attention">
+                                                        Обратите, пожалуйста, внимание, что записи в сервисе
+                                                        хранятся только определенный срок. После публикации запись
+                                                        будет автоматически удалена по истечении 3 дней.
+                                                    </div>
+                                                    </div>         
+                                                </div>
+                                            </form>    
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center btn-user">
+                                            <button type="button" class="btn btn-success user-button">Сохранить <i class="fa fa-check" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-primary user-button">Обновить привязку <i class="fa fa-vk" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-danger user-button">Удалить профиль <i class="fa fa-times" aria-hidden="true"></i></button>
+                                        </div>
+                                                
     <!-- Профиль ============================================================================= -->
 
                                     </div>
@@ -165,26 +176,26 @@
                                                 </div>
                                                 <div class="container">
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                             <div class="row">
                                                                 <ul class="listrap-group">                                                    
                                                                     <li>
                                                                         <div class="listrap-group-toggle">
                                                                             <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" width="90px" />
                                                                         </div>
-                                                                        <a href="https://vk.com/juicy_orange">Сочный апельсин</a>
+                                                                        <a href="https://vk.com/juicy_orange">Сочный апельсин Сочный апельсин Сочный апельсин Сочный апельсин Сочный апельсин</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                             <div class="row">
                                                                 <ul class="listrap-group">
                                                                     <li>
                                                                         <div class="listrap-group-toggle">
                                                                             <img src="https://pp.userapi.com/c630023/v630023017/10925/lx9_-QiCOFY.jpg" class="img-circle" width="90px" />
                                                                         </div>
-                                                                        <a href="https://vk.com/sundish">Солнце на блюде</a>
+                                                                        <a href="https://vk.com/sundish">Солнце на блюде Солнце на блюде Солнце на блюде Солнце на блюде Солнце на блюде</a>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -195,47 +206,6 @@
                                         </div>
 
     <!-- Группы ============================================================================= -->
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="default"><br>
-                                <div class="container">
-                                    <div class="row">
-
-    <!-- По умолчанию ============================================================================= -->     
-
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-8 col-sm-6 col-xs-12">
-                                                    <form class="form-horizontal" role="form">
-                                                        <div class="form-group">
-                                                            <label class="col-lg-3 control-label">Группа по умолчанию:</label>
-                                                            <div class="col-lg-5">
-                                                                <select class="selectpicker bott" data-live-search="true" data-width="100%" multiple data-max-options="1" title="Выберите страницу или сообщество...">
-                                                                        <option>Моя страница</option>
-                                                                        <option>Сочный апельсин</option>
-                                                                        <option>Совместные покупки</option>
-                                                                        <option>Разный мусор</option>                                                    
-                                                                </select>
-                                                            </div>
-                                                        </div><br>
-                                                        <div class="form-group">
-                                                            <label class="col-lg-3 control-label">Удалять из ВКонтакте:</label>
-                                                            <div class="col-lg-5">
-                                                                <div class="checkbox" id="signature">
-                                                                  <label class="checkbox-custom" data-initialize="checkbox">
-                                                                    <input class="sr-only" type="checkbox" value="">
-                                                                  </label>
-                                                                </div>
-                                                            </div>
-                                                        </div><br>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-
-    <!-- По умолчанию ============================================================================= -->
 
                                     </div>
                                 </div>

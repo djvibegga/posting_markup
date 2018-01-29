@@ -1334,6 +1334,10 @@ div.jGrowl div.jGrowl-closer {
 .icon-bar {
     background-color: #fff!important;
 }
+.infinity {
+    font-size: 30px;
+    font-weight: 700;
+}
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {
         background-color: #fff!important;

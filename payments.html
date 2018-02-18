@@ -104,7 +104,7 @@
                                             <td>Выбрать валюту: <a href=""><span class="rub">Р</span></a> | <a href=""><span>грн.</span></a></td>
                                         </tr> -->
                                         <tr class="ap-tr">
-                                            <td>АвтоПост</td>
+                                            <td>АвтоПост <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="Поможет опубликовать ваши запланированные записи в социальную сеть ВКонтакте. Запланировать публикации можно на 90 дней."><i class="fa fa-info-circle"></i></button></td>
                                             <td><span class="infinity">∞</span></td>
                                             <td>
                                                 <div class="material-switch">
@@ -116,7 +116,7 @@
                                             <td>Бесплатно</td>
                                         </tr>
                                         <tr class="ap-tr">
-                                            <td>Репосты</td>
+                                            <td>Репосты <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="Репосты ваших записей публикуемых с помощью нашего сервиса."><i class="fa fa-info-circle"></i></button></td>
                                             <td>25.07.2018 18:25</td>
                                             <td>
                                                 <div class="material-switch">
@@ -138,7 +138,7 @@
                                             <td>15 <span class="rub">Р</span></td>
                                         </tr>
                                         <tr class="ap-tr">
-                                            <td>Повторы</td>
+                                            <td>Повторы <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="Помогут настроить повторяющиеся записи."><i class="fa fa-info-circle"></i></button></td>
                                             <td>25.09.2018 15:25</td>
                                             <td>
                                                 <div class="material-switch">
@@ -160,7 +160,7 @@
                                             <td>20 <span class="rub">Р</span></td>
                                         </tr>
                                         <tr class="ap-tr">
-                                            <td>Пакетное создание записей</td>
+                                            <td>Пакетное создание записей <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="Автоматическое создание записей."><i class="fa fa-info-circle"></i></button></td>
                                             <td>05.07.2018 13:30</td>
                                             <td>
                                                 <div class="material-switch">
@@ -281,6 +281,9 @@
             <script type="text/javascript" src="js/fuelux.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
             <script>
+                $(function () {
+                $('[data-toggle="popover"]').popover('hide')
+                })
                 $(document).ready(function(){    
                 $("[rel=tooltip]").tooltip();
                 });

@@ -1337,8 +1337,8 @@ div.jGrowl div.jGrowl-closer {
 .infinity {
     font-size: 30px;
 }
-.recaptcha-title {
-    font-size: 14px;
+.recaptcha-img {
+    margin-bottom: 7px;
 }
 .modal {
     top: 15%;

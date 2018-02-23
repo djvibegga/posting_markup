@@ -1340,6 +1340,12 @@ div.jGrowl div.jGrowl-closer {
 .recaptcha-img {
     margin-bottom: 7px;
 }
+.recaptcha-play {
+    margin: 0px 0px 0px 7px;
+}
+.recaptcha-title {
+    text-align: center;
+}
 .modal {
     top: 15%;
 }

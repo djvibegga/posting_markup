@@ -151,28 +151,47 @@
                                             <button type="button" class="btn btn-danger user-button">Удалить профиль <i class="fa fa-times" aria-hidden="true"></i></button>
                                             <button type="button" class="btn btn-warning user-button">Возобновить публикацию <i class="fa fa-play" aria-hidden="true"></i></button>
                                             <button class="btn btn-default" data-toggle="modal" data-target=".bs-recaptcha-modal">reCAPTCHA</button>
+                                            <button class="btn btn-default" data-toggle="modal" data-target=".bs-renascence-modal">Renascence</button>
                                         </div>                                        
+    <!-- recaptcha ============================================================================= -->
 
-                                        <div class="modal fade bs-recaptcha-modal" tabindex="-1" role="dialog" aria-labelledby="recaptcha-modal" aria-hidden="true">
-                                        <div class="modal-dialog">
-                                          <div class="modal-content">
-                                            <div class="modal-header">
-                                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
-                                              <h4 class="modal-title recaptcha-title" id="recaptcha-modal">Подтверждение действия</h4>
-                                            </div>
-                                            <div class="modal-body text-center">
-                                                    <img id="verifyCode-image" class="recaptcha-img" src="http://same.pe.hu/site/captcha?v=5961f964d97eb" alt="">                                               
-                                                    <input type="text" id="verifyCode" class="form-control" name="verifyCode" placeholder="Текст с картинки">
-                                                <!-- <p>Публикация записей приостановлена, так как вы отсутствовали долгое время и требовался ввод reCAPTCHA. Рекомендуем вам увеличить интервал между публикациями однотипных записей.</p> -->
-                                            </div>
-                                            <div class="modal-footer">
-                                                <!-- <button type="button" class="btn btn-success">Возобновить публикацию <i class="fa fa-play recaptcha-play" aria-hidden="true"></i></button> -->
-                                                <button type="button" class="btn btn-success">ОК</button>
-                                            </div>
-                                          </div><!-- /.modal-content -->
-                                        </div><!-- /.modal-dialog -->
-                                      </div><!-- /.modal -->
-                                                
+            <div class="modal fade bs-recaptcha-modal" tabindex="-1" role="dialog" aria-labelledby="recaptcha-modal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
+                            <h4 class="modal-title recaptcha-title" id="recaptcha-modal">Подтверждение действия</h4>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img id="verifyCode-image" class="recaptcha-img" src="http://same.pe.hu/site/captcha?v=5961f964d97eb" alt="">
+                            <input type="text" id="verifyCode" class="form-control" name="verifyCode" placeholder="Текст с картинки">
+                        </div>
+                        <div class="modal-footer">                                                
+                            <button type="button" class="btn btn-success">ОК</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+    <!-- recaptcha ============================================================================= -->
+                                        
+    <!-- renascence ============================================================================= -->
+            <div class="modal fade bs-renascence-modal" tabindex="-1" role="dialog" aria-labelledby="renascence-modal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
+                            <h4 class="modal-title recaptcha-title" id="recaptcha-modal">Подтверждение действия</h4>
+                        </div>
+                        <div class="modal-body text-center">                                                    
+                            <p>Публикация записей приостановлена, так как вы отсутствовали долгое время и требовался ввод reCAPTCHA. Рекомендуем вам увеличить интервал между публикациями однотипных записей.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success">Возобновить публикацию <i class="fa fa-play recaptcha-play" aria-hidden="true"></i></button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+    <!-- renascence ============================================================================= -->                                                
     <!-- Профиль ============================================================================= -->
 
                                     </div>

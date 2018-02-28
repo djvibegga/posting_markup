@@ -148,7 +148,7 @@
     width: 85px;
   }
   .lg-logo img {
-    width: 50px;
+    width: 70%;
   }
   .banner-carousel h2 {
     margin: 50px 0;
@@ -159,11 +159,11 @@
   .banner-carousel .trans-bg {
     padding-bottom: 50px; 
   }
-  .banner h2 a {
+  /*.banner h2 a {
     -webkit-box-shadow: 0px 0px 0px 15px rgba(16, 23, 26, 0.21); 
        -moz-box-shadow: 0px 0px 0px 15px rgba(16, 23, 26, 0.21);
             box-shadow: 0px 0px 0px 15px rgba(16, 23, 26, 0.21);
-  }
+  }*/
   header .app li .fa {
     font-size: 14px;
   } 

@@ -727,6 +727,7 @@ div.jGrowl div.jGrowl-closer {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #428bca;
 }
 .listrap-group a {
     margin-left: 10px;
@@ -1351,6 +1352,20 @@ div.jGrowl div.jGrowl-closer {
 }
 .play-post {
     margin: 0px 9px 0px 11px;
+}
+.info-icons {
+    position: absolute;
+    bottom: 20px;
+    right: 21px;
+    color: #3e7fb9;
+    line-height: 15px;
+    text-align: center;
+}
+.post-text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #3e7fb9!important;
 }
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {

@@ -1450,6 +1450,12 @@ div.jGrowl div.jGrowl-closer {
 .panel-height {
     height: 45px;
 }
+.search-user {
+    margin-bottom: 5px;
+}
+.time-zone-allert {
+    margin: 0px 0px 10px;
+}
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {
         background-color: #fff!important;

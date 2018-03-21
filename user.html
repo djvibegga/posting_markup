@@ -154,9 +154,9 @@
                                             <button type="button" class="btn btn-warning user-button">Возобновить публикацию <i class="fa fa-play" aria-hidden="true"></i></button>
                                             <button class="btn btn-default" data-toggle="modal" data-target=".bs-recaptcha-modal">reCAPTCHA</button>
                                             <button class="btn btn-default" data-toggle="modal" data-target=".bs-renascence-modal">Renascence</button>
+                                            <button class="btn btn-default" data-toggle="modal" data-target=".bs-timezone-modal">Time zone</button>
                                         </div>                                        
     <!-- recaptcha ============================================================================= -->
-
             <div class="modal fade bs-recaptcha-modal modal-allert" tabindex="-1" role="dialog" aria-labelledby="recaptcha-modal" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -182,7 +182,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
-                            <h4 class="modal-title recaptcha-title" id="recaptcha-modal">Подтверждение действия</h4>
+                            <h4 class="modal-title recaptcha-title" id="renascence-modal">Подтверждение действия</h4>
                         </div>
                         <div class="modal-body text-center">                                                    
                             <p>Публикация записей приостановлена, так как вы отсутствовали долгое время и требовался ввод reCAPTCHA. Рекомендуем вам увеличить интервал между публикациями однотипных записей.</p>
@@ -193,7 +193,40 @@
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
-    <!-- renascence ============================================================================= -->                                                
+    <!-- renascence ============================================================================= -->
+                                        
+    <!-- time zone ============================================================================= -->
+            <div class="modal fade bs-timezone-modal modal-allert" tabindex="-1" role="dialog" aria-labelledby="timezone-modal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
+                            <h4 class="modal-title recaptcha-title" id="timezone-modal">Часовой пояс</h4>
+                        </div>
+                        <div class="modal-body text-center">
+                            <p>Верно ли мы определили ваш часовой пояс?</p>
+                                <div class="ui-select time-zone-allert">
+                                    <select id="user_time_zone" class="form-control">
+                                        <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                                        <option value="Alaska">(GMT-09:00) Alaska</option>
+                                        <option value="Pacific Time (US & Canada)">(GMT-08:00) Pacific Time (US & Canada)</option>
+                                        <option value="Arizona">(GMT-07:00) Arizona</option>
+                                        <option value="Mountain Time (US & Canada)">(GMT-07:00) Mountain Time (US & Canada)</option>
+                                        <option value="Central Time (US & Canada)" selected="selected">(GMT-06:00) Central Time (US & Canada)</option>
+                                        <option value="Eastern Time (US & Canada)">(GMT-05:00) Eastern Time (US & Canada)</option>
+                                        <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                                    </select>
+                                </div>
+                            <p>Время часового пояса: <span>13:45</span></p>
+                        </div>
+                        <div class="modal-footer">                                                
+                            <button type="button" class="btn btn-success">Сохранить</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+    <!-- time zone ============================================================================= -->
+                                        
     <!-- Профиль ============================================================================= -->
 
                                     </div>

@@ -59,23 +59,31 @@
     
 <!-- Панель навигации ================================================== -->
     
-            <div class="content">           
+            <div class="content">
+                <div class="container">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-md-offset-2 search-user">
+                        <input placeholder="Найти имя..." type="text" class="form-control" />
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 search-user">         
+                        <input placeholder="Найти ID ВКонтакте..." type="text" class="form-control" />       
+                    </div>
+                </div> 
                 <div class="container">
                     <div class="row">
                         <div class="panel panel-primary filterable">
                             <div class="panel-heading panel-height">
                                 <div class="pull-left">
-                                    Активных: <span>34575</span>
+                                    Активные: <span>34575</span>
                                 </div>
-                                <div class="pull-right">
+                                <!--<div class="pull-right">
                                     <button class="btn btn-default btn-xs btn-filter"><i class="fa fa-filter" aria-hidden="true"></i> Фильтр</button>
-                                </div>
+                                </div>-->
                             </div>
                             <table class="table">
                                 <thead>
                                     <tr class="filters">
-                                        <th><input type="text" class="form-control text-center" placeholder="ID" disabled></th>
-                                        <th><input type="text" class="form-control text-center" placeholder="Имя" disabled></th>
+                                        <th>ID</th>
+                                        <th>Имя</th>
                                         <th>Создано записей</th>
                                         <th>Управление</th>
                                     </tr>

@@ -637,6 +637,43 @@
             </div>
     
 <!-- Модальное окно поиск изображений ================================================== -->
+
+<!-- img link ============================================================================= -->
+            <div class="modal fade bs-imglink-modal" tabindex="-1" role="dialog" aria-labelledby="imglink-modal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
+                            <h4 class="modal-title recaptcha-title" id="timezone-modal">Прикрепление изображений по ссылке</h4>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div id="attachs-list" class="nano">
+                                <div class="nano-content" style="height: 400px;">
+                                    <ul class="imglink">
+                                        <li class="add-link">
+                                            <button type="button" class="btn btn-default btn-add" onclick="#" rel="tooltip" data-placement="right" title="Добавить ссылку"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                        </li>                           
+                                    </ul>
+                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">                                                
+                            <button type="button" class="btn btn-success" id="myButton3" data-loading-text="Прикрепляем &lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Прикрепить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- img link ============================================================================= -->
     
 <!-- Создание поста ================================================== -->
             <div class="content fuelux">            
@@ -688,9 +725,9 @@
                                                             <li>
                                                                 <a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a>
                                                             </li>
-                                                            <!-- <li>
-                                                                <a href="#" rel="tooltip" data-placement="bottom" title="Прикрепить ссылку"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                                            </li> -->
+                                                            <li>
+                                                                <a href="#imglink" data-toggle="modal" data-target=".bs-imglink-modal" rel="tooltip" data-placement="bottom" title="Изображения по ссылке"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                            </li>
                                                         </ul>
                                                         <button type="button" class="btn btn-success green" id="myButton3" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button>
                                                         <button type="button" class="btn btn-success green" id="myButton1" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить и добавить еще"><i class="fa fa-check" aria-hidden="true"></i> <i class="fa fa-arrow-right" aria-hidden="true"></i></button>                                         
@@ -698,14 +735,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="col-md-12">
-                                            <div class="row">
-                                                <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
-                                                <div class="remove-link">
-                                                    <i class="fa fa-times"></i>
-                                                </div>
-                                            </div>
-                                        </div> -->
                                     <div class="col-md-6 sortt">
                                         <div class="radio radiobox">
                                             <label class="radio-custom repeat-radiobox" data-initialize="radio" id="post-menu">
@@ -838,7 +867,7 @@
                                         
                                         <div id="attachs-list">
                                             <ul class="sort">
-                                                <li class="img-thumbnail img-thumbnail-album">
+                                                <li class="img-thumbnail-ext">
                                                     <div class="attach-img-album">
                                                         <img src="img/hOok_FFG5Gk.jpg" alt="">
                                                         <div class="album_title">
@@ -849,7 +878,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext img-check">
+                                                <li class="img-thumbnail-ext">
                                                     <div class="attach-img">
                                                         <img src="img/2h7dglSIqyY.jpg" alt="">
                                                         <div class="remove-image">
@@ -857,7 +886,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext img-check">
+                                                <li class="img-thumbnail-ext">
                                                     <div class="attach-img">
                                                         <img src="img/3EuAqE2LehU.jpg" alt="">
                                                         <div class="remove-image">
@@ -865,7 +894,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext img-check">
+                                                <li class="img-thumbnail-ext">
                                                     <div class="attach-img">
                                                         <img src="img/i0DfYUNN9Ns.jpg" alt="">
                                                         <div class="remove-image">
@@ -873,7 +902,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext img-check">
+                                                <li class="img-thumbnail-ext">
                                                     <div class="attach-img">
                                                         <img src="img/3sJUI33eoSM.jpg" alt="">
                                                         <div class="remove-image">
@@ -881,7 +910,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext img-check">
+                                                <li class="img-thumbnail-ext">
                                                     <div class="attach-img">
                                                         <img src="img/RAwi2AmD8eQ.jpg" alt="">
                                                         <div class="remove-image">
@@ -889,7 +918,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext img-check">
+                                                <li class="img-thumbnail-ext">
                                                     <div class="attach-img">
                                                         <img src="img/hOok_FFG5Gk.jpg" alt="">
                                                         <div class="remove-image">
@@ -897,7 +926,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext img-check">
+                                                <li class="img-thumbnail-ext">
                                                     <div class="attach-img">
                                                         <img src="img/dQIWKABOfUs.jpg" alt="">
                                                         <div class="remove-image">
@@ -905,7 +934,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext img-check">
+                                                <li class="img-thumbnail-ext">
                                                     <div class="attach-img">
                                                         <img src="img/xjvNNxQsIj4.jpg" alt="">
                                                         <div class="remove-image">
@@ -913,7 +942,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext img-check">
+                                                <li class="img-thumbnail-ext">
                                                     <div class="attach-img">
                                                         <img src="img/2.jpg" alt="">
                                                         <div class="remove-image">
@@ -921,7 +950,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext img-check">
+                                                <li class="img-thumbnail-ext">
                                                     <div class="attach-img">
                                                         <img src="img/4nsgkUl1tsM.jpg" alt="">
                                                         <div class="remove-image">

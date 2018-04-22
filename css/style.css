@@ -1212,7 +1212,7 @@ div.jGrowl div.jGrowl-closer {
     padding: 0px 0px 10px 0px;
 }
 .repost_author {
-    width: 187px;
+    width: 150%;
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
@@ -1229,7 +1229,7 @@ div.jGrowl div.jGrowl-closer {
     text-overflow: ellipsis;
 }
 .repost_info {
-    width: 187px;
+    width: 50%;
     margin-left: 60px;
     padding-top: 5px;
 }
@@ -1367,6 +1367,13 @@ div.jGrowl div.jGrowl-closer {
     text-overflow: ellipsis;
     color: #3e7fb9!important;
 }
+.post-text-error-overflow {
+    font-size: 0.8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: red!important;
+}
 .form-signin {
     max-width: 330px;
     padding: 15px;
@@ -1454,7 +1461,21 @@ div.jGrowl div.jGrowl-closer {
     margin-bottom: 5px;
 }
 .time-zone-allert {
-    margin: 0px 0px 10px;
+    width: 77%;
+    margin: 0px auto;
+    margin-bottom: 10px; 
+}
+.link {
+    width: 77%;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 5px; 
+}
+.imglink {
+    padding: 0px;
+}
+.add-link {
+    display: inline-block;
 }
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {

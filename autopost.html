@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
         <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/nanoscroller.css">
         <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -92,273 +93,219 @@
             </div>
                 
             </div><br>            
-<!-- Дата ================================================== -->            
-            
-<!-- Расписание ================================================== --> 
-           <!-- <div class="container">
-                <div class="row">                    
-                    
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Расписание:</h3>
-                            <span class="pull-right clickable"><i class="fa fa-chevron-up" aria-hidden="true"></i></span>
-                        </div>
-                        <div class="panel-body">    
-                            <ul class="timew">
-                                <li class="add-time">
-                                    <button type="button" class="btn btn-primary btn-add" onclick="#" rel="tooltip" title="Распределить все посты по текущему расписанию"><i class="fa fa-exchange" aria-hidden="true"></i></button>
-                                </li>
-                                <li class="add-time">
-                                    <button type="button" class="btn btn-default btn-add" onclick="#" rel="tooltip" title="Добавить время"><i class="fa fa-plus" aria-hidden="true"></i></button>
-                                </li>
-                                <li class="add-time">
-                                    <button type="button" class="btn btn-danger btn-add" onclick="#" rel="tooltip" title="Отменить"><i class="fa fa-ban" aria-hidden="true"></i></button>
-                                </li>
-                                <li class="add-time">
-                                    <button type="button" class="btn btn-success btn-add" onclick="#" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button>
-                                </li>
-                            </ul>
-                            <ul class="timew">
-                                <li class="time">
-                                    <input class="form-control" type="text" id="datetimepicker2" placeholder="00:00"/>
-                                    <div class="remove-time">
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </li>
-                                <li class="time">
-                                    <input class="form-control" type="text" id="datetimepicker3" placeholder="00:00"/>
-                                    <div class="remove-time">
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                    </li>
-                                <li class="time">
-                                    <input class="form-control" type="text" id="datetimepicker4" placeholder="00:00"/>
-                                    <div class="remove-time">
-                                        <i class="fa fa-times"></i>
-                                    </div>
-                                </li>                       
-                            </ul>    
-                        </div>
-                    </div>
-                    
-                </div>
-            </div><br><br> -->        
-<!-- Расписание ================================================== -->
+<!-- Дата ================================================== -->
            
-                <!-- Модальное окно поиск изображений ================================================== -->
-    
-            <div class="modal fade" id="show-modal" tabindex="-1" role="dialog" aria-labelledby="imgmodal" aria-hidden="true">
+<!-- Модальное окно просмотра публикации ================================================== -->
+                
+            <div class="modal fade bs-viewpost-modal" tabindex="-1" role="dialog" aria-labelledby="viewpost-modal" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
-                            <h4 class="modal-title" id="myModalLabel">Просмотр публикации</h4>
+                            <h4 class="modal-title recaptcha-title" id="timezone-modal">Просмотр записи</h4>
                         </div>
                         <div class="modal-body">
-                            <div class="row">
-                                    <div class="container col-md-12" style="text-overflow: hidden;">
-                                        <div class="row">                                            
-                                            <div id="attachs-list" class="nano">
-                                                <div class="nano-content view_post">
-                                                    <div class="col-md-6">
-                                                            <div class="row">
-                                                                <div class="post_header">
-                                                                    <div class="post_img">
-                                                                        <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
-                                                                    </div>
-                                                                    <div class="post_info">
-                                                                        <div class="post_author">
-                                                                            <a href="https://vk.com/juicy_orange">Сочный апельсин</a>
-                                                                        </div>
-                                                                        <div class="post_date">
-                                                                            <p>20.07.2017 9:00</p>
-                                                                        </div>                                                                   
-                                                                    </div>                                                                    
-                                                                </div>
-                                                            </div>
+                            <div class="container-fluid">                                
+                                <div id="attachs-list" class="nano">
+                                    <div class="nano-content" style="height: 430px;">                                    
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="row">
+                                                <div class="post_header">
+                                                    <div class="post_img">
+                                                        <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
+                                                    </div>
+                                                    <div class="post_info">
+                                                        <div class="post_author">
+                                                            <a href="https://vk.com/juicy_orange">Сочный апельсин</a>
                                                         </div>
-                                                    <div class="col-md-6">
-                                                        <div class="row">
-                                                            <div class="edit_btn">
-                                                                <ul class="list-inline social-lists">
-                                                                    <li><a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
-                                                                    <li><a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Копировать"><i class="fa fa-clone" aria-hidden="true"></i></a></li>
-                                                                    <li><a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></li>
-                                                                </ul>
-                                                            </div>    
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                            <p class="post_text">Текст, который был запланирован в публикации</p>    
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="row">
-                                                            <div id="attachs-list">
-                                                                <ul class="sort-view">
-                                                                    <li class="img-thumbnail img-thumbnail-album">
-                                                                        <div class="attach-img-album">
-                                                                            <img src="img/hOok_FFG5Gk.jpg" alt="">
-                                                                            <div class="album_title">
-                                                                                Название альбома название альбома
-                                                                            </div>
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="img-thumbnail-ext img-check">
-                                                                        <div class="attach-img">
-                                                                            <img src="img/2h7dglSIqyY.jpg" alt="">
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="img-thumbnail-ext img-check">
-                                                                        <div class="attach-img">
-                                                                            <img src="img/3EuAqE2LehU.jpg" alt="">
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="img-thumbnail-ext img-check">
-                                                                        <div class="attach-img">
-                                                                            <img src="img/i0DfYUNN9Ns.jpg" alt="">
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="img-thumbnail-ext img-check">
-                                                                        <div class="attach-img">
-                                                                            <img src="img/3sJUI33eoSM.jpg" alt="">
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="img-thumbnail-ext img-check">
-                                                                        <div class="attach-img">
-                                                                            <img src="img/RAwi2AmD8eQ.jpg" alt="">
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="img-thumbnail-ext img-check">
-                                                                        <div class="attach-img">
-                                                                            <img src="img/hOok_FFG5Gk.jpg" alt="">
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="img-thumbnail-ext img-check">
-                                                                        <div class="attach-img">
-                                                                            <img src="img/dQIWKABOfUs.jpg" alt="">
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="img-thumbnail-ext img-check">
-                                                                        <div class="attach-img">
-                                                                            <img src="img/xjvNNxQsIj4.jpg" alt="">
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="img-thumbnail-ext img-check">
-                                                                        <div class="attach-img">
-                                                                            <img src="img/2.jpg" alt="">
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="img-thumbnail-ext img-check">
-                                                                        <div class="attach-img">
-                                                                            <img src="img/4nsgkUl1tsM.jpg" alt="">
-                                                                        </div>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <div class="row">
-                                                        <div class="panel panel-default">
-                                                            <div class="panel-body">
-                                                    <div class="col-md-6">
-                                                        <div class="row">
-                                                            <div class="repost_header">
-                                                                <div class="repost_img">
-                                                                    <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
-                                                                </div>
-                                                                <div class="repost_info">
-                                                                    <div class="repost_author">
-                                                                        <a href="https://vk.com/juicy_orange">Сочный апельсин Сочный апельсин Сочный апельсин</a>
-                                                                    </div>
-                                                                    <div class="repost-done">
-                                                                        <i class="fa fa-check" aria-hidden="true" style="color:green;" rel="tooltip" title="Опубликован"></i>
-                                                                    </div>
-                                                                    <div class="repost_text">
-                                                                        <p>Репост Репост Репост Репост Репост</p>
-                                                                    </div>                                                                    
-                                                                </div>                                                                    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="row">
-                                                            <div class="repost_header">
-                                                                <div class="repost_img">
-                                                                    <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
-                                                                </div>
-                                                                <div class="repost_info">
-                                                                    <div class="repost_author">
-                                                                        <a href="https://vk.com/juicy_orange">Сочный апельсин</a>
-                                                                    </div>
-                                                                    <div class="repost-done">
-                                                                        <i class="fa fa-times" aria-hidden="true" style="color:#d9534f;" rel="tooltip" title="Ошибка"></i>
-                                                                    </div>
-                                                                    <div class="repost_text">
-                                                                        <p>Репост</p>
-                                                                    </div>                                                                    
-                                                                </div>                                                                    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="row">
-                                                            <div class="repost_header">
-                                                                <div class="repost_img">
-                                                                    <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
-                                                                </div>
-                                                                <div class="repost_info">
-                                                                    <div class="repost_author">
-                                                                        <a href="https://vk.com/juicy_orange">Сочный апельсин</a>
-                                                                    </div>
-                                                                    <div class="repost-done">
-                                                                        <i class="fa fa-check" aria-hidden="true" style="color:green;" rel="tooltip" title="Опубликован"></i>
-                                                                    </div>
-                                                                    <div class="repost_text">
-                                                                        <p>Репост</p>
-                                                                    </div>                                                                    
-                                                                </div>                                                                    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="row">
-                                                            <div class="repost_header">
-                                                                <div class="repost_img">
-                                                                    <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
-                                                                </div>
-                                                                <div class="repost_info">
-                                                                    <div class="repost_author">
-                                                                        <a href="https://vk.com/juicy_orange">Сочный апельсин</a>
-                                                                    </div>
-                                                                    <div class="repost-done">
-                                                                        <i class="fa fa-check" aria-hidden="true" style="color:green;" rel="tooltip" title="Опубликован"></i>
-                                                                    </div>
-                                                                    <div class="repost_text">
-                                                                        <p>Репост</p>
-                                                                    </div>
-                                                                </div>                                                                    
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                    </div>
-                                                    </div>
-                                                    </div>
+                                                        <div class="post_date">
+                                                            <p>20.07.2017 9:00</p>
+                                                        </div>                                                                   
+                                                    </div>                                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="row">
+                                                <div class="edit_btn">
+                                                    <ul class="list-inline social-lists">
+                                                        <li><a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Копировать"><i class="fa fa-clone" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+                                                    </ul>
                                                 </div>    
                                             </div>
                                         </div>
-                                    </div>                                
-                            </div>                            
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <p class="post_text">Текст, который был запланирован в публикации</p>    
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <div id="attachs-list">
+                                                    <ul class="sort-view">
+                                                        <li class="img-thumbnail-ext">
+                                                            <div class="attach-img-album">
+                                                                <img src="img/hOok_FFG5Gk.jpg" alt="">
+                                                                <div class="album_title">
+                                                                    Название альбома название альбома
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="img-thumbnail-ext">
+                                                            <div class="attach-img">
+                                                                <img src="img/2h7dglSIqyY.jpg" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="img-thumbnail-ext">
+                                                            <div class="attach-img">
+                                                                <img src="img/3EuAqE2LehU.jpg" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="img-thumbnail-ext">
+                                                            <div class="attach-img">
+                                                                <img src="img/i0DfYUNN9Ns.jpg" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="img-thumbnail-ext">
+                                                            <div class="attach-img">
+                                                                <img src="img/3sJUI33eoSM.jpg" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="img-thumbnail-ext">
+                                                            <div class="attach-img">
+                                                                <img src="img/RAwi2AmD8eQ.jpg" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="img-thumbnail-ext">
+                                                            <div class="attach-img">
+                                                                <img src="img/hOok_FFG5Gk.jpg" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="img-thumbnail-ext">
+                                                            <div class="attach-img">
+                                                                <img src="img/dQIWKABOfUs.jpg" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="img-thumbnail-ext">
+                                                            <div class="attach-img">
+                                                                <img src="img/xjvNNxQsIj4.jpg" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="img-thumbnail-ext">
+                                                            <div class="attach-img">
+                                                                <img src="img/2.jpg" alt="">
+                                                            </div>
+                                                        </li>
+                                                        <li class="img-thumbnail-ext">
+                                                            <div class="attach-img">
+                                                                <img src="img/4nsgkUl1tsM.jpg" alt="">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-body">
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="repost_header">
+                                                                    <div class="repost_img">
+                                                                        <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
+                                                                    </div>
+                                                                    <div class="repost_info">
+                                                                        <div class="repost_author">
+                                                                            <a href="https://vk.com/juicy_orange">Сочный апельсин Сочный апельсин Сочный апельсин</a>
+                                                                        </div>
+                                                                        <div class="repost-done">
+                                                                            <i class="fa fa-check" aria-hidden="true" style="color:green;" rel="tooltip" title="Опубликован"></i>
+                                                                        </div>
+                                                                        <div class="repost_text">
+                                                                            <p>Репост Репост Репост Репост Репост</p>
+                                                                        </div>                                                                    
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="repost_header">
+                                                                    <div class="repost_img">
+                                                                        <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
+                                                                    </div>
+                                                                    <div class="repost_info">
+                                                                        <div class="repost_author">
+                                                                            <a href="https://vk.com/juicy_orange">Сочный апельсин</a>
+                                                                        </div>
+                                                                        <div class="repost-done">
+                                                                            <i class="fa fa-times" aria-hidden="true" style="color:#d9534f;" rel="tooltip" title="Ошибка"></i>
+                                                                        </div>
+                                                                        <div class="repost_text">
+                                                                            <p>Репост</p>
+                                                                        </div>                                                                    
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="repost_header">
+                                                                    <div class="repost_img">
+                                                                        <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
+                                                                    </div>
+                                                                    <div class="repost_info">
+                                                                        <div class="repost_author">
+                                                                            <a href="https://vk.com/juicy_orange">Сочный апельсин</a>
+                                                                        </div>
+                                                                        <div class="repost-done">
+                                                                            <i class="fa fa-check" aria-hidden="true" style="color:green;" rel="tooltip" title="Опубликован"></i>
+                                                                        </div>
+                                                                        <div class="repost_text">
+                                                                            <p>Репост</p>
+                                                                        </div>                                                                    
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="repost_header">
+                                                                    <div class="repost_img">
+                                                                        <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
+                                                                    </div>
+                                                                    <div class="repost_info">
+                                                                        <div class="repost_author">
+                                                                            <a href="https://vk.com/juicy_orange">Сочный апельсин</a>
+                                                                        </div>
+                                                                        <div class="repost-done">
+                                                                            <i class="fa fa-check" aria-hidden="true" style="color:green;" rel="tooltip" title="Опубликован"></i>
+                                                                        </div>
+                                                                        <div class="repost_text">
+                                                                            <p>Репост</p>
+                                                                        </div>
+                                                                    </div>                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            
+                            </div>
                         </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
-                    </div>
+                        <div class="modal-footer">                                                
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+                        </div>
                     </div>
                 </div>
             </div>
-    
-<!-- Модальное окно поиск изображений ================================================== -->
+
+<!-- Модальное окно просмотра публикации ================================================== -->
                 
 <!-- Контент ================================================== -->
                         
@@ -381,7 +328,7 @@
                                     
                                     <div class="home-post clearfix">
                                         <div class="row">
-                                            <div class="col-lg-3 col-md-3 col-sm-6 post-item">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 post-item">
                                                 <div class="info-icons">
                                                     <i class="fa fa-random" aria-hidden="true" data-placement="top" rel="tooltip" title="Случайные изображения"></i>
                                                     <i class="fa fa-repeat" aria-hidden="true" data-placement="top" rel="tooltip" title="Повтор"></i>
@@ -393,20 +340,20 @@
                                                     <ul class="list-inline social-lists animate">
                                                         <li><a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
                                                         <li><a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Копировать"><i class="fa fa-clone" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#show-modal" data-toggle="modal" class="btn btn-warning" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#viewpost" data-toggle="modal" data-target=".bs-viewpost-modal" class="btn btn-warning" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
                                                         <li><a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></li>
                                                     </ul>
                                                     <figure>
                                                         <img src="img/2h7dglSIqyY.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="post"> 
                                                     </figure>
                                                     <div class="text-content">
-                                                        <h5>9:00</h5>
+                                                        <h5>23.08.2017 21:55</h5>
                                                         <!-- <div class="for-border"></div> -->
                                                         <h5 class="post-text-overflow"><small>Какой-то текст, какой-то текст, какой-то текст, какойто текст.</small></h5>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-md-3 col-sm-6 post-item">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 post-item">
                                                 <div class="info-icons">
                                                     <i class="fa fa-random" aria-hidden="true" data-placement="top" rel="tooltip" title="Случайные изображения"></i>
                                                     <i class="fa fa-repeat" aria-hidden="true" data-placement="top" rel="tooltip" title="Повтор"></i>
@@ -415,14 +362,14 @@
                                                     <ul class="list-inline social-lists animate">
                                                         <li><a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
                                                         <li><a href="#" class="btn btn-primary" role="button" data-placement="bottom" rel="tooltip" title="Копировать"><i class="fa fa-clone" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#show-modal" data-toggle="modal" class="btn btn-warning" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#viewpost" data-toggle="modal" data-target=".bs-viewpost-modal" class="btn btn-warning" role="button" data-placement="bottom" rel="tooltip" title="Посмотреть"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
                                                         <li><a href="#" class="btn btn-danger" role="button" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></li>
                                                     </ul>
                                                     <figure>
                                                         <img src="img/2h7dglSIqyY.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="post"> 
                                                     </figure>
                                                     <div class="text-content">
-                                                        <h5>9:00</h5>
+                                                        <h5>23.08.2017 21:55</h5>
                                                         <!-- <div class="for-border"></div> -->
                                                         <h5 class="post-text-overflow"><small>Какой-то текст, какой-то текст, какой-то текст, какойто текст.</small></h5>
                                                     </div>
@@ -446,7 +393,14 @@
 
                         <div class="home-post clearfix">
                             <div class="row">
-                                <div class="col-lg-3 col-md-3 col-sm-6 post-item">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 post-item">
+                                    <div class="info-icons">
+                                        <i class="fa fa-random" aria-hidden="true" data-placement="top" rel="tooltip" title="Случайные изображения"></i>
+                                        <i class="fa fa-repeat" aria-hidden="true" data-placement="top" rel="tooltip" title="Повтор"></i>
+                                        <i class="fa fa-pencil" aria-hidden="true" data-placement="top" rel="tooltip" title="Подпись"></i>
+                                        <i class="fa fa-user" aria-hidden="true" data-placement="top" rel="tooltip" title="От имени пользователя"></i>
+                                        <i class="fa fa-bullhorn" aria-hidden="true" data-placement="top" rel="tooltip" title="Репост"></i>
+                                    </div>
                                     <div class="common-post animated fadeInUp clearfix ae-animation-fadeInUp">
                                         <ul class="list-inline social-lists animate">
                                             <li><a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
@@ -458,9 +412,9 @@
                                             <img src="img/3EuAqE2LehU.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="post"> 
                                         </figure>
                                         <div class="text-content">
-                                            <h5>9:00</h5>
+                                            <h5>23.08.2017 21:55</h5>
                                             <!-- <div class="for-border"></div> -->
-                                            <h5><small data-placement="top" rel="tooltip" title="Какой-то текст поста, распрекрасно написанный. Какой-то текст поста, распрекрасно написанный. Какой-то текст поста, распрекрасно написанный.">Какой-то тек...</small></h5>
+                                            <h5 class="post-text-overflow"><small>Какой-то текст, какой-то текст, какой-то текст, какойто текст.</small></h5>
                                         </div>
                                     </div>
                                 </div>                                            
@@ -481,7 +435,14 @@
                         
                         <div class="home-post  clearfix">
                             <div class="row">
-                                <div class="col-lg-3 col-md-3 col-sm-6  text-center post-item">
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12  text-center post-item">
+                                    <div class="info-icons">
+                                        <i class="fa fa-random" aria-hidden="true" data-placement="top" rel="tooltip" title="Случайные изображения"></i>
+                                        <i class="fa fa-repeat" aria-hidden="true" data-placement="top" rel="tooltip" title="Повтор"></i>
+                                        <i class="fa fa-pencil" aria-hidden="true" data-placement="top" rel="tooltip" title="Подпись"></i>
+                                        <i class="fa fa-user" aria-hidden="true" data-placement="top" rel="tooltip" title="От имени пользователя"></i>
+                                        <i class="fa fa-bullhorn" aria-hidden="true" data-placement="top" rel="tooltip" title="Репост"></i>
+                                    </div>
                                     <div class="common-post animated fadeInUp clearfix ae-animation-fadeInUp">
                                         <ul class="list-inline social-lists animate">
                                             <li><a href="#" class="btn btn-success" role="button" data-placement="bottom" rel="tooltip" title="Редактировать"><i class="fa fa-pencil" aria-hidden="true"></i></a></li>
@@ -493,10 +454,10 @@
                                             <img src="img/dQIWKABOfUs.jpg" class="doc-img animate attachment-gallery-post-single wp-post-image" alt="post"> 
                                         </figure>
                                         <div class="text-content-error">
-                                            <h5>7:00</h5>
+                                            <h5>23.08.2017 21:55</h5>
                                             <!-- <div class="for-border"></div> -->
-                                            <h5><small data-placement="top" rel="tooltip" title="Какой-то текст поста, распрекрасно написанный.">Какой-то тек...</small></h5>
-                                            <h5><p class="error">Ошибка публикации</p></h5>
+                                            <h5 class="post-text-overflow"><small>Какой-то текст, какой-то текст, какой-то текст, какойто текст.</small></h5>
+                                            <h5><p class="post-text-error-overflow">Ошибка публикации ошибка публикации ошибка публикации</p></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -539,6 +500,7 @@
             <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/i18n/defaults-*.min.js"></script>
+            <script type="text/javascript" src="js/nanoscroller.min.js"></script>
             <script type="text/javascript">
                 $(document).ready(function(){    
                 $("[rel=tooltip]").tooltip();

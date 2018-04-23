@@ -1214,6 +1214,7 @@ div.jGrowl div.jGrowl-closer {
 .repost_author {
     width: 150%;
     font-weight: 700;
+    color: #428bca;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

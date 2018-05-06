@@ -1441,13 +1441,19 @@ div.jGrowl div.jGrowl-closer {
     width: 10%;
 }
 .filters-name {
-    width: 50%;
+    width: 30%;
 }
 .filters-posts {
-    width: 20%;
+    width: 15%;
+}
+.filters-last-vts {
+	width: 15%;
+}
+.filters-created-ts {
+    width: 15%;
 }
 .filters-control {
-    width: 20%;
+    width: 12%;
 }
 .filters {
     height: 49px;

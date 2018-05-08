@@ -1523,6 +1523,16 @@ div.jGrowl div.jGrowl-closer {
 .footer-news {
     margin: 15px 0px 0px 0px;
 }
+.info-icons-prew {
+    margin: 7px 0px 0px 0px;
+    color: #3e7fb9;
+}
+.info-icons-prew i {
+    margin-right: 4px;
+}
+.info-icons i {
+    margin-right: 4px;
+}
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {
         background-color: #fff!important;

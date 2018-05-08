@@ -1365,7 +1365,9 @@ div.jGrowl div.jGrowl-closer {
 .post-text-overflow {
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
     color: #3e7fb9!important;
 }
 .post-text-error-overflow {

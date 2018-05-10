@@ -1363,7 +1363,9 @@ div.jGrowl div.jGrowl-closer {
     text-align: center;
 }
 .post-text-overflow {
-    white-space: nowrap;
+    word-wrap: break-word;    
+    max-height: 2.6rem;
+    lowline-height: 1.2;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;

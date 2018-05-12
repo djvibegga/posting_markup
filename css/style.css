@@ -1567,6 +1567,35 @@ div.jGrowl div.jGrowl-closer {
       0px -1px 10px #7B96B8;
   }
 }
+.gid-button {
+    position: absolute;
+    bottom: 20px;
+    left: 18%;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    color: #fff;
+    background: #2C98DE;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.275);
+    outline: none;
+}
+.gid-button:hover {
+    color: #2C98DE;
+    background: #fff;
+    border: 1px solid #2C98DE;
+}
+.gid-button:hover .fa-question {
+    display: none;
+}
+.gid-button .fa-life-ring {
+    display: none;
+}
+.gid-button:hover .fa-life-ring {
+    display: inline;
+}
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {
         background-color: #fff!important;

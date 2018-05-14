@@ -654,16 +654,26 @@
                                             <button type="button" class="btn btn-default btn-add" onclick="#" rel="tooltip" data-placement="right" title="Добавить ссылку"><i class="fa fa-plus" aria-hidden="true"></i></button>
                                         </li>                           
                                     </ul>
-                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
-                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
-                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
-                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
-                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
-                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
-                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
-                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
-                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
-                                    <input type="link" class="form-control link" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                    <ul class="imglink">
+                                        <li class="link">
+                                            <input type="link" class="form-control text-center" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                            <div class="remove-time">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </li>
+                                        <li class="link">
+                                            <input type="link" class="form-control text-center" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                            <div class="remove-time">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </li>
+                                        <li class="link">
+                                            <input type="link" class="form-control text-center" id="exampleInputEmail1" placeholder="Введите ссылку">
+                                            <div class="remove-time">
+                                                <i class="fa fa-times"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -673,7 +683,82 @@
                     </div>
                 </div>
             </div>
-    <!-- img link ============================================================================= -->
+<!-- img link ============================================================================= -->
+    
+    <div class="modal fade bs-comment-modal-lg" tabindex="-1" role="dialog" aria-labelledby="comment-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
+                    <h4 class="modal-title recaptcha-title" id="timezone-modal">Прикрепление комментариев</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="attachs-list" class="nano">
+                        <div class="nano-content" style="height: 400px;">
+                            <ul class="imglink">
+                                <li class="add-link">
+                                    <button type="button" class="btn btn-default btn-add" onclick="#" rel="tooltip" data-placement="right" title="Добавить комментарий"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                </li>                           
+                            </ul>
+                            <div class="container-fluid"> 
+<!-- Комментарий 1 ================================================== -->
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                            <div class="widget-area no-padding blank">
+                                <div class="status-upload">
+                                    <textarea class="form-control textarea-control" placeholder="Введите текст..." data-emojiable="true"></textarea>
+                                    <ul>                       
+                                        <li>
+                                            <div class="img-pc">
+                                                <input type="file" multiple="" accept="image/jpeg, image/jpg, image/x-png, image/png">
+                                                <div class="img-pc-icon" data-placement="bottom" rel="tooltip" title="Изображения с ПК">
+                                                    <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#imglink" data-toggle="modal" data-target=".bs-imglink-modal" rel="tooltip" data-placement="bottom" title="Изображения по ссылке"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-success green" id="myButton3" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button> 
+                                </div>
+                            </div>
+                        </div>
+<!-- Комментарий 1 ================================================== -->
+<!-- Изображения к комментарию 1 ================================================== -->
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">                            
+                            <ul class="comment-img">
+                                <li class="img-thumbnail-ext">
+                                    <div class="attach-img">
+                                        <img src="img/2h7dglSIqyY.jpg" alt="">
+                                        <div class="remove-image">
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="img-thumbnail-ext">
+                                    <div class="attach-img">
+                                        <img src="img/3EuAqE2LehU.jpg" alt="">
+                                        <div class="remove-image">
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+<!-- Изображения к комментарию 1 ================================================== -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">                                                
+                    <button type="button" class="btn btn-success" id="myButton3" data-loading-text="Прикрепляем &lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Прикрепить</button>
+                </div>
+            </div>
+        </div>
+    </div> 
     
 <!-- Создание поста ================================================== -->
             <div class="content fuelux">            
@@ -727,6 +812,9 @@
                                                             </li>
                                                             <li>
                                                                 <a href="#imglink" data-toggle="modal" data-target=".bs-imglink-modal" rel="tooltip" data-placement="bottom" title="Изображения по ссылке"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#comment" data-toggle="modal" data-target=".bs-comment-modal-lg" rel="tooltip" data-placement="bottom" title="Добавить комментарии"><i class="fa fa-comments" aria-hidden="true"></i></a>
                                                             </li>
                                                         </ul>
                                                         <button type="button" class="btn btn-success green" id="myButton3" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button>

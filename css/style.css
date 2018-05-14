@@ -1480,10 +1480,12 @@ div.jGrowl div.jGrowl-closer {
     width: 77%;
     text-align: center;
     margin: 0px auto;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
+    position: relative;
 }
 .imglink {
     padding: 0px;
+    list-style: none;
 }
 .add-link {
     display: inline-block;
@@ -1596,6 +1598,9 @@ div.jGrowl div.jGrowl-closer {
 }
 .gid-button:hover .fa-life-ring {
     display: inline;
+}
+.comment-img {
+    padding: 0px;
 }
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {

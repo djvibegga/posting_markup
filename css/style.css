@@ -169,9 +169,6 @@ padding: 6px 15px;
 .dropdown > a > span.green:before {
 border-left-color: #2dcb73;
 }
-.status-upload button > i {
-margin-right: 7px;
-}
 .check {
 opacity:0.5;
 color:#996;

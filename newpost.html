@@ -694,15 +694,16 @@
                 </div>
                 <div class="modal-body">
                     <div id="attachs-list" class="nano">
-                        <div class="nano-content" style="height: 400px;">
-                            <ul class="imglink">
-                                <li class="add-link">
+                        <div class="nano-content" style="height: 450px;">
+                            <ul class="add-comment-button text-center">
+                                <li>
                                     <button type="button" class="btn btn-default btn-add" onclick="#" rel="tooltip" data-placement="right" title="Добавить комментарий"><i class="fa fa-plus" aria-hidden="true"></i></button>
                                 </li>                           
                             </ul>
-                            <div class="container-fluid"> 
+                            <div class="container-fluid">
+                                <div class="row">
 <!-- Комментарий 1 ================================================== -->
-                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 comment-text">
                             <div class="widget-area no-padding blank">
                                 <div class="status-upload">
                                     <textarea class="form-control textarea-control" placeholder="Введите текст..." data-emojiable="true"></textarea>
@@ -710,7 +711,7 @@
                                         <li>
                                             <div class="img-pc">
                                                 <input type="file" multiple="" accept="image/jpeg, image/jpg, image/x-png, image/png">
-                                                <div class="img-pc-icon" data-placement="bottom" rel="tooltip" title="Изображения с ПК">
+                                                <div class="img-pc-icon" data-placement="bottom" rel="tooltip" title="Изображения с компьютера">
                                                     <i class="fa fa-cloud-upload" aria-hidden="true"></i>
                                                 </div>
                                             </div>
@@ -722,13 +723,13 @@
                                             <a href="#imglink" data-toggle="modal" data-target=".bs-imglink-modal" rel="tooltip" data-placement="bottom" title="Изображения по ссылке"><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </li>
                                     </ul>
-                                    <button type="button" class="btn btn-success green" id="myButton3" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button> 
+                                    <button type="button" class="btn btn-danger" id="myButton4" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" data-placement="right" title="Удалить комментарий"><i class="fa fa-times" aria-hidden="true"></i></button>
                                 </div>
                             </div>
                         </div>
 <!-- Комментарий 1 ================================================== -->
 <!-- Изображения к комментарию 1 ================================================== -->
-                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">                            
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 comment-img text-center">                            
                             <ul class="comment-img">
                                 <li class="img-thumbnail-ext">
                                     <div class="attach-img">
@@ -749,12 +750,109 @@
                             </ul>
                         </div>
 <!-- Изображения к комментарию 1 ================================================== -->
+<!-- Комментарий 2 ================================================== -->
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 comment-text">
+                            <div class="widget-area no-padding blank">
+                                <div class="status-upload">
+                                    <textarea class="form-control textarea-control" placeholder="Введите текст..." data-emojiable="true"></textarea>
+                                    <ul>                       
+                                        <li>
+                                            <div class="img-pc">
+                                                <input type="file" multiple="" accept="image/jpeg, image/jpg, image/x-png, image/png">
+                                                <div class="img-pc-icon" data-placement="bottom" rel="tooltip" title="Изображения с компьютера">
+                                                    <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#imglink" data-toggle="modal" data-target=".bs-imglink-modal" rel="tooltip" data-placement="bottom" title="Изображения по ссылке"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-danger" id="myButton5" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" data-placement="right" title="Удалить комментарий"><i class="fa fa-times" aria-hidden="true"></i></button> 
+                                </div>
+                            </div>
+                        </div>
+<!-- Комментарий 2 ================================================== -->
+<!-- Изображения к комментарию 2 ================================================== -->
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 comment-img text-center">                            
+                            <ul class="comment-img">
+                                <li class="img-thumbnail-ext">
+                                    <div class="attach-img">
+                                        <img src="img/2h7dglSIqyY.jpg" alt="">
+                                        <div class="remove-image">
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="img-thumbnail-ext">
+                                    <div class="attach-img">
+                                        <img src="img/3EuAqE2LehU.jpg" alt="">
+                                        <div class="remove-image">
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+<!-- Изображения к комментарию 2 ================================================== -->
+<!-- Комментарий 3 ================================================== -->
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 comment-text">
+                            <div class="widget-area no-padding blank">
+                                <div class="status-upload">
+                                    <textarea class="form-control textarea-control" placeholder="Введите текст..." data-emojiable="true"></textarea>
+                                    <ul>                       
+                                        <li>
+                                            <div class="img-pc">
+                                                <input type="file" multiple="" accept="image/jpeg, image/jpg, image/x-png, image/png">
+                                                <div class="img-pc-icon" data-placement="bottom" rel="tooltip" title="Изображения с компьютера">
+                                                    <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#imgmodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Изображения из ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#imglink" data-toggle="modal" data-target=".bs-imglink-modal" rel="tooltip" data-placement="bottom" title="Изображения по ссылке"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btn btn-danger" id="myButton6" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" data-placement="right" title="Удалить комментарий"><i class="fa fa-times" aria-hidden="true"></i></button> 
+                                </div>
+                            </div>
+                        </div>
+<!-- Комментарий 3 ================================================== -->
+<!-- Изображения к комментарию 3 ================================================== -->
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 comment-img text-center">                            
+                            <ul class="comment-img">
+                                <li class="img-thumbnail-ext">
+                                    <div class="attach-img">
+                                        <img src="img/2h7dglSIqyY.jpg" alt="">
+                                        <div class="remove-image">
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="img-thumbnail-ext">
+                                    <div class="attach-img">
+                                        <img src="img/3EuAqE2LehU.jpg" alt="">
+                                        <div class="remove-image">
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+<!-- Изображения к комментарию 3 ================================================== -->                                    
+                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">                                                
-                    <button type="button" class="btn btn-success" id="myButton3" data-loading-text="Прикрепляем &lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Прикрепить</button>
+                    <button type="button" class="btn btn-success" id="myButton7" data-loading-text="Прикрепляем &lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Прикрепить</button>
                 </div>
             </div>
         </div>
@@ -813,11 +911,14 @@
                                                             <li>
                                                                 <a href="#imglink" data-toggle="modal" data-target=".bs-imglink-modal" rel="tooltip" data-placement="bottom" title="Изображения по ссылке"><i class="fa fa-link" aria-hidden="true"></i></a>
                                                             </li>
-                                                            <li>
+                                                            <li class="comment-button">
                                                                 <a href="#comment" data-toggle="modal" data-target=".bs-comment-modal-lg" rel="tooltip" data-placement="bottom" title="Добавить комментарии"><i class="fa fa-comments" aria-hidden="true"></i></a>
+                                                                <div class="comment-notification">
+                                                                    <span>3</span>
+                                                                </div>
                                                             </li>
                                                         </ul>
-                                                        <button type="button" class="btn btn-success green" id="myButton3" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                                        <button type="button" class="btn btn-success green" id="myButton" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button>
                                                         <button type="button" class="btn btn-success green" id="myButton1" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить и добавить еще"><i class="fa fa-check" aria-hidden="true"></i> <i class="fa fa-arrow-right" aria-hidden="true"></i></button>                                         
                                                     </div>
                                                 </div>
@@ -1272,6 +1373,30 @@
                     });
                 });
                 $('#myButton3').on('click', function () {
+                var btn = $(this).button('loading').delay(500).queue(function(){
+                $(this).button("reset");
+                $(this).dequeue();
+                    });
+                });
+                $('#myButton4').on('click', function () {
+                var btn = $(this).button('loading').delay(500).queue(function(){
+                $(this).button("reset");
+                $(this).dequeue();
+                    });
+                });
+                $('#myButton5').on('click', function () {
+                var btn = $(this).button('loading').delay(500).queue(function(){
+                $(this).button("reset");
+                $(this).dequeue();
+                    });
+                });
+                $('#myButton6').on('click', function () {
+                var btn = $(this).button('loading').delay(500).queue(function(){
+                $(this).button("reset");
+                $(this).dequeue();
+                    });
+                });
+                $('#myButton7').on('click', function () {
                 var btn = $(this).button('loading').delay(500).queue(function(){
                 $(this).button("reset");
                 $(this).dequeue();

@@ -747,7 +747,7 @@ div.jGrowl div.jGrowl-closer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 50px 13px 9px;
+    padding: 10px 13px 9px;
     background-image: url(../img/album_top_shadow.png);
 }
 .spinner input {
@@ -1048,7 +1048,7 @@ div.jGrowl div.jGrowl-closer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 70px 13px 9px;
+    padding: 10px 13px 9px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

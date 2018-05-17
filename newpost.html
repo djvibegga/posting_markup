@@ -852,12 +852,131 @@
                     </div>
                 </div>
                 <div class="modal-footer">                                                
-                    <button type="button" class="btn btn-success" id="myButton7" data-loading-text="Прикрепляем &lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Прикрепить</button>
+                    <button type="button" class="btn btn-success" id="myButton7" data-loading-text="Сохраняем &lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить</button>
                 </div>
             </div>
         </div>
-    </div> 
-    
+    </div>
+<!-- Видео ================================================== -->    
+    <div class="modal fade bs-video-modal-lg" tabindex="-1" role="dialog" aria-labelledby="video-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
+                    <h4 class="modal-title" id="timezone-modal">Поиск видео</h4>
+                </div>
+                <div class="modal-body fuelux">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <ul class="navmodal">
+                                        <li class="list">
+                                            <select class="selectpicker" data-live-search="true" data-width="100%" multiple data-max-options="1" title="Выберите страницу или сообщество...">
+                                                <option>Личные альбомы</option>
+                                                <option>Сочный апельсин</option>
+                                                <option>Солнце на блюде</option>
+                                            </select>
+                                        </li>                                                        
+                                    </ul>    
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <ul class="navmodal">
+                                        <li class="list">
+                                            <select class="selectpicker" data-live-search="true" data-width="100%" multiple data-max-options="1" title="Поиск видео...">
+                                            </select>
+                                        </li>                                                        
+                                    </ul>    
+                                  </div>
+                              </div>                                        
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <ol class="breadcrumb breadcrumb-arrow">
+                                    <li><a id="switchAlbumContainerLink" href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                                    <li class="active"><span>Название альбома...</span></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div id="attachs-list" class="nano">
+                        <div class="nano-content" style="height: 440px;">
+                            <div class="container-fluid">
+                                                                        
+                                    <ul class="video-list">
+                                        <li class="video-box">
+                                            <div class="video-vk">
+                                                <img src="https://pp.userapi.com/c306515/u152540452/video/l_814e2d2a.jpg" alt="">
+                                                <div class="video-album-title">
+                                                    <span class="checkbox-label">Название альбома с видео очень длинное придлинное название альбома, ну просто опупеть какое длинное</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="video-box">
+                                            <div class="video-vk">
+                                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AWdA7hdP4ZA?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                                <div class="video-title">
+                                                    <div class="checkbox text-overflow" id="myCheckbox">
+                                                      <label class="checkbox-custom" data-initialize="checkbox" rel="tooltip" title="Выбрать видео">
+                                                        <input class="sr-only" type="checkbox" value="">
+                                                        <span class="checkbox-label">Название видео очень длинноепридлинное название видео, ну просто опупеть какое длинное</span>
+                                                      </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="video-box">
+                                            <div class="video-vk">
+                                                <iframe width="100%" height="100%" src="http://rutube.ru/video/embed/6529182" frameborder="0" allowfullscreen></iframe>
+                                                <div class="video-title">
+                                                    <div class="checkbox text-overflow" id="myCheckbox">
+                                                      <label class="checkbox-custom" data-initialize="checkbox">
+                                                        <input class="sr-only" type="checkbox" value="">
+                                                        <span class="checkbox-label">Название видео очень длинноепридлинное название видео, ну просто опупеть какое длинное</span>
+                                                      </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="video-box">
+                                            <div class="video-vk">
+                                                <iframe src="http://vk.com/video_ext.php?oid=111437918&id=170954063&hash=8d9da8b76d064f29" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                                                <div class="video-title">
+                                                    <div class="checkbox text-overflow" id="myCheckbox">
+                                                      <label class="checkbox-custom" data-initialize="checkbox">
+                                                        <input class="sr-only" type="checkbox" value="">
+                                                        <span class="checkbox-label">Название видео очень длинноепридлинное название видео, ну просто опупеть какое длинное</span>
+                                                      </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="video-box">
+                                            <div class="video-vk">
+                                                <iframe src="http://vk.com/video_ext.php?oid=135607247&id=170657892&hash=77aa2f7af317d7b6&hd=2" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                                                <div class="video-title">
+                                                    <div class="checkbox text-overflow" id="myCheckbox">
+                                                      <label class="checkbox-custom" data-initialize="checkbox">
+                                                        <input class="sr-only" type="checkbox" value="">
+                                                        <span class="checkbox-label">Название видео очень длинноепридлинное название видео, ну просто опупеть какое длинное</span>
+                                                      </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>                                    
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">                                                
+                    <button type="button" class="btn btn-success" id="myButton8" data-loading-text="Прикрепляем &lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Прикрепить <span class="total">1</span> видео</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Видео ================================================== -->    
 <!-- Создание поста ================================================== -->
             <div class="content fuelux">            
                 <div class="container">
@@ -911,12 +1030,15 @@
                                                             <li>
                                                                 <a href="#imglink" data-toggle="modal" data-target=".bs-imglink-modal" rel="tooltip" data-placement="bottom" title="Изображения по ссылке"><i class="fa fa-link" aria-hidden="true"></i></a>
                                                             </li>
+                                                            <li>
+                                                                <a href="#video" data-toggle="modal" data-target=".bs-video-modal-lg" rel="tooltip" data-placement="bottom" title="Видео из ВКонтакте"><i class="fa fa-film" aria-hidden="true"></i></a>
+                                                            </li>
                                                             <li class="comment-button">
                                                                 <a href="#comment" data-toggle="modal" data-target=".bs-comment-modal-lg" rel="tooltip" data-placement="bottom" title="Добавить комментарии"><i class="fa fa-comments" aria-hidden="true"></i></a>
                                                                 <div class="comment-notification">
                                                                     <span>3</span>
                                                                 </div>
-                                                            </li>
+                                                            </li>                                                            
                                                         </ul>
                                                         <button type="button" class="btn btn-success green" id="myButton" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button>
                                                         <button type="button" class="btn btn-success green" id="myButton1" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить и добавить еще"><i class="fa fa-check" aria-hidden="true"></i> <i class="fa fa-arrow-right" aria-hidden="true"></i></button>                                         
@@ -1397,6 +1519,12 @@
                     });
                 });
                 $('#myButton7').on('click', function () {
+                var btn = $(this).button('loading').delay(500).queue(function(){
+                $(this).button("reset");
+                $(this).dequeue();
+                    });
+                });
+                $('#myButton8').on('click', function () {
                 var btn = $(this).button('loading').delay(500).queue(function(){
                 $(this).button("reset");
                 $(this).dequeue();

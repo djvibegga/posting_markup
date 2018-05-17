@@ -814,16 +814,24 @@ h3 {
   filter:inherit;
 }
 .news-name {
-  position: relative;
   font-family: 'Dosis', sans-serif;
   font-size: 24px;
+  font-weight: 700; 
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.news-date {
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+  font-size: 19px;
   font-weight: 700;
   text-transform: capitalize; 
   display: block;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-.news-name:after {
+.news-date:after {
   content: "";
   height: 1px;
   background: #0aabe1;
@@ -894,7 +902,17 @@ h3 {
   top: 34%;
 }
 .news p {
-  font-style: italic;
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    
+}
+.news a {
+    color: #428bca;
+    text-decoration: none;
 }
 .news .carousel-control.left, .news .carousel-control.right {
   background-image: none;
@@ -1361,9 +1379,6 @@ section.contact > .container {
 }
 .infinity {
     font-size: 30px;
-}
-.carousel-control {
-    color: #0aabe1;
 }
 .carousel-control:hover, .carousel-control:focus {
     color: #017298;

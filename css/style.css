@@ -835,7 +835,6 @@ div.jGrowl div.jGrowl-closer {
     vertical-align: middle;
     color: #ffffff;
 }
-
 .listrap .listrap-toggle span:before {
     font-family: 'FontAwesome';
     content: "\f00c";
@@ -1048,11 +1047,11 @@ div.jGrowl div.jGrowl-closer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 10px 13px 9px;
+    padding: 5px 13px 5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-image: url(../img/album_top_shadow.png);
+    background-color: #000000b5;
 }
 .faq-panel {
     background: #fefefe;
@@ -1511,6 +1510,16 @@ div.jGrowl div.jGrowl-closer {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+.news-text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.9em;
+    margin: 0px 0px 50px 0px;
+}
+.news-article {
+    max-width: 90%;
+    padding-left: 10%;
+}
 .btn-group a {
     padding: 0;
 }
@@ -1518,10 +1527,14 @@ div.jGrowl div.jGrowl-closer {
     color:#3B5998;
 }
 .news-img {
-    margin: 0 20px 15px 0;
+    margin: 0px 0px 50px 0px;
 }
 .news-article h2 {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 50px 0px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.6em;
 }
 .footer-news {
     margin: 15px 0px 0px 0px;
@@ -1668,6 +1681,122 @@ div.jGrowl div.jGrowl-closer {
     text-overflow: ellipsis;
     background-color: #000;
 }
+.docs-pc-icon {
+     -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    color: #777777;
+    float: left;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0 10px 10px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 30px;
+    cursor: pointer;
+}
+.docs-pc-icon:hover {
+    background: none repeat scroll 0 0 #606060;
+    color: #fff;
+}
+.docs-ext {
+    margin: 0px 2px 2px 0px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.docs-attach {
+    position: relative;
+    display: block;
+    width: 124px;
+    height: 100px;
+    font-size: 70px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-align: center;
+    background: #F1F1F1;
+    color: #848282;
+}
+.docs-title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px 13px 5px;
+    background-color: #000000b5;
+}
+.docs-choose-rows .docs-item:last-child {
+    padding: 10px 10px 10px 10px;
+    line-height: 17px;
+}
+.docs-choose-rows .docs-item:hover {
+    background-color: #e1edf7;
+}
+.docs-logo-file {
+    float: left;
+    font-size: 39px;
+    color: #337ab7;
+}
+.docs-name {
+    padding: 0px 0px 0px 10px;
+}
+.video-ext {
+    margin: 0px 2px 2px 0px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.video-attach {
+    position: relative;
+    display: block;
+    width: 124px;
+    height: 100px;
+    font-size: 70px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-align: center;
+    background: #F1F1F1;
+    color: #848282;
+}
+.video-title-block {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px 13px 5px;
+    background-color: #000000b5;
+}
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {
         background-color: #fff!important;
@@ -1692,5 +1821,15 @@ div.jGrowl div.jGrowl-closer {
     }
     .list {
         margin: 0px 0px 15px 15px;
+    }
+    .news-article h2 {
+        font-size: 21px;
+    }
+    .news-article {
+        max-width: 100%;
+        padding-left: 0px;
+    }
+    .news-text {
+        font-size: 12px;
     }
 }

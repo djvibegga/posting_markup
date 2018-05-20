@@ -722,6 +722,17 @@
                                         <li>
                                             <a href="#imglink" data-toggle="modal" data-target=".bs-imglink-modal" rel="tooltip" data-placement="bottom" title="Изображения по ссылке"><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </li>
+                                        <li>
+                                            <a href="#video" data-toggle="modal" data-target=".bs-video-modal-lg" rel="tooltip" data-placement="bottom" title="Видеозапись из ВКонтакте"><i class="fa fa-film" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <div class="file-pc">
+                                                <input type="file" multiple="" accept="">
+                                                <div class="file-pc-icon" data-placement="bottom" rel="tooltip" title="Документы с компьютера">
+                                                    <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </li>
                                     </ul>
                                     <button type="button" class="btn btn-danger" id="myButton4" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" data-placement="right" title="Удалить комментарий"><i class="fa fa-times" aria-hidden="true"></i></button>
                                 </div>
@@ -770,6 +781,17 @@
                                         <li>
                                             <a href="#imglink" data-toggle="modal" data-target=".bs-imglink-modal" rel="tooltip" data-placement="bottom" title="Изображения по ссылке"><i class="fa fa-link" aria-hidden="true"></i></a>
                                         </li>
+                                       <li>
+                                            <a href="#video" data-toggle="modal" data-target=".bs-video-modal-lg" rel="tooltip" data-placement="bottom" title="Видеозапись из ВКонтакте"><i class="fa fa-film" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <div class="file-pc">
+                                                <input type="file" multiple="" accept="">
+                                                <div class="file-pc-icon" data-placement="bottom" rel="tooltip" title="Документы с компьютера">
+                                                    <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </li>                                        
                                     </ul>
                                     <button type="button" class="btn btn-danger" id="myButton5" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" data-placement="right" title="Удалить комментарий"><i class="fa fa-times" aria-hidden="true"></i></button> 
                                 </div>
@@ -817,6 +839,17 @@
                                         </li>
                                         <li>
                                             <a href="#imglink" data-toggle="modal" data-target=".bs-imglink-modal" rel="tooltip" data-placement="bottom" title="Изображения по ссылке"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#video" data-toggle="modal" data-target=".bs-video-modal-lg" rel="tooltip" data-placement="bottom" title="Видеозапись из ВКонтакте"><i class="fa fa-film" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <div class="file-pc">
+                                                <input type="file" multiple="" accept="">
+                                                <div class="file-pc-icon" data-placement="bottom" rel="tooltip" title="Документы с компьютера">
+                                                    <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
                                         </li>
                                     </ul>
                                     <button type="button" class="btn btn-danger" id="myButton6" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" data-placement="right" title="Удалить комментарий"><i class="fa fa-times" aria-hidden="true"></i></button> 
@@ -975,7 +1008,156 @@
             </div>
         </div>
     </div>
-<!-- Видео ================================================== -->    
+<!-- Видео ================================================== -->
+<!-- Документы ============================================================================= -->
+            <div class="modal fade bs-docs-modal" tabindex="-1" role="dialog" aria-labelledby="docs-modal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
+                            <h4 class="modal-title" id="docs-modal">Прикрепление документов</h4>
+                        </div>
+                        <div class="modal-body fuelux">
+                            <div id="attachs-list" class="nano">
+                                <div class="nano-content" style="height: 400px;">
+                                    <div id="dropzone">
+                                        <div class="dropzone-w">
+                                            <input type="file" name="dropzone" multiple="true">
+                                            <div class="dropzone-icon">
+                                                <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="dropzone-text">
+                                                Перетащите файлы сюда <span>(или просто кликните)</span><br>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="docs-choose-rows">
+                                        <div class="docs-item">
+                                            <div class="docs-logo-file">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="checkbox text-overflow docs-name" id="myCheckbox">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Название файла очень длинноепридлинное название файла, ну просто опупеть какое длинное</span>
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="docs-choose-rows">
+                                        <div class="docs-item">
+                                            <div class="docs-logo-file">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="checkbox text-overflow docs-name" id="myCheckbox">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Название файла очень длинноепридлинное название файла, ну просто опупеть какое длинное</span>
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="docs-choose-rows">
+                                        <div class="docs-item">
+                                            <div class="docs-logo-file">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="checkbox text-overflow docs-name" id="myCheckbox">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Название файла очень длинноепридлинное название файла, ну просто опупеть какое длинное</span>
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="docs-choose-rows">
+                                        <div class="docs-item">
+                                            <div class="docs-logo-file">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="checkbox text-overflow docs-name" id="myCheckbox">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Название файла очень длинноепридлинное название файла, ну просто опупеть какое длинное</span>
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="docs-choose-rows">
+                                        <div class="docs-item">
+                                            <div class="docs-logo-file">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="checkbox text-overflow docs-name" id="myCheckbox">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Название файла очень длинноепридлинное название файла, ну просто опупеть какое длинное</span>
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="docs-choose-rows">
+                                        <div class="docs-item">
+                                            <div class="docs-logo-file">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="checkbox text-overflow docs-name" id="myCheckbox">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Название файла очень длинноепридлинное название файла, ну просто опупеть какое длинное</span>
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="docs-choose-rows">
+                                        <div class="docs-item">
+                                            <div class="docs-logo-file">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="checkbox text-overflow docs-name" id="myCheckbox">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Название файла очень длинноепридлинное название файла, ну просто опупеть какое длинное</span>
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="docs-choose-rows">
+                                        <div class="docs-item">
+                                            <div class="docs-logo-file">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="checkbox text-overflow docs-name" id="myCheckbox">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Название файла очень длинноепридлинное название файла, ну просто опупеть какое длинное</span>
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="docs-choose-rows">
+                                        <div class="docs-item">
+                                            <div class="docs-logo-file">
+                                            <i class="fa fa-file-o" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="checkbox text-overflow docs-name" id="myCheckbox">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Название файла очень длинноепридлинное название файла, ну просто опупеть какое длинное</span>
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">                                                
+                            <button type="button" class="btn btn-success" id="myButton9" data-loading-text="Прикрепляем &lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Прикрепить <span class="total">1</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Документы ============================================================================= -->
 <!-- Создание поста ================================================== -->
             <div class="content fuelux">            
                 <div class="container">
@@ -1032,12 +1214,15 @@
                                                             <li>
                                                                 <a href="#video" data-toggle="modal" data-target=".bs-video-modal-lg" rel="tooltip" data-placement="bottom" title="Видеозапись из ВКонтакте"><i class="fa fa-film" aria-hidden="true"></i></a>
                                                             </li>
+                                                            <li>
+                                                                <a href="#docs" data-toggle="modal" data-target=".bs-docs-modal" rel="tooltip" data-placement="bottom" title="Документы"><i class="fa fa-file-o" aria-hidden="true"></i></a>
+                                                            </li>
                                                             <li class="comment-button">
                                                                 <a href="#comment" data-toggle="modal" data-target=".bs-comment-modal-lg" rel="tooltip" data-placement="bottom" title="Добавить комментарии"><i class="fa fa-comments" aria-hidden="true"></i></a>
                                                                 <div class="comment-notification">
                                                                     <span>3</span>
                                                                 </div>
-                                                            </li>                                                            
+                                                            </li>
                                                         </ul>
                                                         <button type="button" class="btn btn-success green" id="myButton" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить"><i class="fa fa-check" aria-hidden="true"></i></button>
                                                         <button type="button" class="btn btn-success green" id="myButton1" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" title="Сохранить и добавить еще"><i class="fa fa-check" aria-hidden="true"></i> <i class="fa fa-arrow-right" aria-hidden="true"></i></button>                                         
@@ -1252,17 +1437,23 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext">
-                                                    <div class="attach-img">
-                                                        <img src="img/2.jpg" alt="">
+                                                <li class="video-ext">
+                                                    <div class="video-attach">
+                                                        <img src="https://pp.userapi.com/c621731/u306569417/video/l_8d1627e4.jpg" alt="">
+                                                        <div class="video-title-block">
+                                                            Название видео Название видео Название видео
+                                                        </div>
                                                         <div class="remove-image">
                                                             <i class="fa fa-times"></i>
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="img-thumbnail-ext">
-                                                    <div class="attach-img">
-                                                        <img src="img/4nsgkUl1tsM.jpg" alt="">
+                                                <li class="docs-ext">
+                                                    <div class="docs-attach">
+                                                        <i class="fa fa-file-o" aria-hidden="true"></i>
+                                                        <div class="docs-title">
+                                                            Название файла Название файла Название файла
+                                                        </div>
                                                         <div class="remove-image">
                                                             <i class="fa fa-times"></i>
                                                         </div>
@@ -1524,6 +1715,12 @@
                     });
                 });
                 $('#myButton8').on('click', function () {
+                var btn = $(this).button('loading').delay(500).queue(function(){
+                $(this).button("reset");
+                $(this).dequeue();
+                    });
+                });
+                $('#myButton9').on('click', function () {
                 var btn = $(this).button('loading').delay(500).queue(function(){
                 $(this).button("reset");
                 $(this).dequeue();

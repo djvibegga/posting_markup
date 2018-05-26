@@ -14,19 +14,36 @@
         <link rel="stylesheet" href="css/font-awesome.css">
         <style type="text/css">
             body {
-                font-family: 'Verdana', sans-serif;
+                font-family: 'Open Sans', sans-serif;
                 margin: 0;
             }
-            .main {
-                background: #3e7fb9;
+            .main header .navbar-toggle {
+                display: none;
             }
-            .menu {
+            .main h1 {
+                font-size: 60px;
+            }
+            .main h1, .main h2, .main h3, .main h4 {
+                font-family: 'Open Sans',sans-serif;
+                margin: 10px 0;
+            }
+            .main h1, .main h2, .main h3 {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+                font-family: inherit;
+                font-weight: 500;
+                line-height: 1.1;
+                color: inherit;
+            }
+            .main .menu {
                 background: #3e7fb9;
                 border: 0;
                 box-shadow: 0 0 5px rgba(0,0,0,.19);
                 padding: 5px 0;
             }
-            .container-fluid{
+            .main .container-fluid {
                 max-width: 1127px;
                 width: auto!important;
                 padding-right: 15px;
@@ -34,40 +51,63 @@
                 margin-right: auto;
                 margin-left: auto;
             }
-            .navbar-default .navbar-brand{
+            .main .navbar-default .navbar-brand{
                 padding-right: 90px;
             }
-            .navbar-default .navbar-brand img{
+            .main .navbar-default .navbar-brand img{
                 position: relative;
                 top: -7px;
             }
-            .navbar-default .navbar-nav > li > a{
+            .main .navbar-default .navbar-nav > li > a{
                 color: #fff;
                 font-size: 15px;
             }
-            .navbar-nav > li > a{
+            .main .navbar-nav > li > a{
                 transition: all .5s;
                 padding-top: 15px;
                 padding-bottom: 7px;
             }
-            .navbar-default .navbar-nav > li.active > a{
+            .main .navbar-default .navbar-nav > li.active > a{
                 border-bottom: 2px solid #fff;
                 color: #fff;
                 background: #3E7FB9;
             }
-            .navbar-default .navbar-nav > li.active > a:hover{
+            .main .navbar-default .navbar-nav > li.active > a:hover{
                 border-bottom: 2px solid #fff;
                 color: #fff;
                 background: #3E7FB9;
             }
-            .navbar-default .navbar-nav:not(.icons) > li > a:hover{
+            .main .navbar-default .navbar-nav:not(.icons) > li > a:hover{
                 border-bottom: 2px solid #fff;
                 color: #fff;
             }
-            .navbar-right{
-             padding-top: 7px;   
+            .main .navbar-right{
+                padding-top: 7px;
             }
-            #user-profile {
+            .main .content .container {
+                display: table;
+            }
+            .main footer {
+                position: relative;
+            }
+            .main .container-foot {
+                color: black;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 30px;
+            }
+            .main .list-view .media .col-lg-3 img {
+                max-width: 250px;
+            }
+            .main .list-view .media .col-lg-3 {
+                width: 20%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .main .list-view .media .col-lg-9 {
+            }
+            .main #user-profile {
                 font-size: 14px;
                 border: 1px solid #84b4e0;
                 border-radius: 100%;
@@ -78,7 +118,7 @@
                 width: 36px;
                 color: #84b4e0;
             }
-            #new-post {
+            .main #new-post {
                 font-weight: 600;
                 font-size: 14px;
                 border: 1px solid #84b4e0;
@@ -89,49 +129,49 @@
                 color: #FFF;
                 text-align: center;
             }
-            .menu-user {
+            .main .menu-user {
                 margin: 0 15px 0 15px;
             }
-            .navbar {
+            .main .navbar {
                 min-height: 50px;
                 margin-bottom: 20px;
             }
-            .navbar-header {
+            .main .navbar-header {
                 float: left;
             }
-            .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+            .main .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
                 margin-left: -15px;
             }
-            .navbar-brand {
+            .main .navbar-brand {
                 float: left;
                 padding: 15px 15px;
                 font-size: 18px;
                 line-height: 20px;
             }
-            .navbar-nav {
+            .main .navbar-nav {
                 float: left;
                 margin: 0;
             }
-            .nav {
+            .main .nav {
                 padding-left: 0;
                 margin-bottom: 0;
                 list-style: none;
             }
-            .navbar-nav>li {
+            .main .navbar-nav>li {
                 float: left;
             }
-            .navbar-nav.navbar-right:last-child {
+            .main .navbar-nav.navbar-right:last-child {
                 margin-right: -15px;
             }
-            .navbar-right {
+            .main .navbar-right {
                 float: right!important;
             }
-            .nav>li>a {
+            .main .nav>li>a {
                 position: relative;
                 display: block;
                 padding: 10px 15px;
             }
-            .dropdown-menu {
+            .main .dropdown-menu {
                 position: absolute;
                 top: 100%;
                 left: 0;
@@ -153,53 +193,53 @@
                 -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
                 box-shadow: 0 6px 12px rgba(0,0,0,.175);
             }
-            a {
+            .main a {
                 color: #428bca;
                 text-decoration: none;
             }
-            .news-panel {
+            .main .news-panel {
                 margin-bottom: 30px;
             }
-            .col-lg-3 {
+            .main .col-lg-3 {
                 width: 25%;
             }
-            .col-lg-9 {
+            .main .col-lg-9 {
                 width: 75%;
             }
-            .pull-right {
+            .main .pull-right {
                 float: right!important;
             }
-            .content {
+            .main .content {
                 background: #fff;
                 color: black;
             }
-            .container {
+            .main .container {
                 width: 1170px;
             }
-            .container {
+            .main .container {
                 padding-right: 15px;
                 padding-left: 15px;
                 margin-right: auto;
                 margin-left: auto;
             }
-            .col-lg-12 {
+            .main .col-lg-12 {
                 width: 100%;
             }
-            .list-inline {
+            .main .list-inline {
                 padding-left: 0;
                 margin-left: -5px;
                 list-style: none;
             }
-            .news-panel h4 {
-                margin-bottom: 15px;
+            .main .news-panel h4 {
+                margin: 0;
                 color: #333;
             }
-            .list-inline>li {
+            .main .list-inline>li {
                 display: inline-block;
                 padding-right: 5px;
                 padding-left: 5px;
             }
-            .news-panel p {
+            .main .news-panel p {
                 margin-bottom: 30px;
                 line-height: 25px;
                 font-size: 14px;
@@ -209,20 +249,14 @@
                 -webkit-line-clamp: 3;
                 -webkit-box-orient: vertical;
             }
-            .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+            .main .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
                 float: left;
             }
-            .container-foot {
-                color: black;
-                padding-left: 30px;
-                padding-right: 30px;
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                height: 30px;
-            }
-            .copyright {
+            .main .copyright {
                 text-align: center;
+            }
+            .main .fa-vk:before {
+                content: "\f189";
             }
         </style>
         <!--[if lt IE 9]>
@@ -230,7 +264,7 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-<body>
+<body class="main">
     
 <!-- Панель навигации ================================================== -->
     

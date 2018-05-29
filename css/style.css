@@ -1802,6 +1802,41 @@ div.jGrowl div.jGrowl-closer {
     width: 570px;
     height: 350px;
 }
+.go-to-top-button {
+    position: fixed;
+    z-index: 10000;
+    right: 3%;
+    bottom: 0px;
+    margin: 0px 0px 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    color: #fff;
+    background: #2C98DE;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.275);
+    outline: none;
+}
+.go-to-top-button:hover {
+    color: #2C98DE;
+    background: #fff;
+    border: 5px solid #2C98DE;
+}
+.go-to-top-button .in {
+    vertical-align: 3px;
+}
+.go-to-top-button:hover .in {
+    display: none;
+}
+.go-to-top-button .out {
+    display: none;
+    vertical-align: 3px;
+}
+.go-to-top-button:hover .out {
+    display: inline;
+    vertical-align: 3px;
+}
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {
         background-color: #fff!important;

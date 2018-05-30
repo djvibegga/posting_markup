@@ -1837,6 +1837,9 @@ div.jGrowl div.jGrowl-closer {
     display: inline;
     vertical-align: 3px;
 }
+.comment-user {
+    margin: 5px 0px 0px 10px;
+}
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {
         background-color: #fff!important;

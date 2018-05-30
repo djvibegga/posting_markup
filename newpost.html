@@ -692,7 +692,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
                     <h4 class="modal-title recaptcha-title" id="timezone-modal">Прикрепление комментариев</h4>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body fuelux">
                     <div id="attachs-list" class="nano">
                         <div class="nano-content" style="height: 440px;">
                             <ul class="add-comment-button text-center">
@@ -727,6 +727,14 @@
                                         </li>
                                         <li>
                                             <a href="#docs" data-toggle="modal" data-target=".bs-docs-modal" rel="tooltip" data-placement="bottom" title="Документы"><i class="fa fa-file-o" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li class="comment-user">
+                                            <div class="checkbox" id="signature" rel="tooltip" data-placement="bottom" title="От имени группы">
+                                              <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label"><i class="fa fa-users" aria-hidden="true"></i></span>
+                                              </label>
+                                            </div>
                                         </li>
                                     </ul>
                                     <button type="button" class="btn btn-danger" id="myButton4" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" data-placement="right" title="Удалить комментарий"><i class="fa fa-times" aria-hidden="true"></i></button>

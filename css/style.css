@@ -1840,6 +1840,9 @@ div.jGrowl div.jGrowl-closer {
 .comment-user {
     margin: 5px 0px 0px 10px;
 }
+.sort-images {
+    float: right;
+}
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {
         background-color: #fff!important;

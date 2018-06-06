@@ -114,7 +114,7 @@ ul, li {
   padding: 120px 0px;
 }
 .trans-bg-top {
-  padding: 10px 0px 0px 0px!important;
+  padding: 10px 0px 0px 0px;
 }
 
 ::-moz-selection { background: #A9D0F5; color: #5F5A5A }
@@ -502,7 +502,7 @@ header .app li {
 }
 #content-wrapper {
   position:absolute;
-  z-index:1 !important;
+  z-index:1 ;
   min-width:100%;
   min-height:100%;
 }
@@ -806,6 +806,34 @@ h3 {
 }
 .news .carousel-inner .item{
   padding: 0 120px;
+}
+.amp .news .carousel-inner .item{
+  padding: 0px 12px 0px 12px;
+}
+.amp .text-center {
+	text-align: center;
+}
+.amp .vis-visible {
+	visibility: visible;
+}
+.amp .all-news-link {
+	margin-top: 25px;
+}
+.amp-version a {
+	color: #fff;
+}
+.amp-version {
+	margin-bottom: 34px;
+}
+.amp .full-version {
+    text-align: center;
+}
+.amp .banner .full-version {
+	margin-top: 10px;
+}
+.amp .banner .full-version a {
+    color: #fff;
+    font-size: 16px;
 }
 .news .carousel-inner > .item > img {
   width: auto;
@@ -1132,6 +1160,25 @@ section.contact > .container {
   position: relative;
   color: #fff;
 }
+.amp .copyright {
+    text-align: center;
+}
+.amp h1 {
+	font-size: 48px;
+}
+.amp .feature h2, .amp .contact h2, .amp .links h2 {
+	font-size: 36px;
+}
+.amp .info-holder {
+	color: #fff;
+}
+.amp .info-holder a {
+	color: #fff;
+}
+.amp .feature-list-right li {
+	padding-left: 40px;
+	padding-right: 40px;
+}
 .copyright span {
   display: inline-block;
   margin-right: 5px;
@@ -1223,8 +1270,8 @@ section.contact > .container {
     text-decoration: none;
 }
 #btn-enter:hover {
-    border: 3px solid #fff!important;
-    color: #1186ac!important;
+    border: 3px solid #fff;
+    color: #1186ac;
     background-color: #fff;
     opacity: 1;
     
@@ -1376,8 +1423,8 @@ section.contact > .container {
     text-decoration: none;
 }
 #btn-subscription:hover {
-    border: 3px solid #fff!important;
-    color: #1186ac!important;
+    border: 3px solid #fff;
+    color: #1186ac;
     background-color: #fff;
     opacity: 1;
     
@@ -1419,10 +1466,13 @@ section.contact > .container {
 }
 }
 @media (max-width: 360px){
+    li.mi-subscr {
+       display: none;
+    }
     .subscription {
         display: none;
     }
-    .news {
+    .no-amp .news {
         display: none;
     }
 }

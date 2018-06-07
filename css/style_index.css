@@ -1472,8 +1472,8 @@ section.contact > .container {
     .subscription {
         display: none;
     }
-    .no-amp .news {
-        display: none;
+    .no-amp .news .carousel-inner .item {
+        padding: 0;
     }
 }
 @media (max-width: 320px){

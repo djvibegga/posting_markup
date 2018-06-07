@@ -1476,6 +1476,21 @@ section.contact > .container {
         display: none;
     }
 }
+@media (max-width: 320px){
+    #contactForm .col-sm-6 .span-form:nth-child(3) {
+        margin-left: 12%;
+    }
+    #contactForm .col-sm-6 .span-form:nth-child(4) {
+        margin-left: 2%;
+    }
+    .span-form {
+        width: 28%;
+    }
+    #contactForm .btn-block {
+        font-size: 10px;
+        margin-top: 3px;
+    }
+}
 
 @media (max-height: 823px){
     .lead-foot-fix {

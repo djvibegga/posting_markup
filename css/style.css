@@ -2020,6 +2020,23 @@ div.jGrowl div.jGrowl-closer {
         height: 100%;
     }
 }
+@media (max-width: 480px){
+	.gid {
+	    display: none;
+	}
+	.field-schedulefilterform-groupid {
+	    max-width: 255px;
+	}
+	.field-schedulefilterform-groupid .dropdown-menu {
+	    max-width: 255px;
+	}
+	.field-postsearch-groupid {
+	    max-width: 255px;
+	}
+	.field-postsearch-groupid .dropdown-menu {
+	    max-width: 255px;
+	}
+}
 @media (max-width: 320px){
     .news-article {
         max-width: 100%;

@@ -1355,11 +1355,11 @@ div.jGrowl div.jGrowl-closer {
   width: 7px;
 }
 .currency {
-    width: 175px;
+    float: right!important;
 }
 .text-currency {
     float: left;
-    margin: 7px 5px 0px 0px;
+    margin: 7px 7px 0 0;
 }
 .choice-currency {
     width: 75px;
@@ -1484,24 +1484,6 @@ div.jGrowl div.jGrowl-closer {
 }
 .filterable .filters input[disabled]:-ms-input-placeholder {
     color: #333;
-}
-.filters-id {
-    width: 10%;
-}
-.filters-name {
-    width: 30%;
-}
-.filters-posts {
-    width: 15%;
-}
-.filters-last-vts {
-	width: 15%;
-}
-.filters-created-ts {
-    width: 15%;
-}
-.filters-control {
-    width: 12%;
 }
 .filters {
     height: 49px;
@@ -1985,6 +1967,92 @@ div.jGrowl div.jGrowl-closer {
 }
 .batch-table-btn {
     width: 10%;
+}
+thead {
+    background-color: #f5f5f5;
+}
+table {
+  border: 1px solid #ccc;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table tr {
+  border-top: 1px solid #ddd;
+  padding: 5px;
+}
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+    table thead {
+        display: none;
+    }
+    table tr {
+        margin-bottom: 10px;
+    }
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 12px;
+        border-bottom: 1px dashed #ccc;
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+    .infinity {
+        font-size: 14px;
+    }
+    .nav-tabs {
+        border: none;
+    }
+    .nav-tabs>li {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .nav-tabs>li.active {
+        margin-bottom: 5px;
+        width: 100%;
+        border-bottom: 2px solid #3E7FB9;
+    }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+        color: #555;
+        cursor: default;
+        background-color: #fff;
+        border: none;
+        border-bottom-color: transparent;
+    }
+    .nav-tabs>li>a:hover {
+        border-color: none;
+    }
+    .currency {
+        margin: 5px 0px 5px 0px;
+    }
+    .sort {
+        padding: 0px 0px 0px 23px;
+    }
+    .status-upload button {
+        width: 95%;
+    }
+    .timew {
+        padding: 0px 0px 0px 21px;
+    }
 }
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {

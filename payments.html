@@ -69,250 +69,224 @@
     <!-- Оплата ============================================================================= -->
                 
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="row">
                         <ul id="myTab" class="nav nav-tabs">
                             <li class="active"><a href="#payments" data-toggle="tab">Подписка</a></li>
                             <li><a href="#history" data-toggle="tab">История платежей</a></li>
+                            <li class="currency">
+                                <span class="text-currency">Выбор валюты:</span>
+                                <select class="form-control choice-currency">
+                                    <option>руб.</option>
+                                    <option>грн.</option>
+                                </select>
+                            </li>
                         </ul>
 
                         <div id="myTabContent" class="tab-content">
                             <div class="tab-pane fade in active" id="payments"><br>
                                 <div class="panel panel-default">
-                                <table class="table table-payments">
-                                    <thead>
-                                        <tr class="active">
-                                            <th>Наименование функции</th>
-                                            <th>Дата и время окончания</th>
-                                            <th>Статус подключения</th>
-                                            <th>Период оплаты</th>
-                                            <th class="currency">
-                                                <div>
-                                                    <span class="text-currency">Стоимость:</span>
-                                                    <select class="form-control choice-currency">
-                                                      <option>руб.</option>
-                                                      <option>грн.</option>
-                                                    </select>
-                                                </div>
-                                                <!-- <a class="currency" href=""><span class="rub">Р</span></a> | <a class="currency" href=""><span>грн.</span></a> -->
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="ap-tr">
-                                            <td>Оплатить всё <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="Оплачены будут все функции: Случайные изображения, Повторы, Репосты, Пакетная загрузка изображений. Пакеты функций в оплату не входят."><i class="fa fa-info-circle"></i></button></td>
-                                            <td>25.07.2018 18:25</td>
-                                            <td>
-                                                <div class="material-switch">
-                                                    <input id="someSwitchOption0Success" name="someSwitchOption001" type="checkbox"/>
-                                                    <label for="someSwitchOption0Success" class="label-success"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ds">
-                                                    <div class="input-group spinner select-day">
-                                                        <input type="text" class="form-control" value="0" min="0" max="1095">
-                                                        <div class="input-group-btn-vertical">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
-                                                        </div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Наименование функции</th>
+                                                <th>Дата и время окончания</th>
+                                                <th>Статус подключения</th>
+                                                <th>Период оплаты</th>
+                                                <th >Стоимость</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Наименование">Оплатить всё <i class="fa fa-info-circle" data-placement="bottom" rel="tooltip" title="Оплачены будут все функции: Случайные изображения, Повторы, Репосты, Пакетная загрузка изображений. Пакеты функций в оплату не входят."></i></td>
+                                                <td data-label="Дата и время окончания">25.07.2018 18:25</td>
+                                                <td data-label="Статус подключения">
+                                                    <div class="material-switch">
+                                                        <input id="someSwitchOption0Success" name="someSwitchOption001" type="checkbox"/>
+                                                        <label for="someSwitchOption0Success" class="label-success"></label>
                                                     </div>
-                                                </div><span class="month"> дн.</span>
-                                            </td>
-                                            <td>15 <span class="rub">Р</span></td>
-                                        </tr>
-                                        <tr class="ap-tr-name">
-                                            <td>Бесплатные функции</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr class="ap-tr">
-                                            <td>АвтоПост <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="Опубликует запланированные записи в социальную сеть ВКонтакте. Запланировать записи можно на 90 дней."><i class="fa fa-info-circle"></i></button></td>
-                                            <td><span class="infinity">∞</span></td>
-                                            <td>
-                                                <div class="material-switch">
-                                                    <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox" disabled checked/>
-                                                    <label for="someSwitchOptionSuccess" class="label-success"></label>
-                                                </div>
-                                            </td>
-                                            <td><span class="infinity">∞</span></td>
-                                            <td>Бесплатно</td>
-                                        </tr>
-                                        <tr class="ap-tr">
-                                            <td>Расписание <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="Расписание сочетается с функцией Пакетного создания записей и ускоряет процесс наполнения групп."><i class="fa fa-info-circle"></i></button></td>
-                                            <td><span class="infinity">∞</span></td>
-                                            <td>
-                                                <div class="material-switch">
-                                                    <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox" disabled checked/>
-                                                    <label for="someSwitchOptionSuccess" class="label-success"></label>
-                                                </div>
-                                            </td>
-                                            <td><span class="infinity">∞</span></td>
-                                            <td>Бесплатно</td>
-                                        </tr>
-                                        <tr class="ap-tr-name">
-                                            <td>Функции организаторам СП</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr class="ap-tr">
-                                            <td>Случайные изображения <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="Эта функция идеально сочетается с Повторами. Благодаря их сочетанию изображения при повтовторах записей всегда будут случайными."><i class="fa fa-info-circle"></i></button></td>
-                                            <td>25.07.2018 18:25</td>
-                                            <td>
-                                                <div class="material-switch">
-                                                    <input id="someSwitchOption0Success" name="someSwitchOption001" type="checkbox"/>
-                                                    <label for="someSwitchOption0Success" class="label-success"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ds">
-                                                    <div class="input-group spinner select-day">
-                                                        <input type="text" class="form-control" value="0" min="0" max="1095">
-                                                        <div class="input-group-btn-vertical">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                </td>
+                                                <td data-label="Период оплаты">
+                                                    <div class="ds">
+                                                        <div class="input-group spinner select-day">
+                                                            <input type="text" class="form-control" value="0" min="0" max="1095">
+                                                            <div class="input-group-btn-vertical">
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                            </div>
                                                         </div>
+                                                    </div><span class="month"> дн.</span>
+                                                </td>
+                                                <td data-label="Стоимость">15 <span class="rub">Р</span></td>
+                                            </tr>
+                                            <tr class="ap-tr-name">
+                                                <td colspan="5">Бесплатные функции</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Наименование">АвтоПост <i class="fa fa-info-circle" data-placement="bottom" rel="tooltip" title="Опубликует запланированные записи в социальную сеть ВКонтакте. Запланировать записи можно на 90 дней."></i></td>
+                                                <td data-label="Дата и время окончания"><span class="infinity">∞</span></td>
+                                                <td data-label="Статус подключения">
+                                                    <div class="material-switch">
+                                                        <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox" disabled checked/>
+                                                        <label for="someSwitchOptionSuccess" class="label-success"></label>
                                                     </div>
-                                                </div><span class="month"> дн.</span>
-                                            </td>
-                                            <td>15 <span class="rub">Р</span></td>
-                                        </tr>
-                                        <tr class="ap-tr">
-                                            <td>Репосты <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="Эта функция будет репостить записи автоматически в любую вашу группу или на личную страницу."><i class="fa fa-info-circle"></i></button></td>
-                                            <td>25.07.2018 18:25</td>
-                                            <td>
-                                                <div class="material-switch">
-                                                    <input id="someSwitchOption0Success" name="someSwitchOption001" type="checkbox"/>
-                                                    <label for="someSwitchOption0Success" class="label-success"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ds">
-                                                    <div class="input-group spinner select-day">
-                                                        <input type="text" class="form-control" value="0" min="0" max="1095">
-                                                        <div class="input-group-btn-vertical">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                </td>
+                                                <td data-label="Период оплаты"><span class="infinity">∞</span></td>
+                                                <td data-label="Стоимость">Бесплатно</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Наименование">Расписание <i class="fa fa-info-circle" data-placement="bottom" rel="tooltip" title="Расписание сочетается с функцией Пакетного создания записей и ускоряет процесс наполнения групп."></i></td>
+                                                <td data-label="Дата и время окончания"><span class="infinity">∞</span></td>
+                                                <td data-label="Статус подключения">
+                                                    <div class="material-switch">
+                                                        <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox" disabled checked/>
+                                                        <label for="someSwitchOptionSuccess" class="label-success"></label>
+                                                    </div>
+                                                </td>
+                                                <td data-label="Период оплаты"><span class="infinity">∞</span></td>
+                                                <td data-label="Стоимость">Бесплатно</td>
+                                            </tr>
+                                            <tr class="ap-tr-name">
+                                                <td colspan="5">Организаторам СП</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Наименование">Случайные изображения <i class="fa fa-info-circle" data-placement="bottom" rel="tooltip" title="Эта функция идеально сочетается с Повторами. Благодаря их сочетанию изображения при повтовторах записей всегда будут случайными."></i></td>
+                                                <td data-label="Дата и время окончания">25.07.2018 18:25</td>
+                                                <td data-label="Статус подключения">
+                                                    <div class="material-switch">
+                                                        <input id="someSwitchOption0Success" name="someSwitchOption001" type="checkbox"/>
+                                                        <label for="someSwitchOption0Success" class="label-success"></label>
+                                                    </div>
+                                                </td>
+                                                <td data-label="Период оплаты">
+                                                    <div class="ds">
+                                                        <div class="input-group spinner select-day">
+                                                            <input type="text" class="form-control" value="0" min="0" max="1095">
+                                                            <div class="input-group-btn-vertical">
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                            </div>
                                                         </div>
+                                                    </div><span class="month"> дн.</span>
+                                                </td>
+                                                <td data-label="Стоимость">15 <span class="rub">Р</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Наименование">Репосты <i class="fa fa-info-circle" data-placement="bottom" rel="tooltip" title="Эта функция будет репостить записи автоматически в любую вашу группу или на личную страницу."></i></td>
+                                                <td data-label="Дата и время окончания">25.07.2018 18:25</td>
+                                                <td data-label="Статус подключения">
+                                                    <div class="material-switch">
+                                                        <input id="someSwitchOption0Success" name="someSwitchOption001" type="checkbox"/>
+                                                        <label for="someSwitchOption0Success" class="label-success"></label>
                                                     </div>
-                                                </div><span class="month"> дн.</span>
-                                            </td>
-                                            <td>15 <span class="rub">Р</span></td>
-                                        </tr>
-                                        <tr class="ap-tr">
-                                            <td>Повторы <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="Если вам нужно повторять записи ежедневно или в определённый промежуток времени, то эта функция подойдёт для вас. Повтор настраивается просто и удобно, можно задать интервал исключения времени, когда запись не будет повторяться, а так же дату и время для остановки повтора."><i class="fa fa-info-circle"></i></button></td>
-                                            <td>25.09.2018 15:25</td>
-                                            <td>
-                                                <div class="material-switch">
-                                                    <input id="someSwitchOption1Success" name="someSwitchOption002" type="checkbox"/>
-                                                    <label for="someSwitchOption1Success" class="label-success"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ds">
-                                                    <div class="input-group spinner select-day">
-                                                        <input type="text" class="form-control" value="0" min="0" max="1095">
-                                                        <div class="input-group-btn-vertical">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                </td>
+                                                <td data-label="Период оплаты">
+                                                    <div class="ds">
+                                                        <div class="input-group spinner select-day">
+                                                            <input type="text" class="form-control" value="0" min="0" max="1095">
+                                                            <div class="input-group-btn-vertical">
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                            </div>
                                                         </div>
+                                                    </div><span class="month"> дн.</span>
+                                                </td>
+                                                <td data-label="Стоимость">15 <span class="rub">Р</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Наименование">Повторы <i class="fa fa-info-circle" data-placement="bottom" rel="tooltip" title="Если вам нужно повторять записи ежедневно или в определённый промежуток времени, то эта функция подойдёт для вас. Повтор настраивается просто и удобно, можно задать интервал исключения времени, когда запись не будет повторяться, а так же дату и время для остановки повтора."></i></td>
+                                                <td data-label="Дата и время окончания">25.09.2018 15:25</td>
+                                                <td data-label="Статус подключения">
+                                                    <div class="material-switch">
+                                                        <input id="someSwitchOption1Success" name="someSwitchOption002" type="checkbox"/>
+                                                        <label for="someSwitchOption1Success" class="label-success"></label>
                                                     </div>
-                                                </div><span class="month"> дн.</span>
-                                            </td>
-                                            <td>20 <span class="rub">Р</span></td>
-                                        </tr>
-                                        <tr class="ap-tr-name">
-                                            <td>Администраторам сообществ</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr class="ap-tr">
-                                            <td>Пакетное создание записей <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="Пакетное создание записей поможет вам из уже подготовленных изображений создать готовые записи, которые наполнят вашу группу в считанные минуты."><i class="fa fa-info-circle"></i></button></td>
-                                            <td>05.07.2018 13:30</td>
-                                            <td>
-                                                <div class="material-switch">
-                                                    <input id="someSwitchOption2Success" name="someSwitchOption003" type="checkbox"/>
-                                                    <label for="someSwitchOption2Success" class="label-success"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ds">
-                                                    <div class="input-group spinner select-day">
-                                                        <input type="text" class="form-control" value="0" min="0" max="1095">
-                                                        <div class="input-group-btn-vertical">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                </td>
+                                                <td data-label="Период оплаты">
+                                                    <div class="ds">
+                                                        <div class="input-group spinner select-day">
+                                                            <input type="text" class="form-control" value="0" min="0" max="1095">
+                                                            <div class="input-group-btn-vertical">
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                            </div>
                                                         </div>
+                                                    </div><span class="month"> дн.</span>
+                                                </td>
+                                                <td data-label="Стоимость">20 <span class="rub">Р</span></td>
+                                            </tr>
+                                            <tr class="ap-tr-name">
+                                                <td colspan="5">Администраторам сообществ</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Наименование">Пакетное создание записей <i class="fa fa-info-circle" data-placement="bottom" rel="tooltip" title="Пакетное создание записей поможет вам из уже подготовленных изображений создать готовые записи, которые наполнят вашу группу в считанные минуты."></i></td>
+                                                <td data-label="Дата и время окончания">05.07.2018 13:30</td>
+                                                <td data-label="Статус подключения">
+                                                    <div class="material-switch">
+                                                        <input id="someSwitchOption2Success" name="someSwitchOption003" type="checkbox"/>
+                                                        <label for="someSwitchOption2Success" class="label-success"></label>
                                                     </div>
-                                                </div><span class="month"> дн.</span>
-                                            </td>
-                                            <td>15 <span class="rub">Р</span></td>
-                                        </tr>
-                                        <tr class="ap-tr-name">
-                                            <td>Пакеты функций</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr class="ap-tr">
-                                            <td>Организаторам СП - S <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="В пакет включены: Случайные изображения, Повторы, Репосты"><i class="fa fa-info-circle"></i></button></td>
-                                            <td>05.07.2018 13:30</td>
-                                            <td>
-                                                <div class="material-switch">
-                                                    <input id="someSwitchOption2Success" name="someSwitchOption003" type="checkbox"/>
-                                                    <label for="someSwitchOption2Success" class="label-success"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ds">
-                                                    <div class="input-group spinner select-day">
-                                                        <input type="text" class="form-control" value="0" min="0" max="1095">
-                                                        <div class="input-group-btn-vertical">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                </td>
+                                                <td data-label="Период оплаты">
+                                                    <div class="ds">
+                                                        <div class="input-group spinner select-day">
+                                                            <input type="text" class="form-control" value="0" min="0" max="1095">
+                                                            <div class="input-group-btn-vertical">
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                            </div>
                                                         </div>
+                                                    </div><span class="month"> дн.</span>
+                                                </td>
+                                                <td data-label="Стоимость">15 <span class="rub">Р</span></td>
+                                            </tr>
+                                            <tr class="ap-tr-name">
+                                                <td colspan="5">Пакеты функций</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Наименование">Организаторам СП - S <i class="fa fa-info-circle" data-placement="bottom" rel="tooltip" title="В пакет включены: Случайные изображения, Повторы, Репосты."></i></td>
+                                                <td data-label="Дата и время окончания">05.07.2018 13:30</td>
+                                                <td data-label="Статус подключения">
+                                                    <div class="material-switch">
+                                                        <input id="someSwitchOption2Success" name="someSwitchOption003" type="checkbox"/>
+                                                        <label for="someSwitchOption2Success" class="label-success"></label>
                                                     </div>
-                                                </div><span class="month"> дн.</span>
-                                            </td>
-                                            <td>15 <span class="rub">Р</span></td>
-                                        </tr>
-                                        <tr class="ap-tr">
-                                            <td>Организаторам СП - M <button type="button" class="btn btn-default btn-xs" data-container="body" data-toggle="popover" data-placement="right" data-content="В пакет включены: Случайные изображения, Повторы"><i class="fa fa-info-circle"></i></button></td>
-                                            <td>05.07.2018 13:30</td>
-                                            <td>
-                                                <div class="material-switch">
-                                                    <input id="someSwitchOption2Success" name="someSwitchOption003" type="checkbox"/>
-                                                    <label for="someSwitchOption2Success" class="label-success"></label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="ds">
-                                                    <div class="input-group spinner select-day">
-                                                        <input type="text" class="form-control" value="0" min="0" max="1095">
-                                                        <div class="input-group-btn-vertical">
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-                                                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                </td>
+                                                <td data-label="Период оплаты">
+                                                    <div class="ds">
+                                                        <div class="input-group spinner select-day">
+                                                            <input type="text" class="form-control" value="0" min="0" max="1095">
+                                                            <div class="input-group-btn-vertical">
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                            </div>
                                                         </div>
+                                                    </div><span class="month"> дн.</span>
+                                                </td>
+                                                <td data-label="Стоимость">15 <span class="rub">Р</span></td>
+                                            </tr>
+                                            <tr class="ap-tr">
+                                                <td data-label="Наименование">Организаторам СП - M <i class="fa fa-info-circle" data-placement="bottom" rel="tooltip" title="В пакет включены: Случайные изображения, Повторы."></i></td>
+                                                <td data-label="Дата и время окончания">05.07.2018 13:30</td>
+                                                <td data-label="Статус подключения">
+                                                    <div class="material-switch">
+                                                        <input id="someSwitchOption2Success" name="someSwitchOption003" type="checkbox"/>
+                                                        <label for="someSwitchOption2Success" class="label-success"></label>
                                                     </div>
-                                                </div><span class="month"> дн.</span>
-                                            </td>
-                                            <td>15 <span class="rub">Р</span></td>
-                                        </tr>
-                                        <tr class="ap-tr">
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td><b>Итого: <span>60</span> <span class="rub">Р</span></b></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                                </td>
+                                                <td data-label="Период оплаты">
+                                                    <div class="ds">
+                                                        <div class="input-group spinner select-day">
+                                                            <input type="text" class="form-control" value="0" min="0" max="1095">
+                                                            <div class="input-group-btn-vertical">
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                                                                <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div><span class="month"> дн.</span>
+                                                </td>
+                                                <td data-label="Стоимость">15 <span class="rub">Р</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="row">
@@ -343,9 +317,9 @@
                             </div>
                             <div class="tab-pane fade" id="history"><br>
                                 <div class="panel panel-default">
-                                <table class="table table-payments">
+                                <table class="table-payments">
                                     <thead>
-                                        <tr class="active">
+                                        <tr>
                                             <th>ID платежа</th>
                                             <th>Дата платежа</th>
                                             <th style="width: 400px;">Заказанные функции</th>
@@ -355,29 +329,29 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="ap-tr">
-                                            <td>347589</td>
-                                            <td>25.07.2019</td>
-                                            <td>Репосты, Повторы</td>
-                                            <td><i class="fa fa-check" aria-hidden="true" style="color:green;" data-placement="bottom" rel="tooltip" title="Оплачено"></i></td>
-                                            <td>300 руб.</td>
-                                            <td><button type="button" class="btn btn-danger btn-xs load-stop" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                                        <tr>
+                                            <td data-label="ID платежа">347589</td>
+                                            <td data-label="Дата платежа">25.07.2019</td>
+                                            <td data-label="Заказанные функции">Репосты, Повторы</td>
+                                            <td data-label="Статус платежа"><i class="fa fa-check" aria-hidden="true" style="color:green;" data-placement="bottom" rel="tooltip" title="Оплачено"></i></td>
+                                            <td data-label="Сумма платежа">300 руб.</td>
+                                            <td data-label="Действие"><button type="button" class="btn btn-danger btn-xs load-stop" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="ID платежа">347590</td>
+                                            <td data-label="Дата платежа">25.07.2019</td>
+                                            <td data-label="Заказанные функции">Репосты, Повторы, Пакетное создание записей, Репосты, Повторы, Пакетное создание записей</td>
+                                            <td data-label="Статус платежа"><i class="fa fa-hourglass-start" aria-hidden="true" style="color:rgba(255,165,0,.5);" data-placement="bottom" rel="tooltip" title="Ожидает"></i></td>
+                                            <td data-label="Сумма платежа">70 руб.</td>
+                                            <td data-label="Действие"><button type="button" class="btn btn-danger btn-xs load-stop" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></button></td>
                                         </tr>
                                         <tr class="ap-tr">
-                                            <td>347590</td>
-                                            <td>25.07.2019</td>
-                                            <td>Репосты, Повторы, Пакетное создание записей, Репосты, Повторы, Пакетное создание записей</td>
-                                            <td><i class="fa fa-hourglass-start" aria-hidden="true" style="color:rgba(255,165,0,.5);" data-placement="bottom" rel="tooltip" title="Ожидает"></i></td>
-                                            <td>70 руб.</td>
-                                            <td><button type="button" class="btn btn-danger btn-xs load-stop" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></button></td>
-                                        </tr>
-                                        <tr class="ap-tr">
-                                            <td>347591</td>
-                                            <td>25.07.2019</td>
-                                            <td>Репосты</td>
-                                            <td><i class="fa fa-times" aria-hidden="true" style="color:#d9534f;" data-placement="bottom" rel="tooltip" title="Отменён"></i></td>
-                                            <td>10 руб.</td>
-                                            <td><button type="button" class="btn btn-danger btn-xs load-stop" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+                                            <td data-label="ID платежа">347591</td>
+                                            <td data-label="Дата платежа">25.07.2019</td>
+                                            <td data-label="Заказанные функции">Репосты</td>
+                                            <td data-label="Статус платежа"><i class="fa fa-times" aria-hidden="true" style="color:#d9534f;" data-placement="bottom" rel="tooltip" title="Отменён"></i></td>
+                                            <td data-label="Сумма платежа">10 руб.</td>
+                                            <td data-label="Действие"><button type="button" class="btn btn-danger btn-xs load-stop" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></button></td>
                                         </tr>
                                     </tbody>
                                 </table>                                    
@@ -395,7 +369,6 @@
                                 </div>
                             </div>    
                         </div>
-                    </div>
                 </div>
 
     <!-- Оплата ============================================================================= -->

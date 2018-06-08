@@ -1959,6 +1959,12 @@ div.jGrowl div.jGrowl-closer {
 .batch-table-comment {
     width: 35%;
 }
+.batch-table-comment p {
+    max-width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 .batch-table-date {
     width: 15%;
 }

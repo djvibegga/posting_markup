@@ -1581,7 +1581,6 @@ div.jGrowl div.jGrowl-closer {
     margin-right: 4px;
 }
 .area {
-  text-align: center;
   font-size: 14px;
   color: #fff;
   animation: blur 3s ease-out infinite;
@@ -2058,6 +2057,13 @@ table th {
     }
     .timew {
         padding: 0px 0px 0px 21px;
+    }
+    .row {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+    .load-img {
+        padding-left: 27px;
     }
 }
 @media (max-width: 768px){

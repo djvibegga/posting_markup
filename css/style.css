@@ -1059,7 +1059,10 @@ div.jGrowl div.jGrowl-closer {
     margin-bottom: 10px!important;
     -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
        -moz-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
-            box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);    
+            box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+}
+[data-role="applyTextPacketButton"] {
+	margin-top: 10px;
 }
 .panel-default>.panel-heading {
     color: #000;

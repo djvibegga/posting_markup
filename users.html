@@ -72,25 +72,58 @@
                         <div class="panel panel-primary filterable">
                             <div class="panel-heading panel-height">
                                 <div class="pull-left">
-                                    Активные: <span>34575</span>
+                                    Статистика
                                 </div>
-                                <!--<div class="pull-right">
-                                    <button class="btn btn-default btn-xs btn-filter"><i class="fa fa-filter" aria-hidden="true"></i> Фильтр</button>
-                                </div>-->
                             </div>
-                            <table>
+                            <table class="table-adaptive">
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="7"><a class="preset" href="?preset=all">Всего</a>: <span>7077</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a class="preset" href="?preset=active">Активные за все время</a>: <span>67 (26.07%)</span><br>
+                                            <a class="preset" href="?preset=activeweek">Активные за эту неделю</a>: <span>67 (26.07%)</span><br>
+                                            <a class="preset" href="?preset=activeaftertrial">Активные после пробного периода</a>: <span>51 (19.84%)</span><br>
+                                            <a class="preset" href="?preset=aftertrialactivenotpayed">Активные после пробного не оплатили</a>: <span>51 (19.84%)</span><br>
+                                            <a class="preset" href="?preset=aftertrialactivepayed">Активные после пробного оплатили</a>: <span>51 (19.84%)</span><br>
+                                            <a class="preset" href="?preset=activeintrial">Активные на пробном периоде</a>: <span>67 (26.07%)</span><br>                                            
+                                        </td>
+                                        <td>
+                                            <a class="preset" href="?preset=intrial">На пробном периоде</a>: <span>51 (19.84%)</span><br>
+                                            <a class="preset" href="?preset=aftertrial">После пробного периода</a>: <span>51 (19.84%)</span><br>
+                                            <a class="preset" href="?preset=aftertrialnotpayed">После пробного не оплатили</a>: <span>67 (26.07%)</span><br>
+                                            <a class="preset" href="?preset=aftertrialpayed">После пробного оплатили</a>: <span>67 (26.07%)</span><br>
+                                            <a class="preset" href="?preset=pausedposting">Приостановлена публикация</a>: <span>67 (26.07%)</span><br>
+                                            <a class="preset" href="?preset=suspended">Заблокированные</a>: <span>51 (19.84%)</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>    
+                        <div class="panel panel-primary filterable">
+                            <div class="panel-heading panel-height">
+                                <div class="pull-left">
+                                    Список пользователей
+                                </div>
+                            </div>
+                            <table class="table-adaptive">
                                 <thead>
-                                    <tr class="filters">
-                                        <th>ID</th>
-                                        <th>Имя</th>
-                                        <th>Создано записей</th>
-                                        <th>Управление</th>
+                                    <tr>
+                                        <th class="filters-id">ID</th>
+                                        <th class="filters-name">Имя</th>
+                                        <th class="filters-created-ts">Дата регистрации</th>
+                                        <th class="filters-last-vts">Последнее посещение</th>
+                                        <th class="filters-posts">Создано записей</th>
+                                        <th class="filters-control">Управление</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td data-label="ID">1</td>
                                         <td data-label="Имя">Александр Евсюков</td>
+                                        <td data-label="Дата регистрации">08.06.2018 19:59:34</td>
+                                        <td data-label="Последнее посещение">08.06.2018 19:59:34</td>
                                         <td data-label="Создано записей">3675</td>
                                         <td data-label="Управление">
                                             <a class='btn btn-success btn-xs btn-admin' href="#" rel="tooltip" title="Войти"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
@@ -103,6 +136,8 @@
                                     <tr>
                                         <td data-label="ID">2</td>
                                         <td data-label="Имя">Евгений Марилёв</td>
+                                        <td data-label="Дата регистрации">08.06.2018 19:59:34</td>
+                                        <td data-label="Последнее посещение">08.06.2018 19:59:34</td>
                                         <td data-label="Создано записей">1345</td>
                                         <td data-label="Управление">
                                             <a class='btn btn-success btn-xs btn-admin' href="#" rel="tooltip" title="Войти"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
@@ -115,6 +150,8 @@
                                     <tr>
                                         <td data-label="ID">3</td>
                                         <td data-label="Имя">Алексей Пеков</td>
+                                        <td data-label="Дата регистрации">08.06.2018 19:59:34</td>
+                                        <td data-label="Последнее посещение">08.06.2018 19:59:34</td>
                                         <td data-label="Создано записей">2017</td>
                                         <td data-label="Управление">
                                             <a class='btn btn-success btn-xs btn-admin' href="#" rel="tooltip" title="Войти"><i class="fa fa-sign-in" aria-hidden="true"></i></a>

@@ -84,7 +84,7 @@
                         <div id="myTabContent" class="tab-content">
                             <div class="tab-pane fade in active" id="payments"><br>
                                 <div class="panel panel-default">
-                                    <table>
+                                    <table class="table-adaptive">
                                         <thead>
                                             <tr>
                                                 <th>Наименование функции</th>
@@ -263,7 +263,7 @@
                                                 </td>
                                                 <td data-label="Стоимость">15 <span class="rub">Р</span></td>
                                             </tr>
-                                            <tr class="ap-tr">
+                                            <tr>
                                                 <td data-label="Наименование">Организаторам СП - M <i class="fa fa-info-circle" data-placement="bottom" rel="tooltip" title="В пакет включены: Случайные изображения, Повторы."></i></td>
                                                 <td data-label="Дата и время окончания">05.07.2018 13:30</td>
                                                 <td data-label="Статус подключения">
@@ -317,22 +317,22 @@
                             </div>
                             <div class="tab-pane fade" id="history"><br>
                                 <div class="panel panel-default">
-                                <table class="table-payments">
+                                <table class="table-adaptive">
                                     <thead>
                                         <tr>
-                                            <th>ID платежа</th>
-                                            <th>Дата платежа</th>
-                                            <th style="width: 400px;">Заказанные функции</th>
-                                            <th>Статус платежа</th>
-                                            <th>Сумма платежа</th>
-                                            <th>Действие</th>
+                                            <th class="ph-id">ID платежа</th>
+                                            <th class="ph-date">Дата платежа</th>
+                                            <th class="ph-name">Заказанные функции</th>
+                                            <th class="ph-status">Статус платежа</th>
+                                            <th class="ph-total">Сумма платежа</th>
+                                            <th class="ph-control">Действие</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td data-label="ID платежа">347589</td>
                                             <td data-label="Дата платежа">25.07.2019</td>
-                                            <td data-label="Заказанные функции">Репосты, Повторы</td>
+                                            <td data-label="Заказанные функции" class="table-text-overflow">Репосты, Повторы</td>
                                             <td data-label="Статус платежа"><i class="fa fa-check" aria-hidden="true" style="color:green;" data-placement="bottom" rel="tooltip" title="Оплачено"></i></td>
                                             <td data-label="Сумма платежа">300 руб.</td>
                                             <td data-label="Действие"><button type="button" class="btn btn-danger btn-xs load-stop" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></button></td>
@@ -340,12 +340,12 @@
                                         <tr>
                                             <td data-label="ID платежа">347590</td>
                                             <td data-label="Дата платежа">25.07.2019</td>
-                                            <td data-label="Заказанные функции">Репосты, Повторы, Пакетное создание записей, Репосты, Повторы, Пакетное создание записей</td>
+                                            <td data-label="Заказанные функции" class="table-text-overflow">Репосты, Повторы, Пакетное создание записей, Репосты, Повторы, Пакетное создание записей</td>
                                             <td data-label="Статус платежа"><i class="fa fa-hourglass-start" aria-hidden="true" style="color:rgba(255,165,0,.5);" data-placement="bottom" rel="tooltip" title="Ожидает"></i></td>
                                             <td data-label="Сумма платежа">70 руб.</td>
                                             <td data-label="Действие"><button type="button" class="btn btn-danger btn-xs load-stop" data-placement="bottom" rel="tooltip" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></button></td>
                                         </tr>
-                                        <tr class="ap-tr">
+                                        <tr>
                                             <td data-label="ID платежа">347591</td>
                                             <td data-label="Дата платежа">25.07.2019</td>
                                             <td data-label="Заказанные функции">Репосты</td>

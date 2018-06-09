@@ -1468,127 +1468,127 @@
                                 
 <!-- Пакетная загрузка изображений ================================================== -->                                
                                 
-                                <div class="col-md-12">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <div class="row">
-                                                <select class="selectpicker bott" data-live-search="true" data-width="100%" multiple data-max-options="1" title="Выберите куда постить...">
-                                                    <optgroup label="Личная страница">
-                                                        <option>Моя страница</option>
-                                                    </optgroup>
-                                                    <optgroup label="Сообщества">
-                                                        <option>Сочный апельсин</option>
-                                                        <option>Совместные покупки</option>
-                                                        <option>Разный мусор</option>
-                                                    </optgroup>    
-                                                </select>
-                                            </div>
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <select class="selectpicker bott" data-live-search="true" data-width="100%" multiple data-max-options="1" title="Выберите куда постить...">
+                        <optgroup label="Личная страница">
+                            <option>Моя страница</option>
+                        </optgroup>
+                        <optgroup label="Сообщества">
+                            <option>Сочный апельсин</option>
+                            <option>Совместные покупки</option>
+                            <option>Разный мусор</option>
+                        </optgroup>    
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-9">                                            
+                <p class="margin-text">После загрузки изображений, посты будут созданы автоматически и распределены на ближайшее свободное время.</p>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div data-fields="dropzone">
+                        <div class="block-field field-dropzone">    
+                            <div data-editor="">
+                                <div class="editor-error-popover" data-error=""></div>
+                                <div id="dropzone">
+                                    <div class="dropzone-w">
+                                        <input type="file" name="dropzone" multiple="" accept="image/jpeg, image/jpg, image/x-png, image/png">
+                                        <div class="dropzone-icon">
+                                            <i class="fa fa-cloud-upload" aria-hidden="true"></i>
                                         </div>
-                                        <div class="col-md-9">                                            
-                                            <p class="margin-text">После загрузки изображений, посты будут созданы автоматически и распределены на ближайшее свободное время.</p>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div data-fields="dropzone">
-                                                    <div class="block-field field-dropzone">    
-                                                        <div data-editor="">
-                                                            <div class="editor-error-popover" data-error=""></div>
-                                                            <div id="dropzone">
-                                                                <div class="dropzone-w">
-                                                                    <input type="file" name="dropzone" multiple="" accept="image/jpeg, image/jpg, image/x-png, image/png">
-                                                                    <div class="dropzone-icon">
-                                                                        <i class="fa fa-cloud-upload" aria-hidden="true"></i>
-                                                                    </div>
-                                                                    <div class="dropzone-text">
-                                                                        Перетащите файлы сюда <span>(или просто кликните)</span><br>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>                                                
-                                                <div class="panel-group" id="accordion">                      
-                                                    <div class="panel panel-default faq-panel">
-                                                        <div class="panel-heading">
-                                                          <h4 class="panel-title">
-                                                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                                                                    Добавить комментарий ко всем изображениям
-                                                                  </a>
-                                                                </h4>
-                                                        </div>
-                                                        <div id="collapseFive" class="panel-collapse collapse">
-                                                          <div class="panel-body">
-                                                            <div class="batch-area no-padding blank">
-                                                                <div class="batch-upload">
-                                                                    <textarea class="form-control textarea-control" placeholder="Введите комментарий, который будет добавлен ко всем изображениям. Если вам не нужен комментарий к изображениям, то просто оставьте это поле пустым." data-emojiable="true"></textarea>
-                                                                </div>
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="panel panel-default">
-                                                    <table>
-                                                        <thead>
-                                                            <tr class="active">
-                                                                <th class="batch-table-img">Изображение</th>
-                                                                <th class="batch-table-comment">Комментарий</th>
-                                                                <th class="batch-table-date">Дата и время</th>
-                                                                <th class="batch-table-status">Статус создания</th>
-                                                                <th class="batch-table-btn">Действие</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td data-label="Изображение"><img src="img/2h7dglSIqyY.jpg" class="vk-post-images"><span> image-01image-01image-01image-01image-01image-01image-01.jpg</span></td>
-                                                                <td data-label="Комментарий">Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий</td>
-                                                                <td data-label="Дата и время">25.07.2017 18:25</td>
-                                                                <td data-label="Статус создания"><i class="fa fa-check" aria-hidden="true" style="color:green;" rel="tooltip" title="Пост создан"></i></td>
-                                                                <td data-label="Действие"><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td data-label="Изображение"><img src="img/3EuAqE2LehU.jpg" class="vk-post-images"><span> image-02.jpg</span></td>
-                                                                <td data-label="Комментарий">Комментарий</td>
-                                                                <td data-label="Дата и время">-</td>
-                                                                <td data-label="Статус создания"><i class="fa fa-times" aria-hidden="true" style="color:#d9534f;" rel="tooltip" title="Ошибка"></i></td>
-                                                                <td data-label="Действие"><a class='btn btn-info btn-xs' href="#" rel="tooltip" data-placement="left" title="Повторить"><i class="fa fa-refresh" aria-hidden="true"></i></a> <a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td data-label="Изображение"><img src="img/3sJUI33eoSM.jpg" class="vk-post-images"><span> image-03.jpg</span></td>
-                                                                <td data-label="Комментарий">Комментарий</td>
-                                                                <td data-label="Дата и время">-</td>
-                                                                <td data-label="Статус создания"><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
-                                                                <td data-label="Действие"><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td data-label="Изображение"><img src="img/dQIWKABOfUs.jpg" class="vk-post-images"><span> image-04.jpg</span></td>
-                                                                <td data-label="Комментарий">Комментарий</td>
-                                                                <td data-label="Дата и время">-</td>
-                                                                <td data-label="Статус создания"><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
-                                                                <td data-label="Действие"><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td data-label="Изображение"><img src="img/i0DfYUNN9Ns.jpg" class="vk-post-images"><span> image-05.jpg</span></td>
-                                                                <td data-label="Комментарий">Комментарий</td>
-                                                                <td data-label="Дата и время">-</td>
-                                                                <td data-label="Статус создания"><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
-                                                                <td data-label="Действие"><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="right" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
+                                        <div class="dropzone-text">
+                                            Перетащите файлы сюда <span>(или просто кликните)</span><br>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>                                                
+                    <div class="panel-group" id="accordion">                      
+                        <div class="panel panel-default faq-panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                Добавить комментарий ко всем изображениям
+                                </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="batch-area no-padding blank">
+                                        <div class="batch-upload">
+                                            <textarea class="form-control textarea-control" placeholder="Введите комментарий, который будет добавлен ко всем изображениям. Если вам не нужен комментарий к изображениям, то просто оставьте это поле пустым." data-emojiable="true"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="panel panel-default">
+                        <table class="table-adaptive">
+                            <thead>
+                                <tr class="active">
+                                    <th class="batch-name">Изображение</th>
+                                    <th class="batch-text">Текст</th>
+                                    <th class="batch-date">Дата и время</th>
+                                    <th class="batch-status">Статус создания</th>
+                                    <th class="batch-control">Действие</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Изображение"><img src="img/2h7dglSIqyY.jpg" class="vk-post-images"><span> image-01image-01image-01image-01image-01image-01image-01.jpg</span></td>
+                                    <td data-label="Комментарий">Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий Комментарий</td>
+                                    <td data-label="Дата и время">25.07.2017 18:25</td>
+                                    <td data-label="Статус создания"><i class="fa fa-check" aria-hidden="true" style="color:green;" rel="tooltip" title="Пост создан"></i></td>
+                                    <td data-label="Действие"><a class='btn btn-info btn-xs' href="#" rel="tooltip" data-placement="bottom" title="Редактировать"><i class="fa fa-pencil" aria-hidden="true"></i></a> <a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="bottom" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Изображение"><img src="img/3EuAqE2LehU.jpg" class="vk-post-images"><span> image-02.jpg</span></td>
+                                    <td data-label="Комментарий">Комментарий</td>
+                                    <td data-label="Дата и время">-</td>
+                                    <td data-label="Статус создания"><i class="fa fa-times" aria-hidden="true" style="color:#d9534f;" rel="tooltip" title="Ошибка"></i></td>
+                                    <td data-label="Действие"><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="bottom" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Изображение"><img src="img/3sJUI33eoSM.jpg" class="vk-post-images"><span> image-03.jpg</span></td>
+                                    <td data-label="Комментарий">Комментарий</td>
+                                    <td data-label="Дата и время">-</td>
+                                    <td data-label="Статус создания"><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
+                                    <td data-label="Действие"><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="bottom" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Изображение"><img src="img/dQIWKABOfUs.jpg" class="vk-post-images"><span> image-04.jpg</span></td>
+                                    <td data-label="Комментарий">Комментарий</td>
+                                    <td data-label="Дата и время">-</td>
+                                    <td data-label="Статус создания"><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
+                                    <td data-label="Действие"><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="bottom" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Изображение"><img src="img/i0DfYUNN9Ns.jpg" class="vk-post-images"><span> image-05.jpg</span></td>
+                                    <td data-label="Комментарий">Комментарий</td>
+                                    <td data-label="Дата и время">-</td>
+                                    <td data-label="Статус создания"><i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true" rel="tooltip" title="Создание поста"></i></td>
+                                    <td data-label="Действие"><a class='btn btn-danger btn-xs' href="#" rel="tooltip" data-placement="bottom" title="Удалить"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
                                 
 <!-- Пакетная загрузка изображений ================================================== -->                                
                                 
-                            </div>
+                                </div>
                             </div>
                         </div>
                     </div>    

@@ -2030,6 +2030,10 @@ div.jGrowl div.jGrowl-closer {
 .ph-control {
     width: 10%;
 }
+.cdn:after {
+    font-family: FontAwesome;
+    content: "\00a0";
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;

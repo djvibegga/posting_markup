@@ -1471,6 +1471,11 @@ section.contact > .container {
     border-top: 1px solid #ddd;
     padding: 5px;
 }
+.ap-tr-name {
+    height: 40px;
+    background-color: #f5f5f5;
+    font-weight: 700;
+}
 .table-adaptive th,
 .table-adaptive td {
     padding: 10px;

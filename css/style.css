@@ -427,7 +427,7 @@ color: #fff;
 
 .post-img{
 	 /* Webkit for Chrome and Safari */
-  -webkit-transform: scale(1, 1); // This is the scale for the normal size of the image.
+  -webkit-transform: scale(1, 1); /* This is the scale for the normal size of the image.*/
   -webkit-transition-duration: 500ms;
   -webkit-transition-timing-function: ease-out;
  
@@ -444,7 +444,7 @@ color: #fff;
 
 .post-item:hover .doc-img{
 	 /* Webkit for Chrome and Safari */
-  -webkit-transform: scale(1.2, 1.2); // This is the enlarged size scale of the image.
+  -webkit-transform: scale(1.2, 1.2); /* This is the enlarged size scale of the image. */
   -webkit-transition-duration: 500ms;
   -webkit-transition-timing-function: ease-out;
  
@@ -1049,7 +1049,7 @@ div.jGrowl div.jGrowl-closer {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-color: #000000b5;
+    background-color: rgba(0,0,0,0.7);
 }
 .faq-panel {
     background: #fefefe;
@@ -1411,9 +1411,10 @@ div.jGrowl div.jGrowl-closer {
     text-align: center;
 }
 .post-text-overflow {
-    word-wrap: break-word;    
+    word-wrap: break-word;
     max-height: 2.6rem;
-    lowline-height: 1.2;
+    /*lowline-height: 1.2;*/
+    line-height: 1.2;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -1773,7 +1774,7 @@ div.jGrowl div.jGrowl-closer {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 5px 13px 5px;
-    background-color: #000000b5;
+    background-color: rgba(0,0,0,0.7);
 }
 .docs-choose-rows .docs-item:last-child {
     padding: 10px 10px 10px 10px;
@@ -1826,7 +1827,7 @@ div.jGrowl div.jGrowl-closer {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 5px 13px 5px;
-    background-color: #000000b5;
+    background-color: rgba(0,0,0,0.7);
 }
 .news-img-text {
     width: 570px;
@@ -2153,7 +2154,7 @@ div.jGrowl div.jGrowl-closer {
         border-bottom-color: transparent;
     }
     .nav-tabs>li>a:hover {
-        border-color: none;
+        border-color: #fff;
     }
     .currency {
         margin: 5px 0px 5px 0px;

@@ -1005,6 +1005,64 @@
         </div>
     </div>
 <!-- Видео ================================================== -->
+    <div class="modal fade bs-random-text-modal" tabindex="-1" role="dialog" aria-labelledby="random-text-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
+                    <h4 class="modal-title recaptcha-title" id="timezone-modal">Случайный текст</h4>
+                </div>
+                <div class="modal-body fuelux">
+                    <div id="attachs-list" class="nano">
+                        <div class="nano-content" style="height: 440px;">
+                            <ul class="add-comment-button text-center">
+                                <li>
+                                    <button type="button" class="btn btn-default btn-add" onclick="#" rel="tooltip" data-placement="right" title="Добавить случайный текст"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                </li>                           
+                            </ul>
+                            <div class="container-fluid">
+                                <div class="row">
+<!-- Текст 1 ================================================== -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 random-text">
+                            <div class="widget-area no-padding blank">
+                                <div class="status-upload">
+                                    <textarea class="form-control textarea-control" placeholder="Введите текст..." data-emojiable="true"></textarea>
+                                    <button type="button" class="btn btn-danger" id="myButton4" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" data-placement="left" title="Удалить текст"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+<!-- Текст 1 ================================================== -->
+<!-- Текст 2 ================================================== -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 random-text">
+                            <div class="widget-area no-padding blank">
+                                <div class="status-upload">
+                                    <textarea class="form-control textarea-control" placeholder="Введите текст..." data-emojiable="true"></textarea>
+                                    <button type="button" class="btn btn-danger" id="myButton5" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" data-placement="left" title="Удалить текст"><i class="fa fa-times" aria-hidden="true"></i></button> 
+                                </div>
+                            </div>
+                        </div>
+<!-- Текст 2 ================================================== -->
+<!-- Текст 3 ================================================== -->
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 random-text">
+                            <div class="widget-area no-padding blank">
+                                <div class="status-upload">
+                                    <textarea class="form-control textarea-control" placeholder="Введите текст..." data-emojiable="true"></textarea>
+                                    <button type="button" class="btn btn-danger" id="myButton6" data-loading-text="&lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;" rel="tooltip" data-placement="left" title="Удалить текст"><i class="fa fa-times" aria-hidden="true"></i></button> 
+                                </div>
+                            </div>
+                        </div>
+<!-- Текст 3 ================================================== -->                                   
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">                                                
+                    <button type="button" class="btn btn-success" id="myButton7" data-loading-text="Сохраняем &lt;i class=&quot;fa fa-spinner fa-pulse fa-fw&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>    
 <!-- Документы ============================================================================= -->
             <div class="modal fade bs-docs-modal" tabindex="-1" role="dialog" aria-labelledby="docs-modal" aria-hidden="true">
                 <div class="modal-dialog">
@@ -1190,9 +1248,13 @@
                                                 <div class="widget-area no-padding blank">
                                                     <div class="status-upload">
                                                         <textarea class="form-control textarea-control" placeholder="Введите текст..." data-emojiable="true"></textarea>
-                                                        <ul>
-                                                            <!-- <li><a href="#audiomodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Аудио"><i class="glyphicon glyphicon-music"></i></a></li>
-                                                            <li><a href="#videomodal" data-toggle="modal" data-placement="bottom" data-target=".bs-example-modal-lg" rel="tooltip" title="Видео"><i class="glyphicon glyphicon-film"></i></a></li> -->                        
+                                                        <div class="rt-notification">
+                                                            <span>5</span>
+                                                        </div>
+                                                        <div class="add-random-text">
+                                                            <a href="#random-text" data-toggle="modal" data-target=".bs-random-text-modal" rel="tooltip" data-placement="bottom" title="Добавить случайный текст"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                                                        </div>
+                                                        <ul>                       
                                                             <li>
                                                                 <div class="img-pc">
                                                                     <input type="file" multiple="" accept="image/jpeg, image/jpg, image/x-png, image/png">

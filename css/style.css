@@ -2158,6 +2158,23 @@ div.jGrowl div.jGrowl-closer {
 .random-text .emoji-menu .emoji-items-wrap {
     overflow: auto;
 }
+.example-pt {
+    background: #fefefe;
+    padding: 13px;
+    padding-left: 15px;
+    border-top: solid 3px #9ca6f1;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+       -moz-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+            box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
+}
+.example-pt-left {
+    margin-right: 10px;
+}
+.example-pt-right {
+    margin-left: 10px;
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;
@@ -2225,6 +2242,12 @@ div.jGrowl div.jGrowl-closer {
     }
     .load-img {
         padding-left: 27px;
+    }
+    .example-pt-left {
+    margin-right: 0px;
+    }
+    .example-pt-right {
+        margin-left: 0px;
     }
 }
 @media (max-width: 768px){

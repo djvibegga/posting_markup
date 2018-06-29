@@ -2124,6 +2124,9 @@ div.jGrowl div.jGrowl-closer {
 .add-random-text a:hover {
     color: #3E7FB9;
 }
+.add-random-text.parent-has-scroll {
+    right: 28px;
+}
 .rt-notification {
     position: absolute;
     top: 46px;

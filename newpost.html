@@ -1731,6 +1731,13 @@
                     });
                     window.emojiPicker.discover();
                   });
+                $(document).on('blur','.emoji-wysiwyg-editor',function(){
+                    var div = $('.emoji-wysiwyg-editor').get(0);
+                    var hasVerticalScrollbar = div.scrollHeight > div.clientHeight;
+                    if(hasVerticalScrollbar){
+                        $('.add-random-text').addClass('parent-has-scroll');
+                    }
+                });
             </script>
             <script type="text/javascript">
                   jQuery.fn.extend({

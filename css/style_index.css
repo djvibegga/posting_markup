@@ -1163,6 +1163,10 @@ section.contact > .container {
   position: relative;
   color: #fff;
 }
+.home-poll {
+	width: 700px;
+	margin: 0 auto;
+}
 .live-int {
     text-align: center;
 }
@@ -1521,19 +1525,22 @@ table-adaptive th, .table-adaptive td.total-calc {
     }
 }
 @media (max-width: 768px){
-#btn-enter {
-    display: inline-block;
-    font-size: 14px;
-    padding: 5px;
-    color: #fff;
-    border: 3px solid #fff;
-    width: 90%;
-    border-radius: 35px;
-    text-decoration: none;
-}
-.lead-foot-fix {
-    height: 0px;
-}
+	#btn-enter {
+	    display: inline-block;
+	    font-size: 14px;
+	    padding: 5px;
+	    color: #fff;
+	    border: 3px solid #fff;
+	    width: 90%;
+	    border-radius: 35px;
+	    text-decoration: none;
+	}
+	.lead-foot-fix {
+	    height: 0px;
+	}
+	.home-poll {
+		width: 100%;
+	}
 }
 @media (max-width: 360px){
     li.mi-subscr {
@@ -1557,6 +1564,9 @@ table-adaptive th, .table-adaptive td.total-calc {
         font-size: 10px;
         margin-top: 3px;
     }
+    .home-poll {
+		display: none;
+	}
 }
 
 @media (max-height: 823px){

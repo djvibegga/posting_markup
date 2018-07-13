@@ -1164,7 +1164,7 @@ section.contact > .container {
   color: #fff;
 }
 .home-poll {
-	width: 700px;
+	width: 50%;
 	margin: 0 auto;
 }
 .live-int {
@@ -1538,6 +1538,11 @@ table-adaptive th, .table-adaptive td.total-calc {
 	.lead-foot-fix {
 	    height: 0px;
 	}
+	.home-poll {
+		width: 90%;
+	}
+}
+@media (max-width: 480px){
 	.home-poll {
 		width: 100%;
 	}

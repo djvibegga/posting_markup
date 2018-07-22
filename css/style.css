@@ -2178,6 +2178,12 @@ div.jGrowl div.jGrowl-closer {
 .example-pt-right {
     margin-left: 10px;
 }
+.comments-text {
+    float: left;
+}
+.comments-btn {
+    float: right;
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;

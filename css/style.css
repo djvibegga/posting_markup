@@ -2293,11 +2293,34 @@ div.jGrowl div.jGrowl-closer {
     text-align: center;
     z-index: 999;
 }
+.account-notification-admin {
+    position: absolute;
+    bottom: 13px;
+    left: 75px;
+    color: #f9f9f9;
+    background-color: #3E7FB9;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 15px;
+    font-size: 15px;
+    text-align: center;
+    z-index: 999;
+}
 .add-social-account {
     margin: 0px 0px 25px 0px;
 }
 .soc-btn {
     margin: 0px 5px 5px 0px;
+}
+.admin-group-icon {
+    display: block;
+    position: relative;
+}
+.admin-group-icon>i {
+    position: absolute;
+    left: 9px;
+    top: 6px;
 }
 @media screen and (max-width: 600px) {
     .table-adaptive {

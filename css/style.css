@@ -1495,7 +1495,7 @@ div.jGrowl div.jGrowl-closer {
     color: #333;
 }
 .btn-admin {
-    margin-bottom: 3px;
+    margin: 0px 3px 3px 0px;
 }
 .panel-height {
     height: 45px;
@@ -2321,6 +2321,15 @@ div.jGrowl div.jGrowl-closer {
     position: absolute;
     left: 9px;
     top: 6px;
+}
+.paylogo{
+    height: 21px;
+}
+.paymetod{
+    text-align: center;
+}
+.mbtn {
+    margin: 0px 3px 3px 0px;
 }
 @media screen and (max-width: 600px) {
     .table-adaptive {

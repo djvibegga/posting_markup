@@ -2331,6 +2331,21 @@ div.jGrowl div.jGrowl-closer {
 .mbtn {
     margin: 0px 3px 3px 0px;
 }
+.chmail {
+    float: right;
+    margin: 0px 15px 5px 15px;
+}
+.change-mail-load {
+    position: absolute;
+    top: 9px;
+    right: 25px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+    text-align: center;
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;

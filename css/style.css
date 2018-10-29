@@ -2348,6 +2348,9 @@ div.jGrowl div.jGrowl-closer {
 .center {
     text-align: center;
 }
+.description {
+    font-size: 11px;
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;

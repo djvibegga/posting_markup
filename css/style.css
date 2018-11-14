@@ -2348,10 +2348,15 @@ div.jGrowl div.jGrowl-closer {
 .center {
     text-align: center;
 }
+<<<<<<< HEAD
 .repost-text {
     resize: vertical;
     min-height: 100px;
     max-height: 250px;
+=======
+.description {
+    font-size: 11px;
+>>>>>>> bcf8a229d76edfc27a73326dc29a5eabcf8964bc
 }
 @media screen and (max-width: 600px) {
     .table-adaptive {

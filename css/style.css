@@ -1619,8 +1619,7 @@ div.jGrowl div.jGrowl-closer {
     position: fixed;
     z-index: 10000;
     left: 18%;
-    bottom: 0px;
-    margin: 0px 0px 20px;    
+    bottom: 20px; 
     width: 50px;
     height: 50px;
     font-size: 1.5em;
@@ -2356,6 +2355,35 @@ div.jGrowl div.jGrowl-closer {
 .description {
     font-size: 11px;
 }
+.support-vk-button {
+    position: fixed;
+    z-index: 10000;
+    left: 30px;
+    bottom: 20px;    
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    color: #fff;
+    background: #2C98DE;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.275);
+    outline: none;
+}
+.support-vk-button:hover {
+    color: #2C98DE;
+    background: #fff;
+    border: 1px solid #2C98DE;
+}
+.support-vk-button:hover .fa-vk {
+    display: none;
+}
+.support-vk-button .fa-envelope-o {
+    display: none;
+}
+.support-vk-button:hover .fa-envelope-o {
+    display: inline;
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;
@@ -2472,6 +2500,9 @@ div.jGrowl div.jGrowl-closer {
 	.gid {
 	    display: none;
 	}
+    /*.support-vk {
+	    display: none;
+	}*/
 	.field-schedulefilterform-groupid {
 	    max-width: 255px;
 	}

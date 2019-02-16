@@ -932,7 +932,7 @@ div.jGrowl div.jGrowl-closer {
     z-index: 999999;
     /*border-right: solid 3px #3E7FB9;*/
 }
-.slide-style {
+/*.slide-style {
     width: .7em;
     width: 1ch;
     text-align: center;
@@ -940,7 +940,7 @@ div.jGrowl div.jGrowl-closer {
     font-size: 7px;
     text-transform: uppercase;
     padding: 21px 0px 0px 4px;
-}
+}*/
 .edit {
     display: inline-block;
     list-style: none;

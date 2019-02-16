@@ -938,6 +938,7 @@ div.jGrowl div.jGrowl-closer {
     text-align: center;
     word-wrap: break-word;
     font-size: 7px;
+    text-transform: uppercase;
     padding: 21px 0px 0px 4px;
 }
 .edit {

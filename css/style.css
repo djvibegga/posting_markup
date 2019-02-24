@@ -1632,24 +1632,24 @@ div.jGrowl div.jGrowl-closer {
   }
 }
 .gid-button {
-    position: fixed;
+    /*position: fixed;
     z-index: 10000;
     left: 18%;
-    bottom: 20px; 
-    width: 50px;
-    height: 50px;
-    font-size: 1.5em;
+    bottom: 20px;*/ 
+    width: 37px;
+    height: 37px;
+    /*font-size: 1.5em;*/
     color: #fff;
-    background: #2C98DE;
+    background: #ffa500;
     border: none;
-    border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,.275);
+    border-radius: 4px;
+    /*box-shadow: 0 3px 6px rgba(0,0,0,.275);*/
     outline: none;
 }
 .gid-button:hover {
-    color: #2C98DE;
+    color: #ffa500;
     background: #fff;
-    border: 1px solid #2C98DE;
+    border: 1px solid #ffa500;
 }
 .gid-button:hover .fa-question {
     display: none;
@@ -1806,6 +1806,7 @@ div.jGrowl div.jGrowl-closer {
     float: left;
     font-size: 39px;
     color: #337ab7;
+    width: 39px;
 }
 .docs-name {
     padding: 0px 0px 0px 10px;
@@ -2372,18 +2373,18 @@ div.jGrowl div.jGrowl-closer {
     font-size: 11px;
 }
 .support-vk-button {
-    position: fixed;
+    /*position: fixed;
     z-index: 10000;
-    left: 30px;
-    bottom: 20px;    
-    width: 50px;
-    height: 50px;
-    font-size: 1.5em;
+    left: 18%;
+    bottom: 20px;*/ 
+    width: 37px;
+    height: 37px;
+    /*font-size: 1.5em;*/
     color: #fff;
     background: #2C98DE;
     border: none;
-    border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,.275);
+    border-radius: 4px;
+    /*box-shadow: 0 3px 6px rgba(0,0,0,.275);*/
     outline: none;
 }
 .support-vk-button:hover {
@@ -2557,10 +2558,10 @@ div.jGrowl div.jGrowl-closer {
     }
 }
 @media (max-width: 480px){
-	.gid {
+	/*.gid {
 	    display: none;
 	}
-    /*.support-vk {
+    .support-vk {
 	    display: none;
 	}*/
 	.field-schedulefilterform-groupid {

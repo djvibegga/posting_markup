@@ -2445,6 +2445,31 @@ div.jGrowl div.jGrowl-closer {
     background: #FFF;
     transform: rotateZ(45deg);
 }
+.title-name {
+    top: -15px;
+    left: -10px;
+    font-weight: 700;
+}
+.comment_header {
+    padding: 0px 0px 10px 0px;
+}
+.comment_img {
+    float: left;
+    width: 50px;
+    margin: 0px 0px 10px 0px;
+}
+.comment_info {
+    width: 300px;
+    margin-left: 60px;
+    padding-top: 15px;
+}
+.comment_author {
+    width: 300px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;

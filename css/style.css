@@ -2470,6 +2470,34 @@ div.jGrowl div.jGrowl-closer {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.selection_acc {
+    padding: 0px 17px 0px 15px;   
+}
+.selection_group {
+    padding: 0px 15px 0px 17px;  
+}
+.acc-dd {
+    padding: 0 0 0 0!important;
+    border-bottom: 0!important;
+}
+.img-acc-dd {
+    width: 36px;
+}
+.info-selections-icon {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    text-align: center;
+    z-index: 999;
+}
+.info-selections {
+    padding: 0px;
+    margin: 0px;
+}
+.selected-ag {
+    display: inline-block;
+    padding: 3px 3px 3px 3px;
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;

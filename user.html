@@ -145,11 +145,9 @@
                                                 <div class="form-group">
                                                     <label class="col-lg-12">Страница по умолчанию:</label>
                                                     <div class="col-lg-12">
-                                                        <select class="selectpicker bott" data-live-search="true" data-width="100%" multiple data-max-options="1" title="Выберите страницу или сообщество...">
-                                                                <option>Моя страница</option>
-                                                                <option>Сочный апельсин</option>
-                                                                <option>Совместные покупки</option>
-                                                                <option>Разный мусор</option>  
+                                                        <select class="selectpicker bott" data-live-search="true" multiple data-max-options="1" id="my-select" title="Выберите страницу или сообщество..." data-width="100%">
+                                                                <option data-content="<div><img src='https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg' class='img-circle' width='25px' /> Александр Евсюков</div>"></option>
+                                                                <option data-content="<div><img src='https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg' class='img-circle' width='25px' /> Евгений Марилёв</div>"></option>
                                                         </select>
                                                     </div>
                                                 </div><br>
@@ -269,80 +267,97 @@
                             </div>
     <!-- Аккаунты ============================================================================= -->
                             <div class="tab-pane fade" id="accounts"><br>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add-social-account">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 add-social-account">
                                     <button type="button" class="btn btn-primary btn-add soc-btn" onclick="#" rel="tooltip" title="" data-original-title="Добавить аккаунт ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></button>
                                     <button type="button" class="btn btn-danger btn-add soc-btn" onclick="#" rel="tooltip" title="" data-original-title="Добавить аккаунт Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
                                     <button type="button" class="btn btn-warning btn-add soc-btn" onclick="#" rel="tooltip" title="" data-original-title="Добавить аккаунт Одноклассники"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></button>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 account_header"> 
-                                    <div class="account_img">
-                                        <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
-                                        <div class="account-notification">
-                                            <span><i class="fa fa-vk" aria-hidden="true"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="account_info">
-                                        <div class="post_author">
-                                            <a href="https://vk.com/juicy_orange">Александр Евсюков</a>
-                                        </div>
-                                        <div class="account_btn">
-                                            <a class="btn btn-primary btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Обновить привязку"><i class="fa fa-refresh" aria-hidden="true"></i></a>
-                                            <a class="btn btn-danger btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Удалить аккаунт"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                        </div>                                                                   
-                                    </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 search-social-item">
+                                    <input placeholder="Найти аккаунт..." type="text" class="form-control search-social-box">
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 account_header">
-                                    <div class="account_img">
-                                        <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
-                                        <div class="account-notification-instagram">
-                                            <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 account_header"> 
+                                            <div class="account_img">
+                                                <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
+                                                <div class="account-notification">
+                                                    <span><i class="fa fa-vk" aria-hidden="true"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="account_info">
+                                                <div class="post_author">
+                                                    <a href="https://vk.com/juicy_orange">Александр Евсюков</a>
+                                                </div>
+                                                <div class="account_btn">
+                                                    <a class="btn btn-primary btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Обновить привязку"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                                                    <a class="btn btn-danger btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Удалить аккаунт"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                                </div>                                                                   
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="account_info">
-                                        <div class="post_author">
-                                            <a href="https://vk.com/juicy_orange">Александр Евсюков</a>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 account_header">
+                                            <div class="account_img">
+                                                <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
+                                                <div class="account-notification-instagram">
+                                                    <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="account_info">
+                                                <div class="post_author">
+                                                    <a href="https://vk.com/juicy_orange">Александр Евсюков</a>
+                                                </div>
+                                                <div class="account_btn">
+                                                    <a class="btn btn-primary btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Обновить привязку"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                                                    <a class="btn btn-danger btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Удалить аккаунт"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                                </div>                                                                   
+                                            </div>                                                   
                                         </div>
-                                        <div class="account_btn">
-                                            <a class="btn btn-primary btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Обновить привязку"><i class="fa fa-refresh" aria-hidden="true"></i></a>
-                                            <a class="btn btn-danger btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Удалить аккаунт"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                        </div>                                                                   
-                                    </div>                                                   
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 account_header">
-                                    <div class="account_img">
-                                        <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
-                                        <div class="account-notification-ok">
-                                            <span><i class="fa fa-odnoklassniki" aria-hidden="true"></i></span>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 account_header">
+                                            <div class="account_img">
+                                                <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" />
+                                                <div class="account-notification-ok">
+                                                    <span><i class="fa fa-odnoklassniki" aria-hidden="true"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="account_info">
+                                                <div class="post_author">
+                                                    <a href="https://vk.com/juicy_orange">Александр Евсюков</a>
+                                                </div>
+                                                <div class="account_btn">
+                                                    <a class="btn btn-primary btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Обновить привязку"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                                                    <a class="btn btn-danger btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Удалить аккаунт"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                                </div>                                                                   
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="account_info">
-                                        <div class="post_author">
-                                            <a href="https://vk.com/juicy_orange">Александр Евсюков</a>
-                                        </div>
-                                        <div class="account_btn">
-                                            <a class="btn btn-primary btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Обновить привязку"><i class="fa fa-refresh" aria-hidden="true"></i></a>
-                                            <a class="btn btn-danger btn-xs mbtn" href="#" rel="tooltip" data-placement="bottom" title="" data-original-title="Удалить аккаунт"><i class="fa fa-times" aria-hidden="true"></i></a>
-                                        </div>                                                                   
                                     </div>
                                 </div>
                             </div>
     <!-- Аккаунты ============================================================================= -->                        
                             <div class="tab-pane fade" id="profile"><br> 
     <!-- Группы ============================================================================= -->     
-                                <ul class="list">
-                                    <li>
-                                        <input class="btn btn-primary" value="Обновить список сообществ" type="button">
-                                    </li>
-                                </ul>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <ul class="list">
+                                        <li>
+                                            <!--<input class="btn btn-primary" value="Обновить список сообществ" type="button">-->
+                                            <button type="button" class="btn btn-primary btn-add soc-btn" onclick="#" rel="tooltip" title="" data-original-title="Обновить список групп ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-warning btn-add soc-btn" onclick="#" rel="tooltip" title="" data-original-title="Обновить список групп Одноклассники"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 search-social-item">
+                                    <input placeholder="Найти сообщество..." type="text" class="form-control search-social-box">
+                                </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <p class="center">Пожалуйста, подождите синхронизируем список сообществ <i class="fa fa-spinner fa-pulse fa-fw" aria-hidden="true"></i></p>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div class="row">                                        
                                         <ul class="listrap-group">                                                    
                                             <li>
                                                 <div class="listrap-group-toggle">
-                                                    <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle" width="90px" />
+                                                    <img src="https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg" class="img-circle img-group" />
+                                                    <div class="account-notification">
+                                                        <span><i class="fa fa-vk" aria-hidden="true"></i></span>
+                                                    </div>
                                                     <div class="account-notification-admin" rel="tooltip" data-placement="bottom" title="" data-original-title="Управление">
                                                         <span class="admin-group-icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
                                                     </div>
@@ -352,12 +367,12 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                     <div class="row">
                                         <ul class="listrap-group">
                                             <li>
                                                 <div class="listrap-group-toggle">
-                                                    <img src="https://pp.userapi.com/c630023/v630023017/10925/lx9_-QiCOFY.jpg" class="img-circle" width="90px" />
+                                                    <img src="https://pp.userapi.com/c630023/v630023017/10925/lx9_-QiCOFY.jpg" class="img-circle img-group" />
                                                 </div>
                                                 <a href="https://vk.com/sundish">Солнце на блюде Солнце на блюде Солнце на блюде Солнце на блюде Солнце на блюде</a>
                                             </li>

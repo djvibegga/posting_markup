@@ -728,8 +728,8 @@ div.jGrowl div.jGrowl-closer {
     color: #428bca;
 }
 .listrap-group a {
-    margin-left: 10px;
-    font-weight: 700;
+    margin-left: 5px;
+    /*font-weight: 700;*/
 }
 .listrap-group .listrap-group-toggle {
     display: inline-block;
@@ -2273,11 +2273,11 @@ div.jGrowl div.jGrowl-closer {
     left: 50px;
     color: #f9f9f9;
     background-color: #3E7FB9;
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     line-height: 15px;
-    font-size: 11px;
+    font-size: 10px;
     text-align: center;
     z-index: 999;
 }
@@ -2311,15 +2311,15 @@ div.jGrowl div.jGrowl-closer {
 }
 .account-notification-admin {
     position: absolute;
-    bottom: 13px;
-    left: 75px;
+    bottom: 10px;
+    left: 15px;
     color: #f9f9f9;
     background-color: #3E7FB9;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     line-height: 15px;
-    font-size: 15px;
+    font-size: 10px;
     text-align: center;
     z-index: 999;
 }
@@ -2333,11 +2333,11 @@ div.jGrowl div.jGrowl-closer {
     display: block;
     position: relative;
 }
-.admin-group-icon>i {
+/*.admin-group-icon>i {
     position: absolute;
     left: 9px;
     top: 6px;
-}
+}*/
 .paylogo{
     height: 21px;
 }
@@ -2470,12 +2470,12 @@ div.jGrowl div.jGrowl-closer {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.selection_acc {
+/*.selection_acc {
     padding: 0px 17px 0px 15px;   
 }
 .selection_group {
     padding: 0px 15px 0px 17px;  
-}
+}*/
 .acc-dd {
     padding: 0 0 0 0!important;
     border-bottom: 0!important;
@@ -2497,6 +2497,20 @@ div.jGrowl div.jGrowl-closer {
 .selected-ag {
     display: inline-block;
     padding: 3px 3px 3px 3px;
+}
+.bootstrap-select>.dropdown-toggle{
+    height: 39px;
+}
+.img-group {
+    width: 50px;
+    height: 50px;
+}
+.search-social-item {
+    margin: 0px 0px 25px 0px;
+}
+.search-social-box {
+    width: 300px;
+    float: right;
 }
 @media screen and (max-width: 600px) {
     .table-adaptive {
@@ -2572,6 +2586,12 @@ div.jGrowl div.jGrowl-closer {
     .example-pt-right {
         margin-left: 0px;
     }
+    .account-notification-admin {
+        left: 21px;
+    }
+    .account-notification {
+        left: 55px;
+    }
 }
 @media (max-width: 768px){
     .navbar-nav .open .dropdown-menu {
@@ -2608,6 +2628,20 @@ div.jGrowl div.jGrowl-closer {
     .news-img-text {
         width: 100%;
         height: 100%;
+    }
+    .more {
+        font-weight: 700;
+        font-size: 14px;
+        border: 1px solid #3E7FB9;
+        border-radius: 35px;
+        width: 90%;
+        color: #3E7FB9;
+        text-align: center;
+        background-color: #fff;
+    }
+    .search-social-box {
+        width: 100%;
+        float: none;
     }
 }
 @media (max-width: 480px){

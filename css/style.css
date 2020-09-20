@@ -2470,12 +2470,12 @@ div.jGrowl div.jGrowl-closer {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-/*.selection_acc {
+.selection_acc {
     padding: 0px 17px 0px 15px;   
 }
 .selection_group {
     padding: 0px 15px 0px 17px;  
-}*/
+}
 .acc-dd {
     padding: 0 0 0 0!important;
     border-bottom: 0!important;

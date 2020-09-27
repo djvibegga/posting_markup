@@ -1069,8 +1069,7 @@ div.jGrowl div.jGrowl-closer {
 }
 .faq-panel {
     background: #fefefe;
-    padding: 12px;
-    padding-left: 16px;
+    padding: 7px;
     border-top: solid 3px #3E7FB9;
     border-radius: 5px;
     margin-bottom: 10px!important;
@@ -1435,7 +1434,7 @@ div.jGrowl div.jGrowl-closer {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    color: #3e7fb9!important;
+    /*color: #3e7fb9!important;*/
 }
 .post-text-error-overflow {
     font-size: 0.8em;
@@ -2514,6 +2513,37 @@ div.jGrowl div.jGrowl-closer {
 }
 .filter-option-inner-inner > div {
     display: inline;
+}
+.filter > a {
+    display: inline;
+    float: right;
+}
+.filter {
+    float: right!important;
+}
+.post-time {
+    font-weight: bold;
+    margin-top: 2px;
+}
+.post-date {
+    margin-top: 2px;
+}
+.view-post-margin {
+    margin: 0px 0px 10px 0px!important;
+}
+.random-image-info {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    color: #f9f9f9;
+    background-color: #3E7FB9;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    line-height: 17px;
+    font-size: 10px;
+    text-align: center;
+    z-index: 999;
 }
 @media screen and (max-width: 600px) {
     .table-adaptive {

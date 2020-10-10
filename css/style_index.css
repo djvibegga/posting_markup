@@ -1618,6 +1618,9 @@ table-adaptive th, .table-adaptive td.total-calc {
         text-align: right;
     }
 }
+.nav-brand img {
+    margin-top: -9px;
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;

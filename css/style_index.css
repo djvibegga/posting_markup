@@ -114,7 +114,7 @@ ul, li {
   padding: 120px 0px;
 }
 .trans-bg-top {
-  padding: 50px 0px 0px 0px;
+  padding: 70px 0px 0px 0px;
 }
 
 ::-moz-selection { background: #A9D0F5; color: #5F5A5A }
@@ -824,9 +824,11 @@ h3 {
 }
 .amp-version a {
 	color: #fff;
+    font-size: 13px;
 }
 .amp-version {
 	margin-bottom: 34px;
+    text-align: center;
 }
 .amp .full-version {
     text-align: center;
@@ -1275,7 +1277,7 @@ section.contact > .container {
     padding: 5px;
     color: #fff;
     border: 3px solid #fff;
-    width: 50%;
+    width: 77%;
     border-radius: 35px;
     text-decoration: none;
 }
@@ -1492,6 +1494,130 @@ section.contact > .container {
 table-adaptive th, .table-adaptive td.total-calc {
     text-align: right;
 }
+.brain-bg {
+    padding-bottom: 45px;
+    background: url(../img/logo-brain.png) no-repeat calc(100vw / 2 - 672px) 0;
+    height: 619px;
+}
+@media (max-width: 1200px) {
+    .brain-bg {
+        padding-bottom: 45px;
+        background: url(../img/logo-brain.png) no-repeat calc(100vw / 2 - 500px) 0;
+        height: 619px;
+    }
+}
+@media (max-width: 992px) {
+    .brain-bg {
+        padding-bottom: 45px;
+        background: url(../img/logo-brain.png) no-repeat calc(100vw / 2 - 488px) 0;
+        height: 540px;
+    }
+}
+@media (max-width: 768px) {
+    .brain-bg {
+        padding-bottom: 45px;
+        background: url(../img/logo-brain.png) no-repeat calc(100vw / 2 - 447px) 0;
+        height: 540px;
+    }
+}
+@media (max-width: 600px) {
+    .brain-bg {
+            padding-bottom: 45px;
+            background: url(../img/logo-brain.png) no-repeat center 75px;
+            height: 616px;
+        }
+}
+.brain {
+    padding-top: 275px;
+    padding-left: 105px;
+    font-size: 20px;
+    color: white;
+}
+@media (max-width: 1200px) {
+    .brain {
+        padding-top: 275px;
+        padding-left: 193px;
+        font-size: 20px;
+        color: white;
+    }
+}
+@media (max-width: 992px) {
+    .brain {
+        padding-top: 275px;
+        padding-left: 103px;
+        font-size: 20px;
+        color: white;
+    }
+}
+@media (max-width: 768px) {
+    .brain {
+        padding: 0px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
+}
+.header-text-container {
+    text-align: right;
+}
+.header-text h1 {
+    font-size: 45px;
+    color: white;
+    font-weight: 600;
+    margin: 39px 50px 0px 0px;
+}
+.header-text h5 {
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    margin: 30px 50px 50px 0px;
+    text-align: right;
+}
+@media (max-width: 1200px) {
+    .header-text h1 {
+        font-size: 37px;
+        color: white;
+        font-weight: 600;
+        margin: 39px 50px 0px 0px;
+    }
+    .header-text h5 {
+        font-size: 19px;
+        font-weight: 300;
+        color: white;
+        margin: 30px 50px 50px 0px;
+        text-align: right;
+    }
+}
+@media (max-width: 992px) {
+    .header-text h1 {
+        font-size: 35px;
+        color: white;
+        font-weight: 600;
+        margin: 39px 50px 0px 0px;
+    }
+    .header-text h5 {
+        font-size: 17px;
+        font-weight: 300;
+        color: white;
+        margin: 30px 50px 50px 0px;
+        text-align: right;
+    }
+}
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 27px;
+        color: white;
+        font-weight: 600;
+        margin: 39px 50px 0px 0px;
+    }
+    .header-text h5 {
+        font-size: 14px;
+        font-weight: 300;
+        color: white;
+        margin: 30px 50px 50px 0px;
+        text-align: right;
+    }
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;
@@ -1534,7 +1660,12 @@ table-adaptive th, .table-adaptive td.total-calc {
 	    width: 90%;
 	    border-radius: 35px;
 	    text-decoration: none;
+        text-align: center;
 	}
+    .cover {
+        padding: 180px 20px 0px 20px;
+        text-align: center;
+    }
 	.lead-foot-fix {
 	    height: 0px;
 	}

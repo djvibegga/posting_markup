@@ -148,7 +148,7 @@ img{
 }
 .status-upload ul > li > a:hover {
     background: none repeat scroll 0 0 #606060;
-color: #fff;
+    color: #fff;
 }
 .status-upload button {
     border: medium none;

@@ -41,7 +41,7 @@
                                 <li><a href="faq.html">FAQ</a></li>
                             </ul>        
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="menu-user"><a id="user-profile" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i></a>
+                                <li class="menu-user"><a id="user-profile" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
                                 <ul class="dropdown-menu">
                                 <div class="arrow-user"></div>
                                 <li class="usersettings"><a href="user.html"><i class="fa fa-cog" aria-hidden="true"></i> Настройки</a></li>
@@ -69,7 +69,6 @@
                             <li class="active"><a href="#home" data-toggle="tab">Профиль</a></li>
                             <li><a href="#accounts" data-toggle="tab">Аккаунты</a></li>
                             <li><a href="#profile" data-toggle="tab">Сообщества</a></li>
-                            <li><a href="#settings" data-toggle="tab">Настройки</a></li>
                         </ul>
 
                         <div id="myTabContent" class="tab-content">
@@ -140,6 +139,48 @@
                                                 </div>
                                             </div><br>
                                             </form>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 personal-info-right">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label class="col-lg-12">Страница по умолчанию:</label>
+                                                    <div class="col-lg-12">
+                                                        <select class="selectpicker bott" data-live-search="true" multiple data-max-options="1" id="my-select" title="Выберите страницу или сообщество..." data-width="100%">
+                                                                <option data-content="<div><img src='https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg' class='img-circle' width='25px' /> Александр Евсюков</div>"></option>
+                                                                <option data-content="<div><img src='https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg' class='img-circle' width='25px' /> Евгений Марилёв</div>"></option>
+                                                        </select>
+                                                    </div>
+                                                </div><br>
+                                                <div class="checkbox" id="myCheckbox">
+                                                    <label class="checkbox-custom" data-initialize="checkbox">
+                                                        <input class="sr-only" type="checkbox" value="">
+                                                        <span class="checkbox-label"><b>Подписаться на наши новости</b></span>
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox" id="myCheckbox">
+                                                    <label class="checkbox-custom" data-initialize="checkbox">
+                                                        <input class="sr-only" type="checkbox" value="">
+                                                        <span class="checkbox-label"><b>Отобразить все группы ВКонтакте</b></span>
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox" id="default-delete">
+                                                    <label class="checkbox-custom" data-initialize="checkbox">
+                                                        <input class="sr-only" data-toggle="#Default-delete" type="checkbox" value="option1">
+                                                        <span class="checkbox-label"><b>Автоматически удалять записи из ВКонтакте</b></span>
+                                                    </label>
+                                                </div><br>
+                                                <div class="alert bg-info" id="Default-delete">
+                                                    <div>
+                                                    При удалении записей из сервиса будут автоматически
+                                                    удалены и связанные записи в ВКонтакте.
+                                                    <div class="attention">
+                                                        Обратите, пожалуйста, внимание, что записи в сервисе
+                                                        хранятся только определенный срок. После публикации запись
+                                                        будет автоматически удалена по истечении 3 дней.
+                                                    </div>
+                                                    </div>         
+                                                </div>
+                                            </form>    
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center btn-user">
                                             <button type="button" class="btn btn-success user-button">Сохранить <i class="fa fa-check" aria-hidden="true"></i></button>
@@ -509,55 +550,6 @@
                                 </div>
     <!-- Группы ============================================================================= -->
                             </div>
-                            
-<div class="tab-pane fade" id="settings"><br>
-
-    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 personal-info-right">
-        <form class="form-horizontal" role="form">
-            <div class="form-group">
-                <label class="col-lg-12">Страница по умолчанию:</label>
-                <div class="col-lg-12">
-                    <select class="selectpicker bott" data-live-search="true" multiple data-max-options="1" id="my-select" title="Выберите страницу или сообщество..." data-width="100%">
-                            <option data-content="<div><img src='https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg' class='img-circle' width='25px' /> Александр Евсюков</div>"></option>
-                            <option data-content="<div><img src='https://pp.userapi.com/c633125/v633125027/22620/8F0bvC2_Us0.jpg' class='img-circle' width='25px' /> Евгений Марилёв</div>"></option>
-                    </select>
-                </div>
-            </div><br>
-            <div class="checkbox" id="myCheckbox">
-                <label class="checkbox-custom" data-initialize="checkbox">
-                    <input class="sr-only" type="checkbox" value="">
-                    <span class="checkbox-label"><b>Подписаться на наши новости</b></span>
-                </label>
-            </div>
-            <div class="checkbox" id="myCheckbox">
-                <label class="checkbox-custom" data-initialize="checkbox">
-                    <input class="sr-only" type="checkbox" value="">
-                    <span class="checkbox-label"><b>Отобразить все группы ВКонтакте</b></span>
-                </label>
-            </div>
-            <div class="checkbox" id="default-delete">
-                <label class="checkbox-custom" data-initialize="checkbox">
-                    <input class="sr-only" data-toggle="#Default-delete" type="checkbox" value="option1">
-                    <span class="checkbox-label"><b>Автоматически удалять записи из ВКонтакте</b></span>
-                </label>
-            </div><br>
-            <div class="alert bg-info" id="Default-delete">
-                <div>
-                При удалении записей из сервиса будут автоматически
-                удалены и связанные записи в ВКонтакте.
-                <div class="attention">
-                    Обратите, пожалуйста, внимание, что записи в сервисе
-                    хранятся только определенный срок. После публикации запись
-                    будет автоматически удалена по истечении 3 дней.
-                </div>
-                </div>         
-            </div>
-        </form>
-        <button type="submit" id="saveButtonDefaults" class="btn btn-success user-button">Сохранить настройки</button>
-    </div>
-    
-</div>
-                            
                         </div>
                     </div>
                 </div>

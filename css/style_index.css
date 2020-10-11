@@ -114,7 +114,7 @@ ul, li {
   padding: 120px 0px;
 }
 .trans-bg-top {
-  padding: 70px 0px 0px 0px;
+  padding: 50px 0px 0px 0px;
 }
 
 ::-moz-selection { background: #A9D0F5; color: #5F5A5A }
@@ -824,11 +824,9 @@ h3 {
 }
 .amp-version a {
 	color: #fff;
-    font-size: 13px;
 }
 .amp-version {
 	margin-bottom: 34px;
-    text-align: center;
 }
 .amp .full-version {
     text-align: center;
@@ -1277,7 +1275,7 @@ section.contact > .container {
     padding: 5px;
     color: #fff;
     border: 3px solid #fff;
-    width: 77%;
+    width: 50%;
     border-radius: 35px;
     text-decoration: none;
 }
@@ -1494,6 +1492,7 @@ section.contact > .container {
 table-adaptive th, .table-adaptive td.total-calc {
     text-align: right;
 }
+<<<<<<< HEAD
 .brain-bg {
     padding-bottom: 45px;
     background: url(../img/logo-brain.png) no-repeat calc(100vw / 2 - 672px) 0;
@@ -1621,6 +1620,8 @@ table-adaptive th, .table-adaptive td.total-calc {
 .nav-brand img {
     margin-top: -9px;
 }
+=======
+>>>>>>> parent of 5626b40... new index top container
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;
@@ -1663,12 +1664,7 @@ table-adaptive th, .table-adaptive td.total-calc {
 	    width: 90%;
 	    border-radius: 35px;
 	    text-decoration: none;
-        text-align: center;
 	}
-    .cover {
-        padding: 180px 20px 0px 20px;
-        text-align: center;
-    }
 	.lead-foot-fix {
 	    height: 0px;
 	}

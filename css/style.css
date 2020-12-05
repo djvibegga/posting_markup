@@ -2587,8 +2587,7 @@ div.jGrowl div.jGrowl-closer {
     padding-left: 0px;
 }
 .db-pricing-eleven ul li {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 10px 20px 10px;
     cursor: pointer;
 }
 .db-pricing-eleven ul li i {

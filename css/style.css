@@ -666,6 +666,7 @@ li.time-divider.sec {
 }
 .offer-warning-text {
     color: #db9e34;
+    font-size: 19px;
 }
 .offer-danger-text {
     color: #c9302c;

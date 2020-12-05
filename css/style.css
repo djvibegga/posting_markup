@@ -673,9 +673,11 @@ li.time-divider.sec {
 }
 .offer-primary-text {
     color: rgba(47,106,215,.9);
+    font-size: 19px;
 }
 .offer-magick-text {
     color: #bb39d7;
+    font-size: 19px;
 }
 .msg {
     -webkit-box-shadow: 0 10px 10px -5px rgba(0,0,0,.08);
@@ -2545,6 +2547,68 @@ div.jGrowl div.jGrowl-closer {
     font-size: 10px;
     text-align: center;
     z-index: 999;
+}
+.db-pricing-eleven {
+    margin-bottom: 30px;
+    margin-top: 25px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    color: #fff;
+    line-height: 30px;
+}
+.db-bk-color-one {
+    background-color: #3E7FB9;
+}
+.db-pricing-eleven .price {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 20px 20px 20px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.db-pricing-eleven .price small {
+    color: #B8B8B8;
+    display: block;
+    font-size: 12px;
+    margin-top: 22px;
+}
+.db-pricing-eleven .type {
+    background-color: #52E89E;
+    padding: 20px 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.db-pricing-eleven ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding-left: 0px;
+}
+.db-pricing-eleven ul li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.db-pricing-eleven ul li i {
+    margin-right: 5px;
+}
+.db-pricing-eleven .pricing-footer {
+    padding: 20px;
+}
+.db-button-color-square {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+.db-button-color-square:hover {
+    color: #5cb85c;
+}
+.db-button-color-square:focus {
+    color: #5cb85c;
 }
 @media screen and (max-width: 600px) {
     .table-adaptive {

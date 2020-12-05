@@ -70,7 +70,8 @@
                 
                 <div class="col-xs-12 col-sm-12 col-md-12">
                         <ul id="myTab" class="nav nav-tabs">
-                            <li class="active"><a href="#payments" data-toggle="tab">Подписка</a></li>
+                            <li class="active"><a href="#paymentspac" data-toggle="tab">Подписка пакетами</a></li>
+                            <li><a href="#payments" data-toggle="tab">Выборочная подписка</a></li>
                             <li><a href="#history" data-toggle="tab">История платежей</a></li>
                             <li class="currency">
                                 <span class="text-currency">Выбор валюты:</span>
@@ -82,7 +83,124 @@
                         </ul>
 
                         <div id="myTabContent" class="tab-content">
-                            <div class="tab-pane fade in active" id="payments"><br>
+                            <div class="tab-pane fade in active" id="paymentspac">
+                                                                  
+                                <div class="cols-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <div class="row">
+                                        <div class="db-wrapper">
+                                            <div class="db-pricing-eleven db-bk-color-one">
+                                                <div class="price">
+                                                    <span>245</span><sup><i class="fa fa-rub" aria-hidden="true"></i></sup>
+                                                    <small>на 30 дней</small>
+                                                </div>
+                                                <div class="type">
+                                                    Всёшечка
+                                                </div>
+                                                <ul>
+                                                    <li>В тариф включены все функции SamePost</li>
+                                                </ul><br>
+                                                <div class="pricing-footer">
+                                                    <a href="#" class="btn db-button-color-square btn-lg">30</a>
+                                                    <a href="#" class="btn db-button-color-square btn-lg">90</a>
+                                                    <a href="#" class="btn db-button-color-square btn-lg">120</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cols-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <div class="row">
+                                        <div class="db-wrapper">
+                                            <div class="db-pricing-eleven db-bk-color-one">
+                                                <div class="price">
+                                                    <span>150</span><sup><i class="fa fa-rub" aria-hidden="true"></i></sup>
+                                                    <small>на 30 дней</small>
+                                                </div>
+                                                <div class="type">
+                                                    Организатор СП
+                                                </div>
+                                                <ul>
+                                                    <li>В тариф включены: Случайные изображения, Повторы, Репосты, Комментарии</li>
+                                                </ul>
+                                                <div class="pricing-footer">
+                                                    <a href="#" class="btn db-button-color-square btn-lg">30</a>
+                                                    <a href="#" class="btn db-button-color-square btn-lg">90</a>
+                                                    <a href="#" class="btn db-button-color-square btn-lg">120</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="cols-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                    <div class="row">
+                                        <div class="db-wrapper">
+                                            <div class="db-pricing-eleven db-bk-color-one">
+                                                <div class="price">
+                                                    <span>95</span><sup><i class="fa fa-rub" aria-hidden="true"></i></sup>
+                                                    <small>на 30 дней</small>
+                                                </div>
+                                                <div class="type">
+                                                    Админ
+                                                </div>
+                                                <ul>
+                                                    <li>В тариф включены: Пакетная загрузка картинок, Пакетная загрузка текстов</li>
+                                                </ul><br>
+                                                <div class="pricing-footer">
+                                                    <a href="#" class="btn db-button-color-square btn-lg">30</a>
+                                                    <a href="#" class="btn db-button-color-square btn-lg">90</a>
+                                                    <a href="#" class="btn db-button-color-square btn-lg">120</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                   
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fuelux">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="radio radiobox paymetod">
+                                                        <label class="radio-custom repeat-radiobox" data-initialize="radio" id="post-menu">
+                                                            <input class="sr-only" data-toggle="#bank_pay_pac" name="radioEx3" type="radio" value="option1">
+                                                            Оплата банковским переводом
+                                                        </label>
+                                                        <label class="radio-custom repeat-radiobox" data-initialize="radio" id="post-menu">
+                                                            <input class="sr-only" data-toggle="#interkassa_pac" name="radioEx3" type="radio" value="option1">
+                                                            <img src="img/logo-interkassa.png" class="paylogo" />
+                                                        </label>
+                                                    </div>
+                                                    <div class="alert bg-info" id="bank_pay_pac">Оплата банковским переводом - это оплата переводом на карту по реквизитам.</div>
+                                                    <div class="alert bg-info" id="interkassa_pac">Interkassa – это агрегатор платежных систем, позволяющая принимать платежи от клиентов с помощью более 50 платежных инструментов и работает в валютных зонах: гривна, доллар, евро и лари.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <p class="bold" style="color:red">ВНИМАНИЕ! Если вы нарушили <a href="terms.html">правила</a> сервиса и вас заблокировали, то возврат денежных средств не осуществляется. Для исключения недоразумений ознакомьтесь с <a href="terms.html">правилами</a> и <a href="oferta.html">офертой</a> сервиса.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                            <div class="row">
+                                                <div class="btn-payment">
+                                                    <button type="button" class="btn btn-success user-button">Оплатить <b><span>60</span> <span class="rub">Р</span></b></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 fuelux">
+                                    <div class="row">
+                                        <div class="checkbox" id="signature">
+                                            <label class="checkbox-custom" data-initialize="checkbox">
+                                                <input class="sr-only" type="checkbox" value="">
+                                                <span class="checkbox-label">Я ознакомился с правилами и офертой сервиса.</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="tab-pane fade" id="payments"><br>
                                 <div class="panel panel-default">
                                     <table class="table-adaptive">
                                         <thead>

@@ -2611,6 +2611,14 @@ div.jGrowl div.jGrowl-closer {
 .radio-paymetod {
     padding-right: 7px;
 }
+.hryvnia {
+    height: 39px;
+}
+.hryvnia-pay {
+    height: 14px;
+    position: relative;
+    top: -1.7px;
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;

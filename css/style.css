@@ -2619,6 +2619,11 @@ div.jGrowl div.jGrowl-closer {
     position: relative;
     top: -1.7px;
 }
+.checkpost {
+    position: absolute;
+    left: 21px;
+    bottom: 7px;
+}
 @media screen and (max-width: 600px) {
     .table-adaptive {
         border: 0;

@@ -169,7 +169,7 @@
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
     <!-- recaptcha ============================================================================= -->
-                                        
+    
     <!-- renascence ============================================================================= -->
             <div class="modal fade bs-renascence-modal modal-allert" tabindex="-1" role="dialog" aria-labelledby="renascence-modal" aria-hidden="true">
                 <div class="modal-dialog">
@@ -220,6 +220,28 @@
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
     <!-- time zone ============================================================================= -->
+                            
+    <!-- login instagram ============================================================================= -->
+        <div class="modal fade bs-logininst-modal modal-allert" tabindex="-1" role="dialog" aria-labelledby="logininst-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
+                        <h4 class="modal-title recaptcha-title" id="logininst-modal">Добавить аккаунт Instagram</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <form class="form-signin" action="" method="">
+                            <input type="text" class="form-control" placeholder="Логин Instagram">
+                            <input type="password" class="form-control" placeholder="Пароль Instagram">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-lg btn-default btn-block" value="Войти" />
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    <!-- login instagram ============================================================================= -->
                                         
     <!-- Профиль ============================================================================= -->
 
@@ -231,9 +253,9 @@
                                     Для продолжения работы требуется прикрепить хотябы один социальный аккаунт...
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 add-social-account">
-                                    <button type="button" class="btn btn-primary btn-add soc-btn" onclick="#" rel="tooltip" title="" data-original-title="Добавить аккаунт ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></button>
-                                    <button type="button" class="btn btn-danger btn-add soc-btn" onclick="#" rel="tooltip" title="" data-original-title="Добавить аккаунт Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
-                                    <button type="button" class="btn btn-warning btn-add soc-btn" onclick="#" rel="tooltip" title="" data-original-title="Добавить аккаунт Одноклассники"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn btn-primary btn-add soc-btn" onclick="#" rel="tooltip" title="Добавить аккаунт ВКонтакте" data-original-title="Добавить аккаунт ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn btn-danger btn-add soc-btn" data-toggle="modal" data-target=".bs-logininst-modal" rel="tooltip" title="Добавить аккаунт Instagram" data-original-title="Добавить аккаунт Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                                    <button type="button" class="btn btn-warning btn-add soc-btn" onclick="#" rel="tooltip" title="Добавить аккаунт Одноклассники" data-original-title="Добавить аккаунт Одноклассники"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></button>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 search-social-item">
                                     <input placeholder="Найти аккаунт..." type="text" class="form-control search-social-box">

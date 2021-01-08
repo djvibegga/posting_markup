@@ -57,6 +57,28 @@
                     </div>
                 </nav>
             </header>
+
+<!-- login instagram ============================================================================= -->
+        <div class="modal fade bs-logininst-modal modal-allert" tabindex="-1" role="dialog" aria-labelledby="logininst-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" rel="tooltip" title="Закрыть">&times;</button>
+                        <h4 class="modal-title recaptcha-title" id="logininst-modal">Войти с помощью Instagram</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <form class="form-signin" action="" method="">
+                            <input type="text" class="form-control" placeholder="Логин Instagram">
+                            <input type="password" class="form-control" placeholder="Пароль Instagram">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" class="btn btn-lg btn-default btn-block" value="Войти" />
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+<!-- login instagram ============================================================================= -->    
     
 <!-- Панель навигации ================================================== -->
     
@@ -71,7 +93,7 @@
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 add-social-account">
                                                 <div class="row">
                                                     <button type="button" class="btn btn-primary btn-add soc-btn" onclick="#" rel="tooltip" title="" data-original-title="Войти с помощью ВКонтакте"><i class="fa fa-vk" aria-hidden="true"></i></button>
-                                                    <button type="button" class="btn btn-danger btn-add soc-btn" onclick="#" rel="tooltip" title="" data-original-title="Войти с помощью Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                                                    <button type="button" class="btn btn-danger btn-add soc-btn" data-toggle="modal" data-target=".bs-logininst-modal" rel="tooltip" title="Войти с помощью Instagram" data-original-title="Войти с помощью Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
                                                     <button type="button" class="btn btn-warning btn-add soc-btn" onclick="#" rel="tooltip" title="" data-original-title="Войти с помощью Одноклассники"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></button>
                                                 </div>
                                             </div>

@@ -70,6 +70,7 @@
                             <li><a href="#accounts" data-toggle="tab">Аккаунты</a></li>
                             <li><a href="#profile" data-toggle="tab">Сообщества</a></li>
                             <li><a href="#settings" data-toggle="tab">Настройки</a></li>
+                            <li><a href="#referals" data-toggle="tab">Реферальная программа</a></li>
                         </ul>
 
                         <div id="myTabContent" class="tab-content">
@@ -578,6 +579,58 @@
             </div>
         </form>
         <button type="submit" id="saveButtonDefaults" class="btn btn-success user-button">Сохранить настройки</button>
+    </div>
+    
+</div>
+                            
+<div class="tab-pane fade" id="referals"><br>
+    
+    <div class="alert alert-info" role="alert">
+        Просто выберите аккаунт на который будет начислен бонус, скопируйте ссылку, отправьте её другу и ожидайте, бонус начислится автоматически
+    </div>
+    <div class="cols-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="row">
+            <div class="panel panel-primary filterable">
+                <div class="panel-heading panel-height">
+                    <div class="pull-left">
+                        Аккаунт <i class="fa fa-info-circle" data-placement="right" rel="tooltip" title="Выберите аккаунт на который будет начислен бонус"></i>
+                    </div>
+                </div>
+                <table class="table-adaptive">
+                    <tbody>
+                        <tr>
+                            <td data-label="Выберите аккаунт" colspan="2">
+                                <select class="selectpicker bott" data-live-search="true" id="my-select" title="Выберите аккаунт..." data-width="100%">
+                                    <option data-content="<div><img src='https://sun9-37.userapi.com/impg/aMlO2fGktU4g0fhIpmT5rL2dTf5Mj3PeXr1sQw/OtjllvJ8z8k.jpg?size=50x0&amp;quality=88&amp;crop=945,247,1224,1224&amp;sign=27d6a9964946a17e100a04683de34bdd&amp;c_uniq_tag=JWv9tAMxOahznO0urIsCfUAQ8FSEbtGb4VaEAEtVHEU&amp;ava=1' class='img-circle' width='25px' /> Евгений Марилёв</div>"></option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="panel panel-default faq-panel">
+                <div class="panel-heading">
+                    <h4 class="panel-title container">
+                        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <input disabled type="text" class="form-control" value="https://samepost.ru?fromId=<myId>&timestamp=1423423423234">
+                            </div>    
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                            <button type="copy" class="btn btn-default user-button">Скопировать</button>
+                        </div>
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <p><i class="fa fa-check" aria-hidden="true" style="color:#52E89E; font-size:20px;"></i> Пригласи друга, который зарегистрируется и получи &nbsp;&nbsp;<b style="background-color:#3E7FB9; color:white; font-size:17px;">&nbsp;&nbsp;7 дней бесплатно на все функции&nbsp;&nbsp;</b></p>
+                    <p><i class="fa fa-check" aria-hidden="true" style="color:#52E89E; font-size:20px;"></i> Пригласи друга, который оформит подписку и получи <b style="background-color:#3E7FB9; color:white; font-size:17px;">&nbsp;30 дней бесплатно на все функции&nbsp;</b></p>
+                </div>
+            </div>
+        </div>
     </div>
     
 </div>

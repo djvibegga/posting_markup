@@ -129,7 +129,7 @@
                <!-- <a href="#" onclick="$.jGrowl('&lt;i class=&quot;fa fa-check&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Пост создан', { sticky: true, position: 'bottom-right', theme: 'msg msg-success msg-success-text' });">Нотификационный блок "успешно"</a>
                 <a href="#" onclick="$.jGrowl('&lt;i class=&quot;fa fa-times&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; Что-то пошло не так', { sticky: true, position: 'bottom-right', theme: 'msg msg-danger msg-danger-text' });">Нотификационный блок "с ошибкой"</a> -->
 
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-md-offset-1">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                             <select class="selectpicker bott" data-live-search="true" data-width="100%" multiple data-max-options="1" title="Выберите страницу или сообщество...">
                                 <optgroup label="Личная страница">
                                     <option>Моя страница</option>
@@ -142,7 +142,7 @@
                             </select>
                         </div>
 
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                             <div class="date-left">
                                 <i class="fa fa-arrow-left"></i>
                             </div>
@@ -151,8 +151,15 @@
                                 <i class="fa fa-arrow-right"></i>
                             </div>          
                         </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <input
+                                type="text"
+                                class="form-control text-center"
+                                placeholder="Введите текст для поиска..."/>
+                        </div>
                         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center">
                         <div class="btn-group">
+                            <button type="button" class="btn btn-default" aria-hidden="true" data-placement="top" rel="tooltip" title="Поиск" data-original-title="Поиск"><i class="fa fa-search" aria-hidden="true"></i></button>
                             <button type="button" class="btn btn-default" aria-hidden="true" data-placement="top" rel="tooltip" title="Выбрать записи" data-original-title="Выбрать записи"><i class="fa fa-check" aria-hidden="true"></i></button>
                             <button type="button" class="btn btn-default" aria-hidden="true" data-placement="top" rel="tooltip" title="Выбрать все" data-original-title="Выбрать все"><i class="fa fa-check-square-o" aria-hidden="true"></i></button>
                             <button type="button" class="btn btn-default" aria-hidden="true" data-placement="top" rel="tooltip" title="Снять выделение" data-original-title="Снять выделение"><i class="fa fa-square-o" aria-hidden="true"></i></button>

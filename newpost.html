@@ -982,7 +982,7 @@
                 </div>
                 <div class="modal-body fuelux">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="row">
+                        <div class="row">                            
                             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                 <div class="row">
                                     <ul class="navmodal">
@@ -1016,7 +1016,71 @@
                     </div>                    
                     <div id="attachs-list" class="nano">
                         <div class="nano-content" style="height: 440px;">
-                            <div class="container-fluid">                                                                        
+                            <div class="container-fluid">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="panel panel-default faq-panel">
+            <div class="panel-body">
+                <div id="dropzone">
+                    <div class="dropzone-w">
+                        <input type="file" name="dropzone" multiple="true">
+                        <div class="dropzone-icon">
+                            <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                        </div>
+                        <div class="dropzone-text">
+                            Для загрузки с компьютера перетащите файлы сюда <span>(или просто кликните)</span><br>
+                        </div>
+                    </div>
+                </div><br>
+                <input type="text" class="form-control" placeholder="Название..."/><br>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="widget-area no-padding blank">
+                            <div class="status-upload">
+                                <textarea class="form-control textarea-control" placeholder="Описание..." data-emojiable="true"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 sortt">
+                    <div class="radio radiobox">
+                        <h4>Где будет показываться видео</h4><br>
+                        <label class="radio-custom repeat-radiobox" data-initialize="radio">
+                            <input class="sr-only" name="radioEx3" type="radio" value="option1">
+                            IGTV <span>s_ews</span>
+                        </label><br>
+                        <label class="radio-custom repeat-radiobox" data-initialize="radio">
+                            <input class="sr-only" data-toggle="#radioToggle_5" name="radioEx3" type="radio" value="option1">
+                            IGTV и Страница Facebook
+                        </label>
+                    </div>
+                    <div class="alert bg-info" id="radioToggle_5">
+                        Включите показ видео в IGTV и на Facebook, чтобы охватить больше людей.
+                    </div>                                        
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 sortt">
+                    <h4>Специальные возможности</h4><br>
+                    <div class="checkbox">
+                        <label class="checkbox-custom" data-initialize="checkbox">
+                            <input class="sr-only" data-toggle="#preview" type="checkbox" value="option1">
+                            <span class="checkbox-label">Опубликовать предпросмотр</span>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label class="checkbox-custom" data-initialize="checkbox">
+                            <input class="sr-only" data-toggle="#captions" type="checkbox" value="option1">
+                            <span class="checkbox-label">Автоматические субтитры</span>
+                        </label>
+                    </div>
+                    <div class="alert bg-info" id="preview">
+                        Предпросмотры видны в профиле и ленте
+                    </div>
+                    <div class="alert bg-info" id="captions">
+                        Автоматически сгенерированные субтитры к видео помогают людям с нарушениями слуха. Они доступны только в приложениях для iOS и Android, а их создание может занимать несколько минут.                                            
+                    </div>
+                </div>
+            </div>
+        </div>                        
+    </div>                     
                                     <ul class="video-list">
                                         <li class="video-box">
                                             <div class="video-vk">
